@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBG"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin25"
+                android:layout_marginEnd="@dimen/margin25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- App Icon -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="@dimen/loginIconWidth"
+                        android:layout_height="@dimen/loginIconHeight"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/app_icon"
+                        app:riv_corner_radius="0dp" />
+
+                </LinearLayout>
+
+                <!-- Welcome back, Login with Mobile note -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin30"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_bold"
+                        android:gravity="center"
+                        android:text="@string/welcome_back"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_25" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_medium"
+                        android:gravity="center"
+                        android:text="@string/login_with_mobile_note"
+                        android:textColor="@color/otherColor"
+                        android:textSize="@dimen/text_15" />
+
+                </LinearLayout>
+
+                <!-- Edittext & Country Code picker -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin28"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittextSize"
+                        android:background="@drawable/round_bg_bor_edt"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/edittext_paddings"
+                        android:paddingEnd="@dimen/edittext_paddings">
+
+                        <LinearLayout
+                            android:id="@+id/lyCountryPicker"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.18"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:theme="@style/AppTheme.MyRipple">
+
+                            <TextView
+                                android:layout_width="11.5dp"
+                                android:layout_height="20.96dp"
+                                android:background="@drawable/ic_mobile"
+                                android:visibility="gone" />
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/countryCodePicker"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:visibility="visible"
+                                app:ccpDialog_background="@color/white"
+                                app:ccpDialog_showFastScroller="true"
+                                app:ccpDialog_textColor="@color/black"
+                                app:ccp_contentColor="@color/text_white"
+                                app:ccp_showArrow="false"
+                                app:ccp_showFlag="false"
+                                app:ccp_showNameCode="false"
+                                app:ccp_textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.82">
+
+                            <EditText
+                                android:id="@+id/etMobileNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/public_medium"
+                                android:hint="@string/enter_your_mobile_number"
+                                android:imeOptions="actionDone"
+                                android:inputType="phone"
+                                android:layoutDirection="locale"
+                                android:paddingStart="@dimen/edittext_paddings"
+                                android:singleLine="true"
+                                android:textColor="@color/text_white"
+                                android:textColorHint="@color/text_other"
+                                android:textSize="@dimen/text_16" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- With Mobile -->
+                <LinearLayout
+                    android:id="@+id/lyWithMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/credButtonHeight"
+                    android:background="@drawable/round_bg_login_regi"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:theme="@style/AppTheme.MyRipple">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/public_semibold"
+                        android:gravity="center"
+                        android:text="@string/login"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_17" />
+
+                </LinearLayout>
+
+                <!-- Or -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin15"
+                        android:layout_marginEnd="@dimen/margin15"
+                        android:fontFamily="@font/public_medium"
+                        android:gravity="center"
+                        android:text="@string/or"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <!-- Social Logins -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!-- Google -->
+                    <LinearLayout
+                        android:id="@+id/lyGmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/credButtonHeight"
+                        android:background="@drawable/round_bg_login_regi"
+                        android:backgroundTint="@color/white"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:theme="@style/AppTheme.MyRipple">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="false">
+
+                            <!--Facebook icon-->
+                            <TextView
+                                android:layout_width="@dimen/socialButtons"
+                                android:layout_height="@dimen/socialButtons"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="40dp"
+                                android:background="@drawable/ic_gmail"
+                                android:clickable="false"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:clickable="false"
+                                android:fontFamily="@font/public_semibold"
+                                android:gravity="center"
+                                android:text="@string/login_with_google"
+                                android:textColor="@color/text_black"
+                                android:textSize="@dimen/text_14" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!-- Facebook -->
+                    <LinearLayout
+                        android:id="@+id/lyFacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/credButtonHeight"
+                        android:layout_marginTop="@dimen/margin18"
+                        android:background="@drawable/round_bg_login_regi"
+                        android:backgroundTint="@color/white"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:theme="@style/AppTheme.MyRipple"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="false">
+
+                            <!--Facebook icon-->
+                            <TextView
+                                android:layout_width="@dimen/socialButtons"
+                                android:layout_height="@dimen/socialButtons"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="40dp"
+                                android:background="@drawable/ic_facebook"
+                                android:clickable="false"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:clickable="false"
+                                android:fontFamily="@font/public_semibold"
+                                android:gravity="center"
+                                android:text="@string/login_with_facebook"
+                                android:textColor="@color/text_black"
+                                android:textSize="@dimen/text_14" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtUserAgreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin20"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="6dp"
+                    android:textColor="@color/otherColor"
+                    android:textColorLink="@color/blueColor"
+                    android:textSize="@dimen/default_texts"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

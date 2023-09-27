@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyDownloadData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Title , Total Videos count and Filter -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/titleMarginStart"
+        android:layout_marginEnd="@dimen/titleMarginEnd"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Total Videos & Filter Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="35dp"
+            android:orientation="horizontal">
+
+            <!-- Total Videos, Minutes and Size -->
+            <LinearLayout
+                android:id="@+id/lyAboutDownload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <!-- Total Videos -->
+                <TextView
+                    android:id="@+id/txtDownloadTotalVideos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:text="5 videos"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_13" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:background="@drawable/circle_bg" />
+
+                <!-- Total Minutes -->
+                <TextView
+                    android:id="@+id/txtDownloadTotalMinutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:text="150 min"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_13" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:background="@drawable/circle_bg" />
+
+                <!-- Total Size -->
+                <TextView
+                    android:id="@+id/txtDownloadTotalSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:text="150 MB"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_13" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin12"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAllDownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

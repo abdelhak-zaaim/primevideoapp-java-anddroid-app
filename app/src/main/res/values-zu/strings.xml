@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CineFilmz</string>
+    <string name="prime">DT prime</string>
+
+    <!--Welcome START-->
+    <string name="skip">Yeqa</string>
+    <string name="next">Okulandelayo</string>
+    <string name="get_started">Qalisa!</string>
+    <string name="welcome_slides">Isikrini Sasekhaya</string>
+    <string name="welcome_1_Title">"Buka ama-movie, imibukiso, imibukiso yezingane &amp;amp; okuningi.</string>
+    <string name="welcome_1_Desc">I-Lorem Ipsum imane nje iwumbhalo oyindida womkhakha wokuphrinta nowokusetha. I-Lorem Ipsum ibilokhu ingumbhalo ojwayelekile wemboni kusukela ngeminyaka yawo-1500s.</string>
+    <string name="welcome_2_Title">Hlola Izinkulungwane Zamavidiyo ku-CineFilmz.</string>
+    <string name="welcome_2_Desc">I-Lorem Ipsum imane nje iwumbhalo oyidumi womkhakha wokuphrinta nowokusetha. I-Lorem Ipsum ibilokhu ingumbhalo ojwayelekile wemboni kusukela ngeminyaka yawo-1500s.</string>
+    <string name="welcome_3_Title">Thola izindaba zomhlaba ku-CineFilmz.</string>
+    <string name="welcome_3_Desc">I-Lorem Ipsum imane nje iwumbhalo oyidumi womkhakha wokuphrinta nowokusetha. I-Lorem Ipsum ibilokhu ingumbhalo ojwayelekile wemboni kusukela ngeminyaka yawo-1500s.</string>
+    <string name="welcome_4_Title">Thuthukisa ukuze uthole okwengeziwe ngokubhalisile.</string>
+    <string name="welcome_4_Desc">I-Lorem Ipsum imane nje iwumbhalo oyidumi womkhakha wokuphrinta nokuhlela. I-Lorem Ipsum ibilokhu ingumbhalo ojwayelekile wemboni kusukela ngeminyaka yawo-1500s.</string>
+    <string name="Lorem_Ipsum">"I-Lorem Ipsum imane nje iwumbhalo oyindida womkhakha wokuphrinta nowokusetha.
+      I-Lorem Ipsum ibilokhu ingumbhalo ojwayelekile wemboni kusukela ngeminyaka yawo-1500s.
+      I-Lorem Ipsum ibilokhu ingumbhalo ojwayelekile wemboni kusukela ngeminyaka yawo-1500s.
+      I-Lorem Ipsum ibilokhu ingumbhalo ojwayelekile wemboni kusukela ngeminyaka yawo-1500s.
+      I-Lorem Ipsum ibilokhu ingumbhalo ojwayelekile wemboni kusukela ngeminyaka yawo-1500s.
+      I-Lorem Ipsum ibiwumbhalo ojwayelekile wemboni kusukela ngeminyaka yawo-1500s.</string>
+    <string name="LoremIpsum_less">"I-Lorem Ipsum imane nje iwumbhalo oyidumi womkhakha wokuphrinta nokuhlela. I-Lorem Ipsum kube umbhalo ojwayelekile wemboni.</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">Uxolo! Ayixhunyiwe ku-inthanethi.</string>
+    <string name="back_to_online">Buyela emuva ku-inthanethi.</string>
+    <string name="permission_desc">Manje sidinga imvume yakho ukuze siqhubeke nokusebenzisa uhlelo lokusebenza kahle kakhulu</string>
+    <string name="permission_title">Konke kuhamba kahle.</string>
+    <string name="okay">Kulungile!</string>
+    <string name="internet_error">Iphutha lokuxhumeka kwenethiwekhi!!!</string>
+    <string name="permission_necessary">Imvume iyadingeka</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">Imvume yesitoreji iyadingeka ukuze ufunde futhi ubhale umcimbi</string>
+    <string name="settings">Izilungiselelo</string>
+    <string name="cancel_">Khansela</string>
+    <string name="permission">Imvume</string>
+    <string name="permission_alert">Isexwayiso Semvume</string>
+    <string name="get_permission_for_brightness_manage_desc">Sidinga imvume ukuze sishintshe ukukhanya futhi ungakwazi ukulawula ukukhanya ngenkathi udlala ividiyo. \n Siyabonga.</string>
+    <string name="we_need_storage_permission_for_save_video">Sidinga imvume yesitoreji ukuze silondoloze ifayela lemidiya esilondolozini sangaphandle.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">Sidinga isitoreji sangaphandle nemvume yekhamera yokulayisha isithombe sephrofayela.</string>
+    <string name="yesterday">izolo</string>
+    <string name="day_ago">usuku oludlule</string>
+    <!--Network and Permission END-->
+
+    <!--General Strings START-->
+    <string name="please_wait">sicela ulinde...</string>
+    <string name="delete">Susa</string>
+    <string name="cancel">Khansela</string>
+    <string name="downloading">Iyalanda...</string>
+    <string name="loading">Iyalayisha...</string>
+    <string name="do_you_want_to_exit">Ingabe ufuna ukuphuma?</string>
+    <string name="yes">Yebo</string>
+    <string name="no">Cha</string>
+    <string name="track_selection_title">Shintsha ithrekhi</string>
+    <!--General Strings END-->
+
+    <!-- Login and OTP START -->
+    <string name="login">Ngena</string>
+    <string name="or">Noma</string>
+    <string name="welcome_back">Siyakwamukela futhi,</string>
+    <string name="login_with_mobile_note">Faka inombolo yakho yeselula ukuze ungene ngemvume</string>
+    <string name="enter_your_mobile_number">Faka inombolo yakho yeselula</string>
+    <string name="login_with_google">Ngena ngemvume nge-Google</string>
+    <string name="login_with_facebook">Ngena ngemvume nge-Facebook</string>
+
+    <string name="otp_verification">Ukuqinisekiswa kwe-OTP"</string>
+    <string name="enter_your_mobile_no">Faka inombolo yakho yeselula</string>
+    <string name="enter_coutry_code">Faka ikhodi yezwe lakini.</string>
+    <string name="verify_phone_number">Qinisekisa inombolo yefoni</string>
+    <string name="code_expire_soon">Ikhodi iphelelwa yisikhathi maduze"</string>
+    <string name="resend">Thumela kabusha</string>
+    <string name="confirm">Qinisekisa</string>
+    <string name="enter_otp">Faka i-OTP eyamukelwe.</string>
+    <string name="select_your_coutry_code">Khetha ikhodi yezwe lakho.</string>
+    <string name="you_will_receive_a_6_digit_code_to_verify_next">Uzothola ikhodi enamadijithi angu-6 ukuze \n uqinisekise ngokulandelayo.</string>
+    <string name="send_otp">THUMELA i-OTP</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">Faka ikhodi ye-OTP ukuze uyithumele enombolweni Yeselula.</string>
+    <string name="we_have_sent_code_to_your_number">Sithumele ikhodi enombolweni yakho</string>
+    <string name="verify_and_proceed">QINISEKISA &amp; QHUBEKA</string>
+    <string name="send_">THUMELA</string>
+    <string name="resend_otp">Phinda uthumele i-OTP</string>
+    <string name="already_have_an_account">Usuvele unayo i-Akhawunti?</string>
+    <string name="do_not_have_an_account">Awunayo i-Akhawunti?</string>
+    <string name="or_Login_using_Social_Media">Noma Ngena ngemvume usebenzisa imidiya yomphakathi</string>
+    <!-- Login and OTP END -->
+
+    <!-- Home Fragment START -->
+    <string name="title_home">Ekhaya</string>
+    <string name="title_tvshows">Imibukiso ye-TV</string>
+    <string name="title_movies">Ama-movie</string>
+    <string name="title_kids">Izingane</string>
+    <string name="title_channels">Iziteshi</string>
+    <string name="title_find">Thola</string>
+    <string name="title_downloads">Okulandiwe</string>
+    <string name="title_store">Isitolo</string>
+    <string name="title_mystuff">Izinto zami</string>
+    <string name="title_settings">Izilungiselelo</string>
+    <string name="continue_watching">Qhubeka ubukele</string>
+    <string name="top_movies">Amamuvi aphezulu</string>
+    <string name="new_movie_tag">I-MOVIE ENTSHA</string>
+    <string name="new_series_tag">UCHUNGECHUNGE ELISHA</string>
+    <string name="new_tvshow_tag">Umbukiso we-TV OMSHA</string>
+    <string name="tvshow">Imidlalo ye-TV</string>
+    <string name="shows">Imibukiso</string>
+    <string name="_shows">imibukiso</string>
+    <string name="movies">amamuvi</string>
+    <string name="movies_">Amamuvi</string>
+    <string name="tv">TV</string>
+    <!-- Home Fragment END -->
+
+    <!-- Details START -->
+    <string name="watch_now">Buka Manje</string>
+    <string name="watch_episode">Buka isiqephu</string>
+    <string name="no_episode">Uxolo! isiqephu asitholakali ukuthi singadlalwa.</string>
+    <string name="no_video">Uxolo! ividiyo ayitholakali ukuthi ingadlalwa.</string>
+    <string name="no_trailer">Uxolo! i-trailer ayitholakali ukuthi ingadlalwa.</string>
+    <string name="no_data">Uxolo! idatha ayitholakali.</string>
+    <string name="related">Okuhlobene</string>
+    <string name="episodes">Iziqephu</string>
+    <string name="more_details">Imininingwane engeziwe</string>
+    <string name="customers_also_watched">Amakhasimende nawo abukele</string>
+    <string name="cast_and_crew">Sakaza &amp; Abasebenzi</string>
+    <string name="details_from">Imininingwane esuka ku-</string>
+    <string name="genres">Izinhlobo</string>
+    <string name="directors">Abaqondisi</string>
+    <string name="starring">Odlalayo</string>
+    <string name="studios">Izitudiyo</string>
+    <string name="maturity_rating">Isilinganiso sokukhula</string>
+    <string name="content_advisory">Ukwelulekwa kokuqukethwe</string>
+    <string name="customer_reviews">Izibuyekezo zekhasimende</string>
+    <string name="did_you_know">Ubuwazi?</string>
+    <string name="known_for">Yaziwa nge:</string>
+    <string name="included_with">ifakwe nokubhaliselwe</string>
+    <string name="available_to_rent">Iyatholakala ukuze iqashwe</string>
+    <string name="release_date">Release Date</string>
+    <string name="rent">Qasha</string>
+    <string name="language_change_note">Ulimi lungashintshwa ngenkathi ividiyo idlala.</string>
+    <string name="available_languages">Izilimi ezitholakalayo</string>
+    <string name="audio">Umsindo</string>
+    <string name="subtitles">Imibhalo engezansi</string>
+    <string name="trailer">I-trailer</string>
+    <string name="share">Yabelana</string>
+    <string name="watch_party">Iphathi Yokubuka</string>
+    <string name="watchlist">Uhlu lokubuka</string>
+    <string name="download">Landa</string>
+    <string name="season">Isizini</string>
+    <string name="create_watch_party">Dala iphathi yokubuka</string>
+    <string name="watch_party_note">Xoxa ngenkathi ubukele amamuvi ne-TV nabanye.</string>
+    <string name="create">Dala</string>
+    <string name="chat_as">Xoxa njengo-:</string>
+    <string name="watch_party_tips">Amathiphu ephathi yokubuka</string>
+    <string name="enter_name">Faka igama</string>
+    <string name="more">Okwengeziwe +</string>
+    <string name="less">Okuncane -</string>
+    <string name="resume">Qalisa kabusha</string>
+    <string name="trivia">I-Trivia</string>
+    <string name="filter">Hlunga</string>
+    <string name="videos">amavidiyo</string>
+    <string name="watch_trailer">I-trailer yokubuka</string>
+    <string name="add_to_watchlist">Engeza ohlwini lokubuka</string>
+    <string name="remove_from_watchlist">Susa ohlwini lokubuka</string>
+    <string name="complete">Qedela</string>
+    <string name="delete_download">Susa ukulanda</string>
+    <string name="more_">Okwengeziwe</string>
+    <string name="view_details">Buka imininingwane</string>
+    <string name="hide_this_video">Fihla le vidiyo</string>
+    <string name="unhide_this_video">Veza le vidiyo?</string>
+    <string name="unhide_video_note">Ukufihla le vidiyo kuyivumela ukuthi ivele ngenkathi uphequlula okuthile ongakubuka. Amavidiyo afihliwe angadlalwa futhi abukwe kokuthi Thola.</string>
+    <string name="instagram_stories">Izindaba ze-Instagram</string>
+    <string name="copy_link">Kopisha isixhumanisi</string>
+    <string name="sms">SMS</string>
+    <string name="sort_by">Hlunga nge-</string>
+    <string name="most_recent_addition">Isengezo Sakamuva</string>
+    <string name="title_a_z">Isihloko A - Z</string>
+    <string name="title_z_a">Isihloko Z - A</string>
+    <string name="content_type">Uhlobo Lokuqukethwe</string>
+    <string name="quality">Ikhwalithi :</string>
+    <string name="audio_languages">Izilimi zomsindo :</string>
+    <string name="play_download">Dlala ukulanda</string>
+    <string name="aired">Kusakazwa:</string>
+    <string name="purchases">Okuthengiwe</string>
+    <string name="rent_and_buy_your_favorites"><![CDATA[Qasha futhi uthenge izintandokazi zakho]]></string>
+    <string name="no_purchases_note">Buka ukuthenga nokuqashwa kunoma imaphi amadivayisi akho.</string>
+    <string name="left">kwesokunxele</string>
+    <string name="share_with">"Yabelana no...</string>
+    <string name="link_copied">Isixhumanisi sikopishiwe</string>
+    <string name="languages">Izilimi:</string>
+    <string name="live">Bukhoma</string>
+    <string name="finish">Qeda</string>
+    <string name="replay_all">Dlala kabusha konke!</string>
+    <!-- Details END -->
+
+    <!-- Find START -->
+    <string name="find">Thola</string>
+    <string name="search_by_actor_title">Sesha ngomlingisi, isihloko...</string>
+    <string name="browse_by">Phequlula nge-</string>
+    <string name="language">Ulimi</string>
+    <string name="see_more">Bona okwengeziwe</string>
+    <string name="subscribe_to_channels">Bhalisela iziteshi</string>
+    <string name="results_for">Imiphumela ye-</string>
+    <!-- Find END -->
+
+    <!-- Downloads START -->
+    <string name="downloads">Okulandiwe</string>
+    <string name="_downloads">okulandiwe</string>
+    <string name="downloads_settings">Izilungiselelo zokulanda</string>
+    <string name="video">Ividiyo</string>
+    <string name="videos_">Amavidiyo</string>
+    <string name="video_">ividiyo</string>
+    <string name="min">min</string>
+    <string name="edit">Hlela</string>
+    <string name="seasons">Amasizini</string>
+    <string name="_episode">isiqephu</string>
+    <string name="episode">Isiqephu</string>
+    <string name="select_all">Khetha konke</string>
+    <string name="unselect_all">"Yeka ukukhetha konke</string>
+    <string name="no_downloads">"Awekho amavidiyo alandiwe"</string>
+    <string name="take_me_to_the_downloads_page">Ngiyise ekhasini lokulanda</string>
+    <string name="download_options">Izinketho zokulanda</string>
+    <string name="download_options_note">Ividiyo yakho ilandwe ngempumelelo. Iya kokuthi Okulandiwe ukuze ubuke nezinye izinketho.</string>
+    <string name="add_to_watchlist_msg">Kwengezwe ngempumelelo ohlwini lokubuka</string>
+    <string name="removed_from_watchlist_msg">Ususwe ngempumelelo ohlwini lokubuka</string>
+    <string name="confirm_deletion">Qinisekisa ukususwa</string>
+    <string name="delete_video_note">Lawa mavidiyo ngeke atholakale ungaxhunyiwe ku-inthanethi.</string>
+    <string name="delete_download_msg">Isuse ngempumelelo ividiyo.</string>
+    <string name="file_has_been_downloaded">Ifayela lilandwe ngempumelelo</string>
+    <string name="download_has_been_started">Ukulanda kuqalisiwe...</string>
+    <string name="Downloaded">Kulandwe ngempumelelo</string>
+    <string name="invalid_url">I-URL engavumelekile!!!</string>
+    <string name="something_went_wrong">Kukhona okungahambanga kahle...</string>
+    <string name="file_already_downloaded">Ifayela selivele lilandiwe.</string>
+    <!-- Downloads END -->
+
+    <!-- MyStuff START -->
+    <string name="create_profile">Dala iphrofayela</string>
+    <string name="manage_profiles">Phatha amaphrofayela</string>
+    <string name="manage_profile">Phatha iphrofayela</string>
+    <string name="learn_more_about_profiles">Funda kabanzi mayelana namaphrofayela</string>
+    <string name="browse_now_watch_later">Phequlula manje, bukela kamuva</string>
+    <string name="watchlist_note">Uhlu lwakho lokubuka lwabiwa kuwo wonke amadivayisi akho.</string>
+    <!-- MyStuff END -->
+
+    <!-- Settings START -->
+    <string name="account_details">Imininingwane ye-akhawunti</string>
+    <string name="manage_your_profile">Phatha iphrofayela yakho</string>
+    <string name="on">Vuliwe</string>
+    <string name="off">Vala</string>
+    <string name="notifications">"Izaziso"</string>
+    <string name="receive_notifications">Thola izaziso zohlelo lokusebenza</string>
+    <string name="clear_cache">Sula inqolobane</string>
+    <string name="clear_locally_cached_data">Sula idatha egcinwe kunqolobane yasendaweni</string>
+    <string name="clear_cached_data_toast">Idatha yenqolobane isuliwe.</string>
+    <string name="change_password">Shintsha iphasiwedi</string>
+    <string name="update_your_password">Buyekeza iphasiwedi yakho</string>
+    <string name="current_password">"Iphasiwedi yamanje</string>
+    <string name="confirm_password">"Qinisekisa iphasiwedi</string>
+    <string name="new_password">Iphasiwedi entsha</string>
+    <string name="enter_current_password">Faka iphasiwedi yamanje.</string>
+    <string name="enter_new_password">Faka iphasiwedi entsha.</string>
+    <string name="enter_confirm_password">Faka iphasiwedi yokuqinisekisa.</string>
+    <string name="password_not_matched_toast">I-password entsha oyifakile, ayifani ne-password yokuqinisekisa!!!</string>
+    <string name="change_password_request_for_type_2">Ungene ngemvume usebenzisa i-akhawunti yakho yomphakathi, indawo yokuguqula iphasiwedi ayisebenzi kuma-akhawunti omphakathi.</string>
+    <string name="change_language">Shintsha ulimi</string>
+    <string name="clear_video_search_history">Sula umlando wosesho lwevidiyo</string>
+    <string name="signed_in_as">Ungene ngemvume njengo-</string>
+    <string name="not_sign_in_desc">Awungeni ngemvume</string>
+    <string name="sign_out">Phuma ngemvume</string>
+    <string name="sign_in">Ngena ngemvume</string>
+    <string name="terms_and_conditions">Imigomo &amp;amp; Izimo</string>
+    <string name="privacy_policy">Inqubomgomo yobumfihlo</string>
+    <string name="about_us">Mayelana nathi</string>
+    <string name="rate_us">Silinganisele</string>
+    <string name="share_app">Yabelana ngohlelo lokusebenza</string>
+    <string name="rate_us_note">Linganisela uhlelo lwethu lokusebenza esitolo sezinhlelo zokusebenza</string>
+    <string name="share_app_note">Yabelana ngohlelo lokusebenza nabangani bakho"</string>
+    <string name="version">Inguqulo</string>
+    <string name="always_ask">Buza njalo</string>
+    <string name="start_over">Qala kabusha</string>
+    <string name="change_language_mark">Shintsha ulimi?</string>
+    <string name="change_language_note">Ukuchofoza okuthi Yebo kuzoqala kabusha uhlelo lokusebenza ngolimi olukhethiwe.\nIngabe ufuna ukuqhubeka?</string>
+    <string name="terms_and_privacy_notice">Imigomo Nesaziso Sobumfihlo</string>
+    <string name="_3rd_party_notices">Izaziso zenkampani yangaphandle</string>
+    <string name="about_and_legal">Mayelana &amp; Okusemthethweni</string>
+    <string name="confirm_sign_out">Qinisekisa ukuphuma ngemvume</string>
+    <string name="are_you_sure_want_to_sign_out">Ingabe uqinisekile ukuthi ufuna ukuphuma ngemvume?</string>
+    <!-- Settings END -->
+
+    <!-- Rent Products START -->
+    <string name="rent_products">Qasha Imikhiqizo</string>
+    <string name="view_more">Buka okuningi</string>
+    <string name="submit">Hambisa</string>
+    <string name="rent_movie_at_just">Qasha imuvi nje</string>
+    <string name="rent_show_at_just">Qasha umbukiso nje</string>
+    <string name="watch_with">Bukela nge-</string>
+    <string name="purchaged_videos">Amavidiyo athengiwe</string>
+    <string name="purchaged_shows">Imibukiso ethengiwe</string>
+    <string name="rent_videos">Qasha amavidiyo</string>
+    <string name="rent_shows">Qasha imibukiso</string>
+    <!-- Rent Products END -->
+
+    <!-- Profile START -->
+    <string name="save">Londoloza</string>
+    <string name="change">Shintsha</string>
+    <string name="kid_s_profile">Iphrofayela yengane?</string>
+    <string name="learn_more">Funda kabanzi</string>
+    <string name="new_">Okusha</string>
+    <string name="edit_profiles">Hlela amaphrofayela</string>
+    <string name="edit_profile">Hlela iphrofayela</string>
+    <string name="remove_profile">Susa iphrofayela</string>
+    <string name="the_account_holder_s_profile_can_t_be_removed">Iphrofayela yomphathi we-akhawunti ayikwazi ukususwa</string>
+    <string name="change_profile_image">Shintsha isithombe sephrofayela</string>
+    <string name="take_photo">Thatha isithombe.</string>
+    <string name="choose_from_gallery">Khetha kugalari.</string>
+    <string name="add_photo">Engeza isithombe!</string>
+    <string name="avatar_suggetion">Iziphakamiso ze-Avatar</string>
+    <string name="choose_an_avatar">Khetha isithombe.</string>
+    <string name="choose_new_avatar_note">Khetha noma iyiphi inketho ukuze ukhethe isithombe sakho esisha.</string>
+    <string name="subscription">Okubhaliselwe</string>
+    <string name="subscription_desc">Thuthukisa ukuze uthole okwengeziwe kokubhaliselwe kwakho</string>
+    <string name="choose_plan">Khetha Uhlelo</string>
+    <string name="current">Okwamanje</string>
+    <string name="enter_phone_number_profile">Faka inombolo yocingo...</string>
+    <string name="enter_email_profile">Faka i-imeyili...</string>
+    <string name="enter_address_profile">Faka ikheli...</string>
+    <string name="enter_your_name_profile">"Faka igama lakho...</string>
+    <string name="update_profile">Buyekeza iphrofayela</string>
+    <string name="enter_password_profile">Faka iphasiwedi...</string>
+    <!-- Profile END -->
+
+    <!--Payment Activity START-->
+    <string name="payment_details">Imininingwane yokukhokha</string>
+    <string name="please_select_any_payment_method">Sicela ukhethe noma iyiphi indlela yokukhokha</string>
+    <string name="payment_methods">Izindlela zokukhokha</string>
+    <string name="choose_a_payment_methods_to_pay">Khetha indlela yokukhokha oya kuyo</string>
+    <string name="pay_with">Khokha nge-</string>
+    <string name="Continue">Qhubeka</string>
+    <string name="paypal">PayPal</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paytm">I-Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">KHOKHA</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">Uxolo, asikwazanga ukuqinisekisa inkokhelo yakho, sicela uzame futhi!!!</string>
+    <string name="wallet_balance">Ibhalansi ye-wallet</string>
+    <string name="payment_gateways">Amasango okukhokha</string>
+    <string name="recharge_your_wallet">Shaja kabusha isikhwama sakho semali</string>
+    <string name="add_to_wallet">Engeza esikhwameni</string>
+    <string name="enter_amount">Faka inani langokwezifiso...</string>
+    <string name="your_current_balance_is">Ibhalansi yakho yamanje ithi :</string>
+    <string name="use_wallet_balance">Sebenzisa ibhalansi yewalethi</string>
+    <string name="pay_now">Khokha Manje</string>
+    <string name="please_enter_valid_amount">Sicela ufake inani elivumelekile.</string>
+    <string name="payable_amount_is">Inani elikhokhwayo ngu:</string>
+    <string name="verification">Ukuqinisekisa</string>
+    <string name="verification_success">Ukuqinisekisa kuphumelele.</string>
+    <string name="verification_note">*Sicela, uqinisekise imininingwane/imininingwane yakho elandelayo ukuze uqhubeke.</string>
+    <string name="download_not_available">Isici sokulanda asitholakali kule vidiyo.</string>
+    <string name="already_purchased">Usuvele uluthengile uhlelo.</string>
+    <string name="delete_account">Susa i-akhawunti</string>
+    <string name="delete_account_msg">Ingabe uqinisekile ukuthi ufuna ukusula i-akhawunti ?</string>
+    <string name="refund_policy">Inqubomgomo yembuyiselo</string>
+    <string name="confirm_delete_account">Qinisekisa ukuthi Susa i-akhawunti</string>
+    <!--Payment Activity END-->
+
+</resources>

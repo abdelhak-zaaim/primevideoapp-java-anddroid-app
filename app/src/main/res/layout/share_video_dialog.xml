@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin23"
+            android:orientation="vertical">
+
+            <!-- Main Video Title -->
+            <TextView
+                android:id="@+id/txtVideoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/public_bold"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_18" />
+
+            <!-- Age limit and Comment Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--Age limit-->
+                <TextView
+                    android:id="@+id/txtAgeLimit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:background="@drawable/round_bor_bg"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_10" />
+
+                <!--Comment-->
+                <TextView
+                    android:id="@+id/txtCommentIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/ic_comment"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+
+            <!-- <- <-  Share Video Features -> -> -->
+
+            <!-- SMS -->
+            <LinearLayout
+                android:id="@+id/lyShareWithSMS"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/minHeightOfView"
+                android:layout_marginTop="@dimen/margin12"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.detailPageRipple_selected">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_chat"
+                        android:backgroundTint="@color/otherColor"
+                        android:clickable="false"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.88"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/public_medium"
+                        android:text="@string/sms"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Instagram stories -->
+            <LinearLayout
+                android:id="@+id/lyShareWithInsta"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/minHeightOfView"
+                android:layout_marginTop="@dimen/margin3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.detailPageRipple_selected">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_instagram"
+                        android:backgroundTint="@color/otherColor"
+                        android:clickable="false"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.88"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/public_medium"
+                        android:text="@string/instagram_stories"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Copy link -->
+            <LinearLayout
+                android:id="@+id/lyCopyLink"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/minHeightOfView"
+                android:layout_marginTop="@dimen/margin3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.detailPageRipple_selected">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_link_copy"
+                        android:backgroundTint="@color/otherColor"
+                        android:clickable="false"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.88"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/public_medium"
+                        android:text="@string/copy_link"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- More... -->
+            <LinearLayout
+                android:id="@+id/lyShareWithMore"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/minHeightOfView"
+                android:layout_marginTop="@dimen/margin3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.detailPageRipple_selected">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_more_h"
+                        android:backgroundTint="@color/otherColor"
+                        android:clickable="false"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.88"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/public_medium"
+                        android:text="@string/more_"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

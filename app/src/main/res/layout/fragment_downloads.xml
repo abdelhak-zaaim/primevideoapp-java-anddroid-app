@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBG"
+        android:orientation="vertical">
+
+        <!--Shimmer-->
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:shimmer_duration="@integer/shimmerDuration">
+
+            <!-- Adding 3 rows of placeholders -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<include layout="@layout/shim_home" />-->
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMainTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBarHeight"
+                android:fontFamily="@font/public_bold"
+                android:gravity="center"
+                android:text="@string/downloads"
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/text_16"
+                android:visibility="gone" />
+
+            <!-- Title , Total Videos count, Filter, Data and Downloads settings -->
+            <LinearLayout
+                android:id="@+id/lyAllDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin6"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <!-- Title , Total Videos count and Filter -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/titleMarginStart"
+                    android:layout_marginEnd="@dimen/titleMarginEnd"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!-- Total Videos & Filter Button -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:orientation="horizontal">
+
+                        <!-- Total Videos, Minutes and Size -->
+                        <LinearLayout
+                            android:id="@+id/lyAboutVideos"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <!-- Total Videos -->
+                            <TextView
+                                android:id="@+id/txtTotalVideos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:text="0 videos"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_13" />
+
+                            <View
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"
+                                android:layout_marginStart="@dimen/margin8"
+                                android:layout_marginEnd="@dimen/margin8"
+                                android:background="@drawable/circle_bg" />
+
+                            <!-- Total Minutes -->
+                            <TextView
+                                android:id="@+id/txtTotalMinutes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:text="0 min"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_13" />
+
+                            <View
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"
+                                android:layout_marginStart="@dimen/margin8"
+                                android:layout_marginEnd="@dimen/margin8"
+                                android:background="@drawable/circle_bg" />
+
+                            <!-- Total Size -->
+                            <TextView
+                                android:id="@+id/txtTotalSize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:text="0 MB"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_13" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Data -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin12"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvAllDownload"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:nestedScrollingEnabled="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyNoData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin25"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/noDataWidth"
+                    android:layout_height="@dimen/noDataHeight"
+                    android:background="@drawable/ic_no_data" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/actionBarHeight"
+                    android:fontFamily="@font/public_bold"
+                    android:gravity="center"
+                    android:text="@string/no_downloads"
+                    android:textColor="@color/text_title"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

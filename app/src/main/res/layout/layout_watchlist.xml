@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyWatchlistData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/titleMarginStart"
+        android:layout_marginEnd="@dimen/titleMarginEnd"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Total Videos -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.82"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtWatchlistTotalVideos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/public_medium"
+                android:gravity="center_vertical"
+                android:text="0 videos"
+                android:textColor="@color/text_other"
+                android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+
+        <!-- Filter Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lyFilterCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:background="@drawable/round_bg_filter"
+                android:gravity="center"
+                android:minWidth="55dp"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.detailPageRipple">
+
+                <TextView
+                    android:id="@+id/txtFilterCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center"
+                    android:text="@string/filter"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_13" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Data -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshWatchlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin12"
+        app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWatchlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

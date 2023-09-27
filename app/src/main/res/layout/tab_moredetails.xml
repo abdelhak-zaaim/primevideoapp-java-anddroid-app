@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutTabMoreDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBG"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="@dimen/margin15"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <!-- Related Details Dynamic -->
+        <LinearLayout
+            android:id="@+id/lyDetailsDynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+        <!-- Customer reviews -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/public_bold"
+                android:text="@string/customer_reviews"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_18" />
+
+            <TextView
+                android:id="@+id/txtNoReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/public_medium"
+                android:text="We don't have any customer reviews."
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_15" />
+
+        </LinearLayout>
+
+        <!-- Did you know? -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/public_bold"
+                android:text="@string/did_you_know"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_18" />
+
+            <TextView
+                android:id="@+id/txtInteresting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/public_medium"
+                android:text="@string/Lorem_Ipsum"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_15" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

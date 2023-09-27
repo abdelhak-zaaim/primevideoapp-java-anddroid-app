@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin23"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/public_bold"
+                android:text="@string/confirm_deletion"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/public_medium"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/delete_video_note"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_13" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/margin20"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lyClickCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_bg_with_bor2"
+                    android:gravity="center"
+                    android:minWidth="75dp"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/margin8"
+                    android:theme="@style/AppTheme.detailPageRipple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_medium"
+                        android:gravity="center"
+                        android:text="@string/cancel_"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyClickDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/round_bg_primarylight"
+                    android:gravity="center"
+                    android:minWidth="75dp"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/margin8"
+                    android:theme="@style/AppTheme.detailPageRipple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_medium"
+                        android:gravity="center"
+                        android:text="@string/delete"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

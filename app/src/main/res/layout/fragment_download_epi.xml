@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBG"
+        android:orientation="vertical">
+
+        <!--Shimmer-->
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:shimmer_duration="@integer/shimmerDuration">
+
+            <!-- Adding 3 rows of placeholders -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<include layout="@layout/shim_home" />-->
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMainTitle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:fontFamily="@font/public_bold"
+                android:gravity="center"
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/text_16" />
+
+            <!-- Title , Total Videos count, Data -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Season -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin10"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvAllSeason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+
+                </LinearLayout>
+
+                <!-- Title , Total Videos count -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/titleMarginStart"
+                    android:layout_marginEnd="@dimen/titleMarginEnd"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Total Videos and Duration -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <!-- Total Videos -->
+                        <TextView
+                            android:id="@+id/txtTotalVideos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/public_medium"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_other"
+                            android:textSize="@dimen/text_13" />
+
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:layout_marginStart="@dimen/margin8"
+                            android:layout_marginEnd="@dimen/margin8"
+                            android:background="@drawable/circle_bg" />
+
+                        <!-- Total Minutes -->
+                        <TextView
+                            android:id="@+id/txtTotalMinutes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/public_medium"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_other"
+                            android:textSize="@dimen/text_13" />
+
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:layout_marginStart="@dimen/margin8"
+                            android:layout_marginEnd="@dimen/margin8"
+                            android:background="@drawable/circle_bg" />
+
+                        <!-- Total Size (mb, kb or gb) -->
+                        <TextView
+                            android:id="@+id/txtTotalSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/public_medium"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_other"
+                            android:textSize="@dimen/text_13" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Data -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin12"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvAllDownloadEpi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:nestedScrollingEnabled="true" />
+
+                    <include layout="@layout/no_data_layout" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

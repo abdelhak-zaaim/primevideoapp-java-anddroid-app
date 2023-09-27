@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBG"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/bottomPadding">
+
+                <!-- SearchView -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="@dimen/margin10"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:layout_marginEnd="@dimen/margin20"
+                    android:orientation="horizontal">
+
+                    <!-- Back -->
+                    <LinearLayout
+                        android:id="@+id/lyBack"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18"
+                        android:gravity="center"
+                        android:theme="@style/AppTheme.detailPageRipple">
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_arrow_left"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <!-- Search -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.82"
+                        android:gravity="center">
+
+                        <!-- Search -->
+                        <LinearLayout
+                            android:id="@+id/lySearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/round_bg_white_search"
+                            android:orientation="horizontal">
+
+                            <!-- EditText -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.82"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="@dimen/margin10"
+                                android:paddingEnd="@dimen/margin10">
+
+                                <EditText
+                                    android:id="@+id/etSearchBy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:cursorVisible="true"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:fontFamily="@font/public_medium"
+                                    android:gravity="center_vertical"
+                                    android:imeOptions="actionSearch"
+                                    android:inputType="text"
+                                    android:singleLine="true"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/text_15" />
+
+                                <requestFocus />
+
+                            </LinearLayout>
+
+                            <!-- Microphone/Clear buttons -->
+                            <LinearLayout
+                                android:id="@+id/lyVoiceClearIcon"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.18"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:theme="@style/AppTheme.MyRipple">
+
+                                <TextView
+                                    android:id="@+id/txtVoiceClearIcon"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/ic_microphone"
+                                    android:backgroundTint="@color/black"
+                                    android:clickable="false"
+                                    android:gravity="center" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--Shimmer-->
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        app:shimmer_duration="@integer/shimmerDuration">
+
+                        <!-- Adding 3 rows of placeholders -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <!--<include layout="@layout/shim_sectionbytypef" />-->
+
+                        </LinearLayout>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <!-- Suggestions and Search Videos -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!-- Suggestions -->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvSuggestions"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/margin25"
+                            android:layout_marginTop="@dimen/margin20"
+                            android:layout_marginEnd="@dimen/margin25"
+                            android:nestedScrollingEnabled="false"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@+id/lySearchData"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Results For & Filter/Cancel Button -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin20"
+                                android:layout_marginTop="@dimen/margin15"
+                                android:layout_marginEnd="@dimen/margin20"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <!-- Result For -->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.82"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtResultFor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_medium"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/results_for"
+                                        android:textColor="@color/text_other"
+                                        android:textSize="@dimen/text_13" />
+
+                                </LinearLayout>
+
+                                <!-- Filter Button -->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.18"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyFilterCancel"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/round_bg_filter"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:theme="@style/AppTheme.detailPageRipple">
+
+                                        <TextView
+                                            android:id="@+id/txtFilterCancel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:clickable="false"
+                                            android:fontFamily="@font/public_medium"
+                                            android:gravity="center"
+                                            android:text="@string/filter"
+                                            android:textColor="@color/text_white"
+                                            android:textSize="@dimen/text_13" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!--TabLayout & ViewPager-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <!--TabLayout-->
+                                <com.google.android.material.tabs.TabLayout
+                                    android:id="@+id/tabLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/homeTabs"
+                                    app:tabGravity="fill"
+                                    app:tabIndicator="@drawable/tab_indicator_line"
+                                    app:tabIndicatorColor="@color/white"
+                                    app:tabIndicatorFullWidth="false"
+                                    app:tabIndicatorHeight="2dp"
+                                    app:tabMode="fixed"
+                                    app:tabSelectedTextColor="@color/text_white"
+                                    app:tabTextAppearance="@style/tab_text"
+                                    app:tabTextColor="@color/text_other" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.7dp"
+                                    android:background="@color/lightBlack" />
+
+                                <!--Tab ViewPager-->
+                                <androidx.viewpager.widget.ViewPager
+                                    android:id="@+id/tabViewpager"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

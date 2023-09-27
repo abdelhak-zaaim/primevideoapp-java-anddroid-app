@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBG"
+        android:orientation="vertical">
+
+        <!--Shimmer-->
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:shimmer_duration="@integer/shimmerDuration">
+
+            <!-- Adding 3 rows of placeholders -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/shim_moviedetails" />
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/colorPrimary">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Details-->
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appBarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:visibility="visible"
+                    app:elevation="0dp">
+
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:id="@+id/collapsingToolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Movie poster -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/poster">
+
+                                    <ImageView
+                                        android:id="@+id/ivPoster"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/no_image_land" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/bottom_grad_windowbg" />
+
+                                    <LinearLayout
+                                        android:id="@+id/lyPlayButton"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_centerInParent="true"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:theme="@style/AppTheme.MyRipple"
+                                        android:visibility="visible">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/ic_play_new" />
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <!--Movie details-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/mainMargin"
+                                android:layout_marginTop="-60dp"
+                                android:layout_marginEnd="@dimen/mainMargin"
+                                android:layout_marginBottom="@dimen/mainMarginBottom"
+                                android:orientation="vertical">
+
+                                <!-- Title, Desc, New movie tag -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/titleMarginSmall"
+                                    android:gravity="top"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="top"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            app:cardBackgroundColor="@color/lightBlack"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardUseCompatPadding="true">
+
+                                            <com.makeramen.roundedimageview.RoundedImageView
+                                                android:id="@+id/ivPosterThumb"
+                                                android:layout_width="65dp"
+                                                android:layout_height="85dp"
+                                                android:scaleType="fitXY" />
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:paddingStart="@dimen/margin10">
+
+                                        <!--Title-->
+                                        <TextView
+                                            android:id="@+id/txtMainTitle"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/public_bold"
+                                            android:gravity="center_vertical"
+                                            android:textColor="@color/text_white"
+                                            android:textSize="@dimen/text_24" />
+
+                                        <!--Year, Duration, Age limit, Quality and Comment-->
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/margin3"
+                                            android:gravity="center_vertical"
+                                            android:minHeight="22dp"
+                                            android:orientation="horizontal">
+
+                                            <!--Year-->
+                                            <TextView
+                                                android:id="@+id/txtReleaseYear"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginEnd="@dimen/margin10"
+                                                android:fontFamily="@font/public_medium"
+                                                android:gravity="center_vertical"
+                                                android:textColor="@color/text_whiteLight"
+                                                android:textSize="@dimen/text_13" />
+
+                                            <!--Duration-->
+                                            <TextView
+                                                android:id="@+id/txtDuration"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginEnd="@dimen/margin10"
+                                                android:fontFamily="@font/public_medium"
+                                                android:gravity="center_vertical"
+                                                android:textColor="@color/text_other"
+                                                android:textSize="@dimen/text_13" />
+
+                                            <!--Age limit-->
+                                            <TextView
+                                                android:id="@+id/txtAgeLimit"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginEnd="@dimen/margin10"
+                                                android:background="@drawable/round_bor_bg"
+                                                android:fontFamily="@font/public_medium"
+                                                android:gravity="center_vertical"
+                                                android:paddingStart="5dp"
+                                                android:paddingEnd="5dp"
+                                                android:textColor="@color/text_other"
+                                                android:textSize="@dimen/text_10" />
+
+                                            <!--Quality-->
+                                            <TextView
+                                                android:id="@+id/txtMaxVideoQuality"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginEnd="@dimen/margin10"
+                                                android:background="@drawable/round_bor_bg"
+                                                android:fontFamily="@font/public_medium"
+                                                android:gravity="center_vertical"
+                                                android:paddingStart="5dp"
+                                                android:paddingEnd="5dp"
+                                                android:textColor="@color/text_other"
+                                                android:textSize="@dimen/text_10" />
+
+                                            <!--Comment-->
+                                            <TextView
+                                                android:id="@+id/txtCommentIcon"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:background="@drawable/ic_comment"
+                                                android:visibility="gone" />
+
+                                        </LinearLayout>
+
+                                        <!-- New Release TAG -->
+                                        <LinearLayout
+                                            android:id="@+id/lyNewReleaseTag"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_marginHorizontal="@dimen/titleMarginSmall"
+                                            android:layout_marginTop="@dimen/margin3"
+                                            android:gravity="center_vertical"
+                                            android:orientation="vertical"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/txtNewReleaseTag"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/public_round_bold"
+                                                android:gravity="center_vertical"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/text_15" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <!-- Release Date -->
+                                <LinearLayout
+                                    android:id="@+id/lyReleaseDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin3"
+                                    android:layout_marginTop="@dimen/margin8"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_medium"
+                                        android:text="@string/release_date"
+                                        android:textColor="@color/text_white"
+                                        android:textSize="@dimen/text_15" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin5"
+                                        android:layout_marginEnd="@dimen/margin5"
+                                        android:fontFamily="@font/public_medium"
+                                        android:text=":"
+                                        android:textColor="@color/text_white"
+                                        android:textSize="@dimen/text_15" />
+
+                                    <TextView
+                                        android:id="@+id/txtReleaseDate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_bold"
+                                        android:text="-"
+                                        android:textColor="@color/complimentryColor"
+                                        android:textSize="@dimen/text_15" />
+
+                                </LinearLayout>
+
+                                <!--Tag (prime / not prime)-->
+                                <LinearLayout
+                                    android:id="@+id/lyPrimeTag"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin3"
+                                    android:layout_marginTop="@dimen/margin8"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/txtPrimeTag"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_round_bold"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/prime"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="@dimen/text_17" />
+
+                                    <!--Tag Desc-->
+                                    <TextView
+                                        android:id="@+id/txtPrimeTagDesc"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_medium"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/included_with"
+                                        android:textColor="@color/text_white"
+                                        android:textSize="@dimen/text_12" />
+
+                                </LinearLayout>
+
+                                <!-- Rent TAG -->
+                                <LinearLayout
+                                    android:id="@+id/lyRentTag"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin3"
+                                    android:layout_marginTop="@dimen/margin8"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/txtCurrencySymbol"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:background="@drawable/circle_bg"
+                                        android:backgroundTint="@color/complimentryColor"
+                                        android:fontFamily="@font/public_bold"
+                                        android:gravity="center"
+                                        android:textColor="@color/text_white"
+                                        android:textSize="@dimen/text_11" />
+
+                                    <TextView
+                                        android:id="@+id/txtRentTag"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin5"
+                                        android:fontFamily="@font/public_medium"
+                                        android:text="@string/available_to_rent"
+                                        android:textColor="@color/text_white"
+                                        android:textSize="@dimen/text_12" />
+
+                                </LinearLayout>
+
+                                <!-- Watch Trailer -->
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cvWatchTrailer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="18dp"
+                                    android:layout_marginBottom="18dp"
+                                    android:visibility="gone"
+                                    app:cardBackgroundColor="@color/primaryDark"
+                                    app:cardCornerRadius="3dp"
+                                    app:cardUseCompatPadding="true">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyWatchTrailer"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:minHeight="45dp"
+                                        android:orientation="horizontal"
+                                        android:theme="@style/AppTheme.detailPageRipple"
+                                        android:visibility="visible">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.16"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:layout_width="@dimen/featureIconSize"
+                                                android:layout_height="@dimen/featureIconSize"
+                                                android:background="@drawable/ic_play2"
+                                                android:gravity="center" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.84"
+                                            android:gravity="center_vertical"
+                                            android:orientation="vertical"
+                                            android:padding="2dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/public_semibold"
+                                                android:gravity="center_vertical"
+                                                android:text="@string/watch_trailer"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/default_texts" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <!-- Watch Now -->
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cvWatchNow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="18dp"
+                                    android:visibility="visible"
+                                    app:cardBackgroundColor="@color/primaryDark"
+                                    app:cardCornerRadius="3dp"
+                                    app:cardUseCompatPadding="true">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyWatchNow"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:theme="@style/AppTheme.detailPageRipple"
+                                        android:visibility="visible">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:minHeight="45dp"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.16"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:layout_width="@dimen/featureIconSize"
+                                                    android:layout_height="@dimen/featureIconSize"
+                                                    android:background="@drawable/ic_play2"
+                                                    android:gravity="center" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.84"
+                                                android:gravity="center_vertical"
+                                                android:orientation="vertical"
+                                                android:padding="2dp">
+
+                                                <TextView
+                                                    android:id="@+id/txtWatchNow"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/public_semibold"
+                                                    android:gravity="center_vertical"
+                                                    android:text="@string/watch_now"
+                                                    android:textColor="@color/text_white"
+                                                    android:textSize="@dimen/default_texts" />
+
+                                                <TextView
+                                                    android:id="@+id/txtRemainWatch"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/public_medium"
+                                                    android:gravity="center_vertical"
+                                                    android:textColor="@color/text_white"
+                                                    android:textSize="@dimen/text_12"
+                                                    android:visibility="gone" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                                            android:id="@+id/progressRemainWatch"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="4dp"
+                                            android:layout_margin="3dp"
+                                            android:visibility="gone"
+                                            app:rpbBackgroundColor="@color/secProgressColor"
+                                            app:rpbCornerRadius="2dp"
+                                            app:rpbProgressColor="@color/white"
+                                            app:rpbShowProgressText="false" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/lySubscribeNow"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:theme="@style/AppTheme.MyRipple"
+                                        android:visibility="gone">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:minHeight="45dp"
+                                            android:paddingHorizontal="10dp">
+
+                                            <TextView
+                                                android:id="@+id/txtSubscribeNow"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/public_bold"
+                                                android:gravity="center"
+                                                android:text="@string/watch_with"
+                                                android:textColor="@color/text_black"
+                                                android:textSize="@dimen/text_15" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <!-- Rent Now -->
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cvRentNow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:visibility="gone"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:cardCornerRadius="3dp"
+                                    app:cardUseCompatPadding="true">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyRentNow"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:theme="@style/AppTheme.MyRipple"
+                                        android:visibility="visible">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:minHeight="45dp"
+                                            android:paddingHorizontal="10dp">
+
+                                            <TextView
+                                                android:id="@+id/txtRentPrice"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/public_bold"
+                                                android:gravity="center"
+                                                android:text="@string/rent_movie_at_just"
+                                                android:textColor="@color/text_black"
+                                                android:textSize="@dimen/text_15" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <!-- Facebook & Admob NativeAd -->
+                                <LinearLayout
+                                    android:id="@+id/lyNativeAds"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin8"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <!-- Facebook NativeAd -->
+                                    <com.facebook.ads.NativeAdLayout
+                                        android:id="@+id/fbNativeTemplate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone" />
+
+                                    <!-- Admob NativeAd -->
+                                    <com.google.android.ads.nativetemplates.TemplateView
+                                        android:id="@+id/nativeTemplate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone"
+                                        app:gnt_template_type="@layout/gnt_small_template_view" />
+
+                                </LinearLayout>
+
+                                <!-- Other Details -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/titleMarginSmall"
+                                    android:layout_marginEnd="@dimen/titleMarginSmall"
+                                    android:orientation="vertical">
+
+                                    <!-- Trailer, Download, Watchlist and More -->
+                                    <LinearLayout
+                                        android:id="@+id/lyFeatureBtns"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="25dp"
+                                        android:layout_marginBottom="20dp"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <!--Trailer-->
+                                        <LinearLayout
+                                            android:id="@+id/lyTrailer"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:theme="@style/AppTheme.detailPageRipple">
+
+                                            <LinearLayout
+                                                android:layout_width="@dimen/movieFeatureSize"
+                                                android:layout_height="@dimen/movieFeatureSize"
+                                                android:background="@drawable/circle_bor_bg"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/txtTrailerIcon"
+                                                    android:layout_width="@dimen/featureIconSize"
+                                                    android:layout_height="@dimen/featureIconSize"
+                                                    android:background="@drawable/ic_play_trailer"
+                                                    android:backgroundTint="@color/lightGray"
+                                                    android:gravity="center" />
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:id="@+id/txtTrailer"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:fontFamily="@font/public_medium"
+                                                android:gravity="center"
+                                                android:text="@string/trailer"
+                                                android:textColor="@color/text_lightGray"
+                                                android:textSize="@dimen/text_12" />
+
+                                        </LinearLayout>
+
+                                        <!--Start Over-->
+                                        <LinearLayout
+                                            android:id="@+id/lyStartOver"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:theme="@style/AppTheme.detailPageRipple"
+                                            android:visibility="gone">
+
+                                            <LinearLayout
+                                                android:layout_width="@dimen/movieFeatureSize"
+                                                android:layout_height="@dimen/movieFeatureSize"
+                                                android:background="@drawable/circle_bor_bg"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/txtStartOverIcon"
+                                                    android:layout_width="@dimen/featureIconSize"
+                                                    android:layout_height="@dimen/featureIconSize"
+                                                    android:background="@drawable/ic_restart"
+                                                    android:backgroundTint="@color/lightGray"
+                                                    android:gravity="center" />
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:id="@+id/txtStartOver"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:fontFamily="@font/public_medium"
+                                                android:gravity="center"
+                                                android:text="@string/start_over"
+                                                android:textColor="@color/text_lightGray"
+                                                android:textSize="@dimen/text_12" />
+
+                                        </LinearLayout>
+
+                                        <!-- Download -->
+                                        <LinearLayout
+                                            android:id="@+id/lyDownload"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:theme="@style/AppTheme.detailPageRipple">
+
+                                            <LinearLayout
+                                                android:layout_width="@dimen/movieFeatureSize"
+                                                android:layout_height="@dimen/movieFeatureSize"
+                                                android:background="@drawable/circle_bor_bg"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/txtDownloadIcon"
+                                                    android:layout_width="@dimen/featureIconSize"
+                                                    android:layout_height="@dimen/featureIconSize"
+                                                    android:background="@drawable/ic_downloads"
+                                                    android:backgroundTint="@color/lightGray"
+                                                    android:gravity="center" />
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:id="@+id/txtDownload"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:fontFamily="@font/public_medium"
+                                                android:gravity="center"
+                                                android:text="@string/download"
+                                                android:textColor="@color/text_lightGray"
+                                                android:textSize="@dimen/text_12" />
+
+                                        </LinearLayout>
+
+                                        <!-- Download Started -->
+                                        <LinearLayout
+                                            android:id="@+id/lyDownloadStarted"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:theme="@style/AppTheme.detailPageRipple"
+                                            android:visibility="gone">
+
+                                            <RelativeLayout
+                                                android:id="@+id/rlDWithProgress"
+                                                android:layout_width="@dimen/movieFeatureSize"
+                                                android:layout_height="@dimen/movieFeatureSize"
+                                                android:gravity="center_vertical"
+                                                android:orientation="vertical"
+                                                android:visibility="visible">
+
+                                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                                    android:id="@+id/downloadProgress"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    app:cpb_background_progressbar_width="2dp"
+                                                    app:cpb_indeterminate_mode="false"
+                                                    app:cpb_progress="0"
+                                                    app:cpb_progress_direction="to_right"
+                                                    app:cpb_progress_max="100"
+                                                    app:cpb_progressbar_color="@color/colorPrimary"
+                                                    app:cpb_progressbar_width="2dp"
+                                                    app:cpb_round_border="true" />
+
+                                                <TextView
+                                                    android:id="@+id/txtDownloadPauseIcon"
+                                                    android:layout_width="@dimen/featureIconSize"
+                                                    android:layout_height="@dimen/featureIconSize"
+                                                    android:layout_centerInParent="true"
+                                                    android:background="@drawable/ic_download2"
+                                                    android:backgroundTint="@color/lightGray" />
+
+                                            </RelativeLayout>
+
+                                            <TextView
+                                                android:id="@+id/txtDownloadStarted"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:fontFamily="@font/public_medium"
+                                                android:gravity="center"
+                                                android:text="0 %"
+                                                android:textColor="@color/text_lightGray"
+                                                android:textSize="@dimen/text_12" />
+
+                                        </LinearLayout>
+
+                                        <!--Watchlist-->
+                                        <LinearLayout
+                                            android:id="@+id/lyWatchlist"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:theme="@style/AppTheme.detailPageRipple">
+
+                                            <LinearLayout
+                                                android:layout_width="@dimen/movieFeatureSize"
+                                                android:layout_height="@dimen/movieFeatureSize"
+                                                android:background="@drawable/circle_bor_bg"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/txtWatchlistIcon"
+                                                    android:layout_width="@dimen/featureIconSize"
+                                                    android:layout_height="@dimen/featureIconSize"
+                                                    android:background="@drawable/ic_add_icon"
+                                                    android:backgroundTint="@color/lightGray"
+                                                    android:gravity="center" />
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:id="@+id/txtWatchlist"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:fontFamily="@font/public_medium"
+                                                android:gravity="center"
+                                                android:text="@string/watchlist"
+                                                android:textColor="@color/text_lightGray"
+                                                android:textSize="@dimen/text_12" />
+
+                                        </LinearLayout>
+
+                                        <!--More-->
+                                        <LinearLayout
+                                            android:id="@+id/lyMore"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:theme="@style/AppTheme.detailPageRipple">
+
+                                            <LinearLayout
+                                                android:layout_width="@dimen/movieFeatureSize"
+                                                android:layout_height="@dimen/movieFeatureSize"
+                                                android:background="@drawable/circle_bor_bg"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/txtMoreIcon"
+                                                    android:layout_width="@dimen/featureIconSize"
+                                                    android:layout_height="@dimen/featureIconSize"
+                                                    android:background="@drawable/ic_more"
+                                                    android:backgroundTint="@color/lightGray"
+                                                    android:gravity="center" />
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:id="@+id/txtMore"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:fontFamily="@font/public_medium"
+                                                android:gravity="center"
+                                                android:text="More"
+                                                android:textColor="@color/text_lightGray"
+                                                android:textSize="@dimen/text_12" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <!--Movie Desc-->
+                                    <TextView
+                                        android:id="@+id/txtDescription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/public_medium"
+                                        android:gravity="center_vertical"
+                                        android:maxLines="3"
+                                        android:textColor="@color/text_white"
+                                        android:textSize="@dimen/default_texts" />
+
+                                    <!--IMDb ratings-->
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="23dp"
+                                            android:layout_marginEnd="@dimen/margin10"
+                                            android:src="@drawable/imdb" />
+
+                                        <TextView
+                                            android:id="@+id/txtIMDbRatings"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/public_round_bold"
+                                            android:gravity="center_vertical"
+                                            android:textColor="@color/text_other"
+                                            android:textSize="@dimen/text_15" />
+
+                                    </LinearLayout>
+
+                                    <!--Language, Audio and Subtitle-->
+                                    <LinearLayout
+                                        android:id="@+id/lyOpenLASDialog"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="25dp"
+                                        android:layout_marginTop="@dimen/margin8"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/public_medium"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/languages"
+                                            android:textColor="@color/text_other"
+                                            android:textSize="@dimen/text_13" />
+
+                                        <TextView
+                                            android:id="@+id/txtAudioSubtitleCount"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="5dp"
+                                            android:fontFamily="@font/public_medium"
+                                            android:gravity="center_vertical"
+                                            android:textColor="@color/text_other"
+                                            android:textSize="@dimen/text_13" />
+
+                                        <TextView
+                                            android:layout_width="7dp"
+                                            android:layout_height="7dp"
+                                            android:layout_marginStart="5dp"
+                                            android:background="@drawable/ic_dropdown" />
+
+                                    </LinearLayout>
+
+                                    <!-- Admob BannerAdView -->
+                                    <LinearLayout
+                                        android:id="@+id/lyAdView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin10"
+                                        android:background="@color/black"
+                                        android:orientation="vertical"
+                                        android:visibility="gone" />
+
+                                    <!-- Facebook BannerAdView -->
+                                    <LinearLayout
+                                        android:id="@+id/lyFbAdView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin10"
+                                        android:background="@color/black"
+                                        android:orientation="vertical"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <include layout="@layout/custom_tab_layout" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="@color/otherColor" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Related Video and Cast-Crew -->
+                            <include layout="@layout/tab_relatedvideo" />
+
+                            <!-- More Details -->
+                            <include layout="@layout/tab_moredetails" />
+
+                        </LinearLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+
+                </LinearLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

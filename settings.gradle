@@ -1,0 +1,5 @@
+include ':pinview'
+include ':nativetemplates'
+include ':app'
+rootProject.name = "primevideoapp"
+include ':vimeoplayer2'

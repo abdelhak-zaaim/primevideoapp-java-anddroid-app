@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottomHome"
+        android:icon="@drawable/nav_home_selector"
+        android:title="@string/title_home"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/bottomFind"
+        android:icon="@drawable/nav_find_selector"
+        android:title="@string/title_find"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/bottomChannels"
+        android:icon="@drawable/nav_channels_selector"
+        android:title="@string/title_channels"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/bottomRent"
+        android:icon="@drawable/nav_store_selector"
+        android:title="@string/title_store"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/bottomMyStuff"
+        android:icon="@drawable/nav_mystuff_selector"
+        android:title="@string/title_mystuff"
+        app:showAsAction="withText" />
+</menu>

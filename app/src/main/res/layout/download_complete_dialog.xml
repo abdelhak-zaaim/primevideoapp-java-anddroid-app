@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin23"
+            android:orientation="vertical">
+
+            <!-- Dialog Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/public_bold"
+                android:text="@string/download_options"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_18" />
+
+            <!-- NOTE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/public_medium"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/download_options_note"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_13" />
+
+            <!-- <- <-  Video Details related features -> -> -->
+
+            <!-- Go To Download Page -->
+            <LinearLayout
+                android:id="@+id/lyGoToDownload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/minHeightOfView"
+                android:layout_marginTop="@dimen/margin10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.detailPageRipple_selected">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/dialogIconSize"
+                        android:layout_height="@dimen/dialogIconSize"
+                        android:background="@drawable/ic_settings"
+                        android:backgroundTint="@color/otherColor"
+                        android:clickable="false"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.88"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/public_medium"
+                        android:text="@string/take_me_to_the_downloads_page"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Delete Download -->
+            <LinearLayout
+                android:id="@+id/lyDeleteDownload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/minHeightOfView"
+                android:layout_marginTop="@dimen/margin2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.detailPageRipple_selected">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/dialogIconSize"
+                        android:layout_height="@dimen/dialogIconSize"
+                        android:background="@drawable/ic_delete"
+                        android:backgroundTint="@color/otherColor"
+                        android:clickable="false"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.88"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtDownloadDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/public_medium"
+                        android:text="@string/delete_download"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

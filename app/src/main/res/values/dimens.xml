@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+
+    <dimen name="dots_height">40dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+
+    <dimen name="slide_title">20dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+
+    <dimen name="desc_padding">40dp</dimen>
+
+    <dimen name="min_height">150dp</dimen>
+    <dimen name="tab_height">35dp</dimen>
+
+    <dimen name="card_corner_radius_4">4dp</dimen>
+    <dimen name="card_corner_radius">5dp</dimen>
+    <dimen name="card_corner_radius_1">1dp</dimen>
+
+    <dimen name="toolbar">17dp</dimen>
+    <dimen name="inner_toolbar">16dp</dimen>
+    <dimen name="text_35">35dp</dimen>
+    <dimen name="text_30">30dp</dimen>
+    <dimen name="text_29">29dp</dimen>
+    <dimen name="text_28">28dp</dimen>
+    <dimen name="text_27">27dp</dimen>
+    <dimen name="text_26">26dp</dimen>
+    <dimen name="text_25">25dp</dimen>
+    <dimen name="text_24">24dp</dimen>
+    <dimen name="text_23">23dp</dimen>
+    <dimen name="text_22">22dp</dimen>
+    <dimen name="text_20">20dp</dimen>
+    <dimen name="text_18">18dp</dimen>
+    <dimen name="text_17">17dp</dimen>
+    <dimen name="text_16">16dp</dimen>
+    <dimen name="text_15">15dp</dimen>
+    <dimen name="text_14">14dp</dimen>
+    <dimen name="default_texts">14dp</dimen>
+    <dimen name="text_13">13dp</dimen>
+    <dimen name="text_12">12dp</dimen>
+    <dimen name="text_11">11dp</dimen>
+    <dimen name="text_10">10dp</dimen>
+    <dimen name="text_9">9dp</dimen>
+    <dimen name="text_8">8dp</dimen>
+    <dimen name="text_7">7dp</dimen>
+    <dimen name="text_6">6dp</dimen>
+    <dimen name="text_5">5dp</dimen>
+
+    <!--Payment-->
+    <dimen name="pay_toolbar">18dp</dimen>
+    <dimen name="pay_topic">17dp</dimen>
+    <dimen name="pay_card_radius">8dp</dimen>
+    <dimen name="pay_card_elevation">5dp</dimen>
+    <dimen name="pay_sub_topic">16dp</dimen>
+    <dimen name="pay_card_margin_start_end">8dp</dimen>
+    <dimen name="subscriptionCardRadius">8dp</dimen>
+
+    <dimen name="toolbarHeightFull">95dp</dimen>
+    <dimen name="toolbarHeight">58dp</dimen>
+
+    <!-- Home Screen Dimens START -->
+    <dimen name="homeIconWidth">80dp</dimen>
+    <dimen name="homeIconHeight">25dp</dimen>
+    <dimen name="toolbarHome">67dp</dimen>
+    <dimen name="homeBanner">230dp</dimen>
+    <dimen name="homeTabs">50dp</dimen>
+    <dimen name="titleMarginStart">20dp</dimen>
+    <dimen name="titleMarginSmall">3dp</dimen>
+    <dimen name="titleMarginEnd">20dp</dimen>
+    <dimen name="contentMarginTop">17dp</dimen>
+    <dimen name="moreIconSize">12dp</dimen>
+    <dimen name="noDataHeight2">240dp</dimen>
+    <dimen name="noDataHeight">130dp</dimen>
+    <dimen name="noDataWidth">180dp</dimen>
+    <dimen name="homeIcons">23dp</dimen>
+    <dimen name="infoMsgHeight">50dp</dimen>
+    <dimen name="bottomPadding">15dp</dimen>
+    <!-- Home Screen Dimens END -->
+
+    <!-- Potrait, Landscape and Square layouts Height & Width START -->
+    <dimen name="cardRadius">4dp</dimen>
+
+    <dimen name="width_P">115dp</dimen>
+    <dimen name="height_P">155dp</dimen>
+
+    <dimen name="width_L">172dp</dimen>
+    <dimen name="height_L">100dp</dimen>
+
+    <dimen name="width_S">172dp</dimen>
+    <dimen name="height_S">172dp</dimen>
+
+    <!-- ContinueWatch START -->
+    <dimen name="width_continue_P">115dp</dimen>
+    <dimen name="height_continue_P">155dp</dimen>
+
+    <dimen name="width_continue_L">172dp</dimen>
+    <dimen name="height_continue_L">104dp</dimen>
+
+    <dimen name="height_continue_S">172dp</dimen>
+    <dimen name="width_continue_S">172dp</dimen>
+    <!-- ContinueWatch END -->
+
+    <!-- Language & Genres START -->
+    <dimen name="width_lang_gen">172dp</dimen>
+    <dimen name="height_lang_gen">177dp</dimen>
+    <!-- Language & Genres END -->
+    <!-- Potrait, Landscape and Square layouts Height & Width END -->
+
+    <!-- Movie, TVSHow, Kids, CastCrew and WatchParty Details START -->
+    <dimen name="poster">255dp</dimen>
+    <dimen name="detailTabs">50dp</dimen>
+    <dimen name="mainMargin">20dp</dimen>
+    <dimen name="mainMarginTop">15dp</dimen>
+    <dimen name="mainMarginBottom">13dp</dimen>
+    <dimen name="movieFeatureSize">50dp</dimen>
+    <dimen name="featureIconSize">20dp</dimen>
+    <dimen name="contentMarginSmall">5dp</dimen>
+    <dimen name="margin1">1dp</dimen>
+    <dimen name="margin2">2dp</dimen>
+    <dimen name="margin3">3dp</dimen>
+    <dimen name="margin4">4dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin6">6dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="margin15">15dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin17">17dp</dimen>
+    <dimen name="margin18">18dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin22">22dp</dimen>
+    <dimen name="margin23">23dp</dimen>
+    <dimen name="margin25">25dp</dimen>
+    <dimen name="margin27">27dp</dimen>
+    <dimen name="margin28">28dp</dimen>
+    <dimen name="margin29">29dp</dimen>
+    <dimen name="margin30">30dp</dimen>
+    <dimen name="margin32">32dp</dimen>
+    <dimen name="margin35">35dp</dimen>
+    <dimen name="marginStart">23dp</dimen>
+    <dimen name="marginEnd">23dp</dimen>
+    <dimen name="epiPoster">240dp</dimen>
+    <dimen name="castCrewPoster">525dp</dimen>
+    <dimen name="marginSmall">3dp</dimen>
+    <!-- Movie, TVSHow, Kids, CastCrew and WatchParty Details END -->
+
+    <!-- Channels, Settings START -->
+    <dimen name="channelPoster">222dp</dimen>
+    <dimen name="channelBanner">230dp</dimen>
+    <dimen name="channelVideoBanner">195dp</dimen>
+    <dimen name="actionBarHeight">70dp</dimen>
+    <dimen name="minHeightSettings">40dp</dimen>
+    <!-- Channels, Settings END -->
+
+    <!-- Rent Products START -->
+    <dimen name="rentBanner">103dp</dimen>
+    <dimen name="minHeightOfView">42dp</dimen>
+    <dimen name="dialogIconSize">22dp</dimen>
+    <dimen name="dialogButtonHeight">48dp</dimen>
+    <!-- Rent Products END -->
+
+    <!--Login Screen Dimens START-->
+    <dimen name="loginIconWidth">170dp</dimen>
+    <dimen name="loginIconHeight">60dp</dimen>
+    <dimen name="credButtonHeight">52dp</dimen>
+    <dimen name="socialButtons">40dp</dimen>
+    <dimen name="edittext_paddings">8dp</dimen>
+    <dimen name="edittextSize">52dp</dimen>
+    <dimen name="edittextProfileSize">50dp</dimen>
+    <dimen name="cred_marginTop">15dp</dimen>
+    <!--Login Screen Dimens END-->
+
+</resources>

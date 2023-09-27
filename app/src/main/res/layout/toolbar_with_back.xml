@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbarHeight"
+    android:background="@color/subscriptionBG"
+    android:elevation="5dp"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <!--Toolbar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/lyBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:theme="@style/AppTheme.MyRipple">
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/ic_back"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtToolbarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/public_round_bold"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/toolbar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

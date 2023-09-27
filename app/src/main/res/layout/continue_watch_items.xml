@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/width_continue_L"
+            android:layout_height="@dimen/height_continue_L"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="@dimen/cardRadius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/ivThumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_image_land" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPlay"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/ic_play" />
+
+                    <LinearLayout
+                        android:id="@+id/lyNewTag"
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:background="@color/black"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtNewTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/public_medium"
+                            android:gravity="center"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_6" />
+
+                    </LinearLayout>
+
+                    <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                        android:id="@+id/progressWatch"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_margin="3dp"
+                        android:visibility="visible"
+                        app:rpbBackgroundColor="@color/secProgressColor"
+                        app:rpbCornerRadius="2dp"
+                        app:rpbProgressColor="@color/colorPrimary"
+                        app:rpbShowProgressText="false" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

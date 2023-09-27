@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBG"
+        android:orientation="vertical">
+
+        <!--Shimmer-->
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:shimmer_duration="@integer/shimmerDuration">
+
+            <!-- Adding 3 rows of placeholders -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/shim_homesectionf" />
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/bottomPadding">
+
+                        <!--Banner with Dots indicator-->
+                        <LinearLayout
+                            android:id="@+id/lyBanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/homeBanner"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <!--Banner ViewPager-->
+                                <pl.pzienowicz.autoscrollviewpager.AutoScrollViewPager
+                                    android:id="@+id/viewPager"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:overScrollMode="never" />
+
+                                <!--Dots indicator-->
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@android:color/transparent"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+                                    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                                        android:id="@+id/dotsIndicator"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:dotsColor="@color/lightBlack"
+                                        app:dotsSize="8dp"
+                                        app:dotsSpacing="4dp"
+                                        app:dotsWidthFactor="1"
+                                        app:selectedDotColor="@color/Gray" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <!--Other Views-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/contentMarginTop"
+                            android:orientation="vertical"
+                            android:paddingStart="@dimen/titleMarginStart">
+
+                            <!--Continue Watching-->
+                            <LinearLayout
+                                android:id="@+id/lyContinueWatch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <!--Title-->
+                                <LinearLayout
+                                    android:id="@+id/lyContinueWatchTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/titleMarginSmall"
+                                    android:layout_marginEnd="@dimen/titleMarginEnd"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_bold"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/continue_watching"
+                                        android:textColor="@color/text_title"
+                                        android:textSize="@dimen/text_16" />
+
+                                    <TextView
+                                        android:id="@+id/txtContinueWatchMore"
+                                        android:layout_width="@dimen/moreIconSize"
+                                        android:layout_height="@dimen/moreIconSize"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/ic_arrow_right"
+                                        android:gravity="center"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                                <!--Data-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rvContinueWatch"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!-- Data Dynamic -->
+                            <LinearLayout
+                                android:id="@+id/lyDataDynamic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            </LinearLayout>
+
+                            <include layout="@layout/no_data_layout" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

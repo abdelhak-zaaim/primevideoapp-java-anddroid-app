@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBG"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBarHeight"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/actionBarHeight"
+                    android:fontFamily="@font/public_bold"
+                    android:gravity="center"
+                    android:text="@string/settings"
+                    android:textColor="@color/text_title"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+            <!-- All Settings -->
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- All Settings -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin20"
+                        android:layout_marginTop="@dimen/margin20"
+                        android:layout_marginEnd="@dimen/titleMarginEnd"
+                        android:orientation="vertical">
+
+                        <!-- AccountDetails -->
+                        <LinearLayout
+                            android:id="@+id/lyAccountDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/account_details"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/manage_your_profile"
+                                    android:textColor="@color/text_other"
+                                    android:textSize="@dimen/text_13" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin16"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Subscription -->
+                        <LinearLayout
+                            android:id="@+id/lySubscription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin16"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/subscription"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/subscription_desc"
+                                    android:textColor="@color/text_other"
+                                    android:textSize="@dimen/text_13" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin16"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Change Password -->
+                        <LinearLayout
+                            android:id="@+id/lyChangePassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin16"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Title & Drop-Down/Up Icons -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="horizontal">
+
+                                <!-- Title -->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.85"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_medium"
+                                        android:text="@string/change_password"
+                                        android:textColor="@color/text_white"
+                                        android:textSize="@dimen/text_15" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_medium"
+                                        android:text="@string/update_your_password"
+                                        android:textColor="@color/text_other"
+                                        android:textSize="@dimen/text_13" />
+
+                                </LinearLayout>
+
+                                <!-- Drop-Down/Up Icons -->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center|end">
+
+                                    <TextView
+                                        android:id="@+id/txtCPassDown"
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        android:background="@drawable/ic_dropdown"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:id="@+id/txtCPassUp"
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        android:background="@drawable/ic_dropup"
+                                        android:gravity="center"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!-- Change Password EditTexts -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <!--For Type 1-->
+                                <LinearLayout
+                                    android:id="@+id/lyCPassType1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin10"
+                                    android:layout_marginTop="@dimen/margin10"
+                                    android:layout_marginEnd="@dimen/margin10"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <!-- Current Password -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_margin="8dp"
+                                        android:background="@drawable/round_change_pass_bg"
+                                        android:backgroundTint="@color/lightGray"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="0.12"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:src="@drawable/ic_password" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.76">
+
+                                            <EditText
+                                                android:id="@+id/etCurrentPassword"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@android:color/transparent"
+                                                android:fontFamily="@font/public_medium"
+                                                android:hint="@string/current_password"
+                                                android:imeOptions="actionNext"
+                                                android:inputType="textPassword"
+                                                android:singleLine="true"
+                                                android:textColor="@color/white"
+                                                android:textColorHint="@color/darkGray"
+                                                android:textSize="@dimen/default_texts" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/lyCurrentVisible"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="0.12"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:id="@+id/ivCurrentVisible"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:src="@drawable/ic_pass_visible" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <!-- New Password -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_margin="8dp"
+                                        android:background="@drawable/round_change_pass_bg"
+                                        android:backgroundTint="@color/lightGray"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="0.12"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:src="@drawable/ic_password" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.76">
+
+                                            <EditText
+                                                android:id="@+id/etNewPassword"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@android:color/transparent"
+                                                android:fontFamily="@font/public_medium"
+                                                android:hint="@string/new_password"
+                                                android:imeOptions="actionNext"
+                                                android:inputType="textPassword"
+                                                android:singleLine="true"
+                                                android:textColor="@color/white"
+                                                android:textColorHint="@color/darkGray"
+                                                android:textSize="@dimen/default_texts" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/lyNewVisible"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="0.12"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:id="@+id/ivNewVisible"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:src="@drawable/ic_pass_visible" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <!-- Confirm Password -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_margin="8dp"
+                                        android:background="@drawable/round_change_pass_bg"
+                                        android:backgroundTint="@color/lightGray"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="0.12"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:src="@drawable/ic_password" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.76">
+
+                                            <EditText
+                                                android:id="@+id/etConfirmPassword"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@android:color/transparent"
+                                                android:fontFamily="@font/public_medium"
+                                                android:hint="@string/confirm_password"
+                                                android:imeOptions="actionDone"
+                                                android:inputType="textPassword"
+                                                android:singleLine="true"
+                                                android:textColor="@color/white"
+                                                android:textColorHint="@color/darkGray"
+                                                android:textSize="@dimen/default_texts" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/lyConfirmVisible"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="0.12"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:id="@+id/ivConfirmVisible"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:src="@drawable/ic_pass_visible" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <!-- Change Password Button -->
+                                    <LinearLayout
+                                        android:id="@+id/lyChangePassBtn"
+                                        android:layout_width="170dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="end"
+                                        android:layout_margin="8dp"
+                                        android:background="@drawable/round_change_pass_bg"
+                                        android:backgroundTint="@color/white"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/public_round_bold"
+                                            android:gravity="center"
+                                            android:text="@string/change_password"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="@dimen/default_texts" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <!--For Type 2-->
+                                <LinearLayout
+                                    android:id="@+id/lyCPassType2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin10"
+                                    android:layout_marginTop="@dimen/margin10"
+                                    android:layout_marginEnd="@dimen/margin10"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_medium"
+                                        android:singleLine="false"
+                                        android:text="@string/change_password_request_for_type_2"
+                                        android:textColor="@color/otherColor"
+                                        android:textSize="@dimen/default_texts" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin16"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Change Language -->
+                        <LinearLayout
+                            android:id="@+id/lyChangeLanguage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin16"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/language"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                                <TextView
+                                    android:id="@+id/txtCurrentLanguage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="English"
+                                    android:textColor="@color/text_other"
+                                    android:textSize="@dimen/text_13" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin16"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Notifications -->
+                        <LinearLayout
+                            android:id="@+id/lyPushNotifications"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin16"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/marginSmall"
+                                    android:layout_marginEnd="@dimen/marginSmall"
+                                    android:layout_weight="0.7"
+                                    android:gravity="center_vertical"
+                                    android:minHeight="@dimen/minHeightSettings"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_medium"
+                                        android:text="@string/notifications"
+                                        android:textColor="@color/text_white"
+                                        android:textSize="@dimen/text_15" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_medium"
+                                        android:text="@string/receive_notifications"
+                                        android:textColor="@color/text_other"
+                                        android:textSize="@dimen/text_13" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.3"
+                                    android:gravity="center|end">
+
+                                    <androidx.appcompat.widget.SwitchCompat
+                                        android:id="@+id/switchPushNoti"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="true"
+                                        android:theme="@style/SCBSwitch" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin16"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Clear Cache -->
+                        <LinearLayout
+                            android:id="@+id/lyClearCache"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin16"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.85"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_medium"
+                                        android:text="@string/clear_cache"
+                                        android:textColor="@color/text_white"
+                                        android:textSize="@dimen/text_15" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/public_medium"
+                                        android:text="@string/clear_locally_cached_data"
+                                        android:textColor="@color/text_other"
+                                        android:textSize="@dimen/text_13" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center|end">
+
+                                    <TextView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="@drawable/ic_brush" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin16"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Clear video search history -->
+                        <LinearLayout
+                            android:id="@+id/lyClearSearchHistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/clear_video_search_history"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin8"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Signed in as -->
+                        <LinearLayout
+                            android:id="@+id/lySignedInAs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin16"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtSignedUserName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/not_sign_in_desc"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                                <TextView
+                                    android:id="@+id/txtSignInOut"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/sign_in"
+                                    android:textColor="@color/text_other"
+                                    android:textSize="@dimen/text_13" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin16"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Rate Us -->
+                        <LinearLayout
+                            android:id="@+id/lyRateUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin16"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/rate_us"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/rate_us_note"
+                                    android:textColor="@color/text_other"
+                                    android:textSize="@dimen/text_13" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin16"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Share App -->
+                        <LinearLayout
+                            android:id="@+id/lyShareApp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin16"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/share_app"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/share_app_note"
+                                    android:textColor="@color/text_other"
+                                    android:textSize="@dimen/text_13" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin16"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- About Us -->
+                        <LinearLayout
+                            android:id="@+id/lyAboutUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin16"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/about_us"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                                <TextView
+                                    android:id="@+id/txtAppVersion"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/version"
+                                    android:textColor="@color/text_other"
+                                    android:textSize="@dimen/text_13" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin16"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Privacy Policy -->
+                        <LinearLayout
+                            android:id="@+id/lyPrivacyPolicy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/privacy_policy"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin8"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Terms & Conditions -->
+                        <LinearLayout
+                            android:id="@+id/lyTermsConditions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/terms_and_conditions"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin8"
+                                android:layout_marginBottom="@dimen/margin3"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Refund Policy -->
+                        <LinearLayout
+                            android:id="@+id/lyRefundPolicy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/refund_policy"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin8"
+                                android:layout_marginBottom="@dimen/margin3"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                        <!-- Delete Account -->
+                        <LinearLayout
+                            android:id="@+id/lyDeleteAccount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/marginSmall"
+                                android:layout_marginEnd="@dimen/marginSmall"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/minHeightSettings"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:text="@string/delete_account"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_15" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/margin8"
+                                android:layout_marginBottom="@dimen/margin3"
+                                android:background="@color/otherColor" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

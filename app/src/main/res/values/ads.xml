@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Admob Init. ID -->
+    <string name="admob_main_id" translatable="false">ca-app-pub-4183191208143029~4850748911</string>
+
+    <!-- Admob Test Ads -->
+    <string name="admob_appopen" translatable="false">ca-app-pub-4183191208143029/8753500757</string>
+
+    <string name="admob_banner" translatable="false">ca-app-pub-4183191208143029/2224585578</string>
+
+    <string name="admob_native" translatable="false">ca-app-pub-4183191208143029/3442298478</string>
+
+    <string name="admob_interstial" translatable="false">ca-app-pub-4183191208143029/9884988711</string>
+
+    <string name="admob_interstialvideo" translatable="false">ca-app-pub-4183191208143029/6338842988</string>
+
+    <string name="admob_rewardvideo" translatable="false">ca-app-pub-4183191208143029/8641572699</string>
+    <!-- Admob Test Ads -->
+
+    <!-- Facebook Test Ads -->
+    <string name="fb_banner" translatable="false">684829922314226_916388455825037</string>
+    <string name="fb_medium_rect" translatable="false">684829922314226_916952915768591</string>
+    <string name="fb_native" translatable="false">684829922314226_916951262435423</string>
+    <string name="fb_native_full" translatable="false">684829922314226_916952472435302</string>
+    <string name="fb_interstial" translatable="false">684829922314226_916951759102040</string>
+    <string name="fb_rewardvideo" translatable="false">684829922314226_916952092435340</string>
+    <!-- Facebook Test Ads -->
+
+    <!-- Exoplayer Test Ads -->
+    <string name="exo_1stAd" translatable="false"><![CDATA[https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_ad_samples&sz=640x480&cust_params=sample_ct%3Dlinear&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=]]></string>
+    <string name="exo_2ndAd" translatable="false"><![CDATA[https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_ad_samples&sz=640x480&cust_params=sample_ct%3Dlinear&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=]]></string>
+    <!-- Exoplayer Test Ads -->
+
+</resources>

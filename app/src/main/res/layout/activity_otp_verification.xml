@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBG"
+    tools:context="com.cinefilmz.tv.OTPLogin.OTPVerification">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Back -->
+            <LinearLayout
+                android:id="@+id/lyBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_back_with_bg"
+                    android:gravity="center"
+                    android:theme="@style/AppTheme.MyRipple" />
+
+            </LinearLayout>
+
+            <!-- Title, Desc & Mobile Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_bold"
+                    android:gravity="center"
+                    android:text="@string/verify_phone_number"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_26" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/public_regular"
+                    android:gravity="center"
+                    android:text="@string/we_have_sent_code_to_your_number"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_15" />
+
+                <TextView
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_15" />
+
+            </LinearLayout>
+
+            <!-- OTP digits -->
+            <LinearLayout
+                android:id="@+id/lyNoCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.gne.www.lib.PinView
+                    android:id="@+id/otpView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cursorColor="@color/white"
+                    app:inputType="number"
+                    app:isPassword="false"
+                    app:pinBackground="@drawable/round_bg_bor_edt"
+                    app:pinCount="6"
+                    app:pinSize="45dp"
+                    app:showPasswordToggle="false"
+                    app:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+            <!-- Timer -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_regular"
+                    android:gravity="center"
+                    android:text="@string/code_expire_soon"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/default_texts" />
+
+                <cn.iwgang.countdownview.CountdownView
+                    android:id="@+id/countdownTimer"
+                    style="@style/timerTextMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    app:isHideTimeBackground="true"
+                    app:isShowDay="false"
+                    app:isShowHour="false"
+                    app:isShowMillisecond="false"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:suffixTextColor="@color/colorAccent"
+                    app:timeTextColor="@color/white"
+                    app:timeTextSize="@dimen/default_texts" />
+
+            </LinearLayout>
+
+            <!-- Confirm button -->
+            <LinearLayout
+                android:id="@+id/lyConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/credButtonHeight"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/round_bg_login_regi"
+                android:gravity="center"
+                android:theme="@style/AppTheme.MyRipple">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center"
+                    android:text="@string/confirm"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_18" />
+
+            </LinearLayout>
+
+            <!-- Resend -->
+            <LinearLayout
+                android:id="@+id/lyResendOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_semibold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/resend"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/default_texts" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

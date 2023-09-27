@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme.detailPageRipple_selected">
+
+        <TextView
+            android:id="@+id/txtSuggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:fontFamily="@font/public_medium"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_other"
+            android:textSize="@dimen/default_texts" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/primaryLight" />
+
+    </LinearLayout>
+
+</LinearLayout>

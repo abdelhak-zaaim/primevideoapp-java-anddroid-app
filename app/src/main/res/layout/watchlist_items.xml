@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lyContent"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@color/lightBlack"
+            android:orientation="horizontal">
+
+            <!-- Item Image -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.44"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/ivThumb"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/no_image_land" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtPlay"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/ic_play" />
+
+                        <LinearLayout
+                            android:id="@+id/lyNewReleaseTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"
+                            android:background="@color/black"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/txtNewReleaseTag"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center"
+                                android:text="@string/new_movie_tag"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/text_6" />
+
+                        </LinearLayout>
+
+                        <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                            android:id="@+id/progressWatch"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_margin="3dp"
+                            android:visibility="visible"
+                            app:rpbBackgroundColor="@color/secProgressColor"
+                            app:rpbCornerRadius="2dp"
+                            app:rpbProgressColor="@color/colorPrimary"
+                            app:rpbShowProgressText="false" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Title, Prime TAG, Release Year, Total Size and View Detail Icon -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.56"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Title, Prime TAG, Total Episode and Total Size -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin10"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <!-- Title -->
+                        <TextView
+                            android:id="@+id/txtTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/public_round_bold"
+                            android:maxLines="2"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/default_texts" />
+
+                        <!-- Total Episode and Total Size -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <!-- Release Year -->
+                            <TextView
+                                android:id="@+id/txtReleaseYear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/margin10"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_12" />
+
+                            <!-- Total Duration -->
+                            <TextView
+                                android:id="@+id/txtTotalDuration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_12" />
+
+                        </LinearLayout>
+
+                        <!-- Prime TAG -->
+                        <TextView
+                            android:id="@+id/txtPrimeTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/public_round_bold"
+                            android:text="@string/prime"
+                            android:textColor="@color/text_primary"
+                            android:textSize="@dimen/text_12" />
+
+                        <!-- Rent TAG -->
+                        <TextView
+                            android:id="@+id/txtRentTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/public_medium"
+                            android:text="@string/available_to_rent"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_12" />
+
+                    </LinearLayout>
+
+                    <!-- View Detail Icon -->
+                    <LinearLayout
+                        android:id="@+id/lyViewDetails"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/margin15"
+                        android:layout_marginBottom="@dimen/margin10"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:theme="@style/AppTheme.detailPageRipple"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/txtViewDetail"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:background="@drawable/ic_more2"
+                            android:backgroundTint="@color/lightGray" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

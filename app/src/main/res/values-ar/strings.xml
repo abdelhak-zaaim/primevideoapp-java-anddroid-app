@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CineFilmz</string>
+    <string name="prime">DT رئيس الوزراء</string>
+
+    <!--Welcome START-->
+    <string name="skip">يتخطى</string>
+    <string name="next">التالي</string>
+    <string name="get_started">البدء!</string>
+    <string name="welcome_slides">الشاشة الرئيسية</string>
+    <string name="welcome_1_Title">شاهد الأفلام والعروض وعروض الأطفال والمزيد.</string>
+    <string name="welcome_1_Desc">لوريم إيبسوم هو ببساطة نص شكلي يستخدم في صناعة الطباعة والتنضيد. كان Lorem Ipsum هو النص الوهمي القياسي في الصناعة منذ القرن الخامس عشر الميلادي.</string>
+    <string name="welcome_2_Title">استكشف آلاف مقاطع الفيديو على CineFilmz.</string>
+    <string name="welcome_2_Desc">لوريم إيبسوم هو ببساطة نص شكلي يستخدم في صناعة الطباعة والتنضيد. كان Lorem Ipsum هو النص الوهمي القياسي في الصناعة منذ القرن الخامس عشر الميلادي.</string>
+    <string name="welcome_3_Title">ابحث عن أخبار العالم على CineFilmz.</string>
+    <string name="welcome_3_Desc">لوريم إيبسوم هو ببساطة نص شكلي يستخدم في صناعة الطباعة والتنضيد. كان Lorem Ipsum هو النص الوهمي القياسي في الصناعة منذ القرن الخامس عشر الميلادي.</string>
+    <string name="welcome_4_Title">قم بالترقية للاستفادة بشكل أكبر من اشتراكك.</string>
+    <string name="welcome_4_Desc">لوريم إيبسوم هو ببساطة نص شكلي يستخدم في صناعة الطباعة والتنضيد. كان Lorem Ipsum هو النص الوهمي القياسي في الصناعة منذ القرن الخامس عشر الميلادي.</string>
+    <string name="Lorem_Ipsum">لوريم إيبسوم هو ببساطة نص شكلي يستخدم في صناعة الطباعة والتنضيد.</string>
+    <string name="LoremIpsum_less">"         لوريم إيبسوم هو النص الوهمي القياسي في الصناعة منذ القرن الخامس عشر الميلادي."</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">آسف! غير متصل بالإنترنت.</string>
+    <string name="back_to_online">العودة إلى الإنترنت.</string>
+    <string name="permission_desc">نحتاج الآن إلى إذنك لمواصلة استخدام التطبيق بشكل مثالي</string>
+    <string name="permission_title">كل شيء على ما يرام.</string>
+    <string name="okay">تمام!</string>
+    <string name="internet_error">خطأ في الاتصال بالشبكة !!!</string>
+    <string name="permission_necessary">إذن ضروري</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">إذن التخزين ضروري لقراءة وكتابة الحدث</string>
+    <string name="settings">إعدادات</string>
+    <string name="cancel_">يلغي</string>
+    <string name="permission">الإذن</string>
+    <string name="permission_alert">تنبيه الإذن</string>
+    <string name="get_permission_for_brightness_manage_desc">نحتاج إلى إذن لتغيير السطوع ويمكنك إدارة السطوع أثناء تشغيل الفيديو.</string>
+    <string name="we_need_storage_permission_for_save_video">نحتاج إلى إذن تخزين لحفظ ملف الوسائط في وحدة تخزين خارجية.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">نحتاج إلى وحدة تخزين خارجية وإذن الكاميرا لتحميل صورة الملف الشخصي.</string>
+    <string name="yesterday">في الامس</string>
+    <string name="day_ago">منذ يوم</string>
+    <!--Network and Permission END-->
+
+    <!--General Strings START-->
+    <string name="please_wait">أرجو الإنتظار...</string>
+    <string name="delete">حذف</string>
+    <string name="cancel">يلغي</string>
+    <string name="downloading">جارى التحميل...</string>
+    <string name="loading">جار التحميل...</string>
+    <string name="do_you_want_to_exit">هل تريد الخروج؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">رقم</string>
+    <string name="track_selection_title">تغيير المسار</string>
+    <!--General Strings END-->
+
+    <!-- Login and OTP START -->
+    <string name="login">تسجيل الدخول</string>
+    <string name="or">أو</string>
+    <string name="welcome_back">مرحبًا بعودتك،</string>
+    <string name="login_with_mobile_note">أدخل رقم هاتفك المحمول لتسجيل الدخول</string>
+    <string name="enter_your_mobile_number">أدخل رقم هاتفك المحمول</string>
+    <string name="login_with_google">تسجيل الدخول عبر جوجل</string>
+    <string name="login_with_facebook">تسجيل الدخول باستخدام الفيسبوك</string>
+
+    <string name="otp_verification">التحقق من OTP</string>
+    <string name="enter_your_mobile_no">أدخل رقم هاتفك المحمول</string>
+    <string name="enter_coutry_code">أدخل رمز بلدك.</string>
+    <string name="verify_phone_number">تحقق من رقم الهاتف</string>
+    <string name="code_expire_soon">تنتهي صلاحية الرمز قريبًا</string>
+    <string name="resend">إعادة إرسال</string>
+    <string name="confirm">يتأكد</string>
+    <string name="enter_otp">أدخل OTP المستلم.</string>
+    <string name="select_your_coutry_code">حدد رمز بلدك.</string>
+    <string name="you_will_receive_a_6_digit_code_to_verify_next">سوف تتلقى رمزًا مكونًا من 6 أرقام إلى</string>
+    <string name="send_otp">إرسال OTP</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">أدخل رمز OTP لإرساله إلى رقم الهاتف المحمول.</string>
+    <string name="we_have_sent_code_to_your_number">لقد أرسلنا الرمز إلى رقمك</string>
+    <string name="verify_and_proceed">التحقق والمتابعة</string>
+    <string name="send_">إرسال</string>
+    <string name="resend_otp">إعادة إرسال OTP</string>
+    <string name="already_have_an_account">هل لديك حساب ؟</string>
+    <string name="do_not_have_an_account">ليس لديك حساب؟</string>
+    <string name="or_Login_using_Social_Media">أو تسجيل الدخول باستخدام وسائل التواصل الاجتماعي</string>
+    <!-- Login and OTP END -->
+
+    <!-- Home Fragment START -->
+    <string name="title_home">مسكن</string>
+    <string name="title_tvshows">عرض تلفزيوني</string>
+    <string name="title_movies">أفلام</string>
+    <string name="title_kids">أطفال</string>
+    <string name="title_channels">القنوات</string>
+    <string name="title_find">تجد</string>
+    <string name="title_downloads">التحميلات</string>
+    <string name="title_store">متجر</string>
+    <string name="title_mystuff">أشيائي</string>
+    <string name="title_settings">إعدادات</string>
+    <string name="continue_watching">استمر في المشاهدة</string>
+    <string name="top_movies">الافلام الافضل</string>
+    <string name="new_movie_tag">فيلم جديد</string>
+    <string name="new_series_tag">سلسلة جديدة</string>
+    <string name="new_tvshow_tag">عرض تلفزيوني جديد</string>
+    <string name="tvshow">عرض تلفزيوني</string>
+    <string name="shows">عروض</string>
+    <string name="_shows">عروض</string>
+    <string name="movies">أفلام</string>
+    <string name="movies_">أفلام</string>
+    <string name="tv">تلفزيون</string>
+    <!-- Home Fragment END -->
+
+    <!-- Details START -->
+    <string name="watch_now">شاهد الآن</string>
+    <string name="watch_episode">مشاهدة الحلقة</string>
+    <string name="no_episode">آسف! الحلقة غير متوفرة للعب.</string>
+    <string name="no_video">آسف! الفيديو غير متوفر للعب.</string>
+    <string name="no_trailer">آسف! مقطورة غير متوفرة للعب.</string>
+    <string name="no_data">آسف! لم يتم العثور على بيانات.</string>
+    <string name="related">متعلق ب</string>
+    <string name="episodes">الحلقات</string>
+    <string name="more_details">المزيد من التفاصيل</string>
+    <string name="customers_also_watched">شاهد العملاء أيضًا</string>
+    <string name="cast_and_crew">الممثلون وطاقم العمل</string>
+    <string name="details_from">التفاصيل من</string>
+    <string name="genres">الأنواع</string>
+    <string name="directors">المدراء</string>
+    <string name="starring">بطولة</string>
+    <string name="studios">استوديوهات</string>
+    <string name="maturity_rating">تصنيف النضج</string>
+    <string name="content_advisory">استشاري المحتوى</string>
+    <string name="customer_reviews">آراء المستهلكين</string>
+    <string name="did_you_know">هل كنت تعلم؟</string>
+    <string name="known_for">معروف ب:</string>
+    <string name="included_with">متضمن في الاشتراك</string>
+    <string name="available_to_rent">متاح للإيجار</string>
+    <string name="release_date">Release Date</string>
+    <string name="rent">تأجير</string>
+    <string name="language_change_note">يمكن تغيير اللغة أثناء تشغيل الفيديو.</string>
+    <string name="available_languages">اللغات المتوفرة</string>
+    <string name="audio">صوتي</string>
+    <string name="subtitles">ترجمات</string>
+    <string name="trailer">جَرَّار</string>
+    <string name="share">يشارك</string>
+    <string name="watch_party">مشاهدة الحفلة</string>
+    <string name="watchlist">قائمة المراقبة</string>
+    <string name="download">تحميل</string>
+    <string name="season">الموسم</string>
+    <string name="create_watch_party">إنشاء حفلة مشاهدة</string>
+    <string name="watch_party_note">الدردشة أثناء مشاهدة الأفلام والتلفزيون مع الآخرين.</string>
+    <string name="create">خلق</string>
+    <string name="chat_as">الدردشة باسم:</string>
+    <string name="watch_party_tips">شاهد نصائح الحفلة</string>
+    <string name="enter_name">أدخل الاسم</string>
+    <string name="more">المزيد +</string>
+    <string name="less">أقل -</string>
+    <string name="resume">سيرة ذاتية</string>
+    <string name="trivia">أمور تافهة</string>
+    <string name="filter">منقي</string>
+    <string name="videos">أشرطة فيديو</string>
+    <string name="watch_trailer">مشاهدة اعلان</string>
+    <string name="add_to_watchlist">أضافة إلى قائمة المشاهدة</string>
+    <string name="remove_from_watchlist">إزالة من قائمة المراقبة</string>
+    <string name="complete">مكتمل</string>
+    <string name="delete_download">حذف التنزيل</string>
+    <string name="more_">أكثر</string>
+    <string name="view_details">عرض التفاصيل</string>
+    <string name="hide_this_video">إخفاء هذا الفيديو</string>
+    <string name="unhide_this_video">إظهار هذا الفيديو؟</string>
+    <string name="unhide_video_note">يتيح لك إخفاء هذا الفيديو ظهوره أثناء التصفح بحثًا عن شيء لمشاهدته. يمكن تشغيل مقاطع الفيديو المخفية وعرضها من Find.</string>
+    <string name="instagram_stories">قصص انستغرام</string>
+    <string name="copy_link">انسخ الرابط</string>
+    <string name="sms">رسالة قصيرة</string>
+    <string name="sort_by">صنف حسب</string>
+    <string name="most_recent_addition">أحدث إضافة</string>
+    <string name="title_a_z">العنوان أ - ي</string>
+    <string name="title_z_a">العنوان Z - A</string>
+    <string name="content_type">نوع المحتوى</string>
+    <string name="quality">جودة :</string>
+    <string name="audio_languages">لغات الصوت:</string>
+    <string name="play_download">تلعب التحميل</string>
+    <string name="aired">بثت:</string>
+    <string name="purchases">المشتريات</string>
+    <string name="rent_and_buy_your_favorites"><![CDATA[استئجار وشراء مفضلاتك]]></string>
+    <string name="no_purchases_note">شاهد المشتريات والتأجيرات على أي من أجهزتك.</string>
+    <string name="left">اليسار</string>
+    <string name="share_with">شارك مع...</string>
+    <string name="link_copied">تم نسخ الرابط</string>
+    <string name="languages">اللغات:</string>
+    <string name="live">يعيش</string>
+    <string name="finish">إنهاء</string>
+    <string name="replay_all">إعادة كل شيء!</string>
+    <string name="download_not_available">ميزة التنزيل غير متوفرة لهذا الفيديو.</string>
+    <!-- Details END -->
+
+    <!-- Find START -->
+    <string name="find">تجد</string>
+    <string name="search_by_actor_title">البحث عن طريق الممثل ، العنوان ...</string>
+    <string name="browse_by">التصفح عن طريق</string>
+    <string name="language">لغة</string>
+    <string name="see_more">شاهد المزيد</string>
+    <string name="subscribe_to_channels">اشترك في القنوات</string>
+    <string name="results_for">نتائج</string>
+    <!-- Find END -->
+
+    <!-- Downloads START -->
+    <string name="downloads">التحميلات</string>
+    <string name="_downloads">التحميلات</string>
+    <string name="downloads_settings">إعدادات التنزيل</string>
+    <string name="video">فيديو</string>
+    <string name="videos_">أشرطة فيديو</string>
+    <string name="video_">فيديو</string>
+    <string name="min">دقيقة</string>
+    <string name="edit">يحرر</string>
+    <string name="seasons">مواسم</string>
+    <string name="_episode">حلقة</string>
+    <string name="episode">حلقة</string>
+    <string name="select_all">اختر الكل</string>
+    <string name="unselect_all">إلغاء تحديد الكل</string>
+    <string name="no_downloads">لا يوجد تنزيل فيديو</string>
+    <string name="take_me_to_the_downloads_page">خذني إلى صفحة التنزيلات</string>
+    <string name="download_options">خيارات التنزيل</string>
+    <string name="download_options_note">تم تنزيل الفيديو الخاص بك بنجاح. انتقل إلى التنزيلات للمشاهدة والخيارات الأخرى.</string>
+    <string name="add_to_watchlist_msg">تمت الإضافة إلى قائمة المراقبة بنجاح</string>
+    <string name="removed_from_watchlist_msg">تمت الإزالة بنجاح من قائمة المراقبة</string>
+    <string name="confirm_deletion">تأكيد الحذف</string>
+    <string name="delete_video_note">لن تكون مقاطع الفيديو هذه متاحة بلا إنترنت.</string>
+    <string name="delete_download_msg">تم حذف الفيديو بنجاح.</string>
+    <string name="file_has_been_downloaded">تم تنزيل الملف بنجاح</string>
+    <string name="download_has_been_started">بدأ التنزيل ...</string>
+    <string name="Downloaded">تم التنزيل بنجاح</string>
+    <string name="invalid_url">URL غير صالح!!!</string>
+    <string name="something_went_wrong">هناك خطأ ما...</string>
+    <string name="file_already_downloaded">تم تنزيل الملف بالفعل.</string>
+    <!-- Downloads END -->
+
+    <!-- MyStuff START -->
+    <string name="create_profile">إنشاء ملف تعريف</string>
+    <string name="manage_profiles">إدارة الملفات الشخصية</string>
+    <string name="manage_profile">إدارة الملف الشخصي</string>
+    <string name="learn_more_about_profiles">تعرف على المزيد حول الملفات الشخصية</string>
+    <string name="browse_now_watch_later">تصفح الآن ، شاهد لاحقًا</string>
+    <string name="watchlist_note">قائمة المراقبة الخاصة بك مشتركة عبر جميع أجهزتك.</string>
+    <!-- MyStuff END -->
+
+    <!-- Settings START -->
+    <string name="account_details">تفاصيل الحساب</string>
+    <string name="manage_your_profile">إدارة ملف التعريف الخاص بك</string>
+    <string name="on">على</string>
+    <string name="off">Off</string>
+    <string name="notifications">إشعارات</string>
+    <string name="receive_notifications">تلقي الإخطارات</string>
+    <string name="clear_cache">مسح ذاكرة التخزين المؤقت</string>
+    <string name="clear_locally_cached_data">امسح البيانات المخزنة مؤقتًا محليًا</string>
+    <string name="clear_cached_data_toast">تم مسح بيانات ذاكرة التخزين المؤقت.</string>
+    <string name="change_password">غير كلمة السر</string>
+    <string name="update_your_password">قم بتحديث كلمة المرور الخاصة بك</string>
+    <string name="current_password">كلمة المرور الحالية</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+    <string name="enter_current_password">إدخل كلمة السر الحالية.</string>
+    <string name="enter_new_password">أدخل كلمة مرور جديدة.</string>
+    <string name="enter_confirm_password">أدخل تأكيد كلمة المرور.</string>
+    <string name="password_not_matched_toast">كلمة المرور الجديدة التي أدخلتها ، لا تتطابق مع تأكيد كلمة المرور !!!</string>
+    <string name="change_password_request_for_type_2">لقد قمت بتسجيل الدخول باستخدام حساب التواصل الاجتماعي الخاص بك ، ولا تنطبق ميزة تغيير كلمة المرور على الحسابات الاجتماعية.</string>
+    <string name="change_language">تغيير اللغة</string>
+    <string name="clear_video_search_history">مسح سجل البحث عن الفيديو</string>
+    <string name="signed_in_as">وقعت في مثل</string>
+    <string name="not_sign_in_desc">أنت لم تقم بتسجيل الدخول</string>
+    <string name="sign_out">خروج</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="terms_and_conditions">البنود و الظروف</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="about_us">معلومات عنا</string>
+    <string name="rate_us">قيمنا</string>
+    <string name="share_app">شارك التطبيق</string>
+    <string name="rate_us_note">قيم تطبيقنا على متجر التطبيقات</string>
+    <string name="share_app_note">شارك التطبيق مع أصدقائك</string>
+    <string name="version">إصدار</string>
+    <string name="always_ask">اسال دائما</string>
+    <string name="start_over">ابدأ من جديد</string>
+    <string name="change_language_mark">تغيير اللغة؟</string>
+    <string name="change_language_note">يؤدي النقر فوق \"نعم\" إلى إعادة تشغيل التطبيق باللغة المحددة.</string>
+    <string name="terms_and_privacy_notice">هل تريد الاستمرار؟</string>
+    <string name="_3rd_party_notices">إشعارات الطرف الثالث</string>
+    <string name="about_and_legal">حول والشؤون القانونية</string>
+    <string name="confirm_sign_out">أكد تسجيل الخروج</string>
+    <string name="are_you_sure_want_to_sign_out">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <!-- Settings END -->
+
+    <!-- Rent Products START -->
+    <string name="rent_products">منتجات الإيجار</string>
+    <string name="view_more">عرض المزيد</string>
+    <string name="submit">يُقدِّم</string>
+    <string name="rent_movie_at_just">استئجار الفيلم فقط</string>
+    <string name="rent_show_at_just">عرض الإيجار في فقط</string>
+    <string name="watch_with">مشاهدة مع</string>
+    <string name="purchaged_videos">فيديو معدّل</string>
+    <string name="purchaged_shows">عروض مكثفة</string>
+    <string name="rent_videos">استئجار مقاطع الفيديو</string>
+    <string name="rent_shows">عرض الإيجار</string>
+    <!-- Rent Movie END -->
+
+    <!-- Profile START -->
+    <string name="save">يحفظ</string>
+    <string name="change">يتغيرون</string>
+    <string name="kid_s_profile">الملف الشخصي للطفل؟</string>
+    <string name="learn_more">يتعلم أكثر</string>
+    <string name="new_">جديد</string>
+    <string name="edit_profiles">تحرير ملفات التعريف</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="remove_profile">إزالة ملف التعريف</string>
+    <string name="the_account_holder_s_profile_can_t_be_removed">لا يمكن إزالة الملف الشخصي لصاحب الحساب</string>
+    <string name="change_profile_image">تغيير صورة الملف الشخصي</string>
+    <string name="take_photo">تصوير.</string>
+    <string name="choose_from_gallery">اختر من المعرض.</string>
+    <string name="add_photo">إضافة صورة!</string>
+    <string name="avatar_suggetion">اقتراحات الصورة الرمزية</string>
+    <string name="choose_an_avatar">اختر صورة رمزية.</string>
+    <string name="choose_new_avatar_note">حدد أي خيار لاختيار الصورة الرمزية الجديدة الخاصة بك.</string>
+    <string name="subscription">الاشتراك</string>
+    <string name="subscription_desc">قم بالترقية للاستفادة بشكل أكبر من اشتراكك</string>
+    <string name="choose_plan">اختر الخطة</string>
+    <string name="current">تيار</string>
+    <string name="enter_phone_number_profile">أدخل رقم الهاتف...</string>
+    <string name="enter_email_profile">أدخل البريد الإلكتروني ...</string>
+    <string name="enter_address_profile">أدخل العنوان...</string>
+    <string name="enter_your_name_profile">أدخل أسمك...</string>
+    <string name="update_profile">تحديث الملف</string>
+    <string name="enter_password_profile">أدخل كلمة المرور ...</string>
+    <!-- Profile END -->
+
+    <!--Payment Activity START-->
+    <string name="payment_details">بيانات الدفع</string>
+    <string name="please_select_any_payment_method">من فضلك ، حدد أي طريقة دفع</string>
+    <string name="payment_methods">طرق الدفع</string>
+    <string name="choose_a_payment_methods_to_pay">اختر طريقة الدفع إلى</string>
+    <string name="pay_with">ادفع من خلال</string>
+    <string name="Continue">يكمل</string>
+    <string name="paypal">PayPal</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">يدفع</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">عذرا ، لم نتمكن من التحقق من الدفع الخاص بك ، حاول مرة أخرى من فضلك !!!</string>
+    <string name="wallet_balance">رصيد المحفظة</string>
+    <string name="payment_gateways">بوابات الدفع</string>
+    <string name="recharge_your_wallet">اشحن محفظتك</string>
+    <string name="add_to_wallet">أضف إلى المحفظة</string>
+    <string name="enter_amount">أدخل المبلغ المخصص ...</string>
+    <string name="your_current_balance_is">رصيدك الحالي هو :</string>
+    <string name="use_wallet_balance">استخدم رصيد المحفظة</string>
+    <string name="pay_now">ادفع الآن</string>
+    <string name="please_enter_valid_amount">الرجاء إدخال مبلغ صالح.</string>
+    <string name="payable_amount_is">المبلغ المستحق هو:</string>
+    <string name="verification">تَحَقّق</string>
+    <string name="verification_success">تم التحقق بنجاح.</string>
+    <string name="verification_note">* من فضلك ، تحقق من التفاصيل التالية الخاصة بك للمتابعة.</string>
+    <string name="already_purchased">لقد اشتريت الخطة بالفعل.</string>
+    <string name="delete_account">حذف الحساب</string>
+    <string name="delete_account_msg">هل أنت متأكد من أنك تريد حذف الحساب؟</string>
+    <string name="refund_policy">سياسة الاسترجاع</string>
+    <string name="confirm_delete_account">أكد حذف الحساب</string>
+    <!--Payment Activity END-->
+
+</resources>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">CineFilmz</string>
+    <string name="prime">DT prime</string>
+
+    <!--Welcome START-->
+    <string name="skip"> پریږدئ</string>
+    <string name="next">بل</string>
+    <string name="get_started"> پیل کړئ!</string>
+    <string name="welcome_slides">کور سکرین</string>
+    <string name="welcome_1_Title">فلمونه، نندارې، د ماشومانو ننداره وګورئ او ډیر څه.</string>
+    <string name="welcome_1_Desc">Lorem Ipsum په ساده ډول د چاپ او ټایپ سیټینګ صنعت ډمی متن دی. Lorem Ipsum د 1500s راهیسې د صنعت معیاري ډمي متن دی.</string>
+    <string name="welcome_2_Title">په DT ژوندۍ کې په زرګونو ویډیوګانې وپلټئ.</string>
+    <string name="welcome_2_Desc">Lorem Ipsum په ساده ډول د چاپ او ټایپ سیټینګ صنعت ډمی متن دی. Lorem Ipsum د 1500s راهیسې د صنعت معیاري ډمي متن دی.</string>
+    <string name="welcome_3_Title">د نړۍ خبرونه په DT ژوندۍ کې ومومئ.</string>
+    <string name="welcome_3_Desc">Lorem Ipsum په ساده ډول د چاپ او ټایپ سیټینګ صنعت ډمی متن دی. Lorem Ipsum د 1500s راهیسې د صنعت معیاري ډمي متن دی.</string>
+    <string name="welcome_4_Title"> د خپل ګډون څخه د ډیرو ترلاسه کولو لپاره لوړ کړئ.</string>
+    <string name="welcome_4_Desc">Lorem Ipsum په ساده ډول د چاپ او ټایپ سیټینګ صنعت ډمی متن دی. Lorem Ipsum د 1500s راهیسې د صنعت معیاري ډمي متن دی.</string>
+    <string name="Lorem_Ipsum">Lorem Ipsum په ساده ډول د چاپ او ټایپ سیټینګ صنعت ډمی متن دی. Lorem Ipsum د 1500s راهیسې د صنعت معیاري ډمي متن دی.
+        Lorem Ipsum د 1500s راهیسې د صنعت معیاري ډمي متن دی. Lorem Ipsum د 1500s راهیسې د صنعت معیاري ډمي متن دی.
+        Lorem Ipsum د 1500s راهیسې د صنعت معیاري ډمي متن دی. Lorem Ipsum د 1500s راهیسې د صنعت معیاري ډمي متن دی.</string>
+    <string name="LoremIpsum_less">Lorem Ipsum په ساده ډول د چاپ او ټایپ سیټینګ صنعت ډمی متن دی. Lorem Ipsum د صنعت معیاري متن دی.</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">بخښنه! له انټرنیټ سره وصل نه دی.</string>
+    <string name="back_to_online"> بیرته آنلاین ته.</string>
+    <string name="permission_desc">اوس موږ ستاسو اجازې ته اړتیا لرو ترڅو د اپلیکیشن په سمه توګه کارولو ته دوام ورکړو</string>
+    <string name="permission_title">هرڅه سم دي.</string>
+    <string name="okay">ښه ده!</string>
+    <string name="internet_error"> د شبکې پیوستون تېروتنه!!!</string>
+    <string name="permission_necessary">اجازه ضروري ده</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">د پیښې د لوستلو او لیکلو لپاره د ذخیرې اجازه اړینه ده</string>
+    <string name="settings"> ترتیبات</string>
+    <string name="cancel_"> لغوه کول</string>
+    <string name="permission">اجازه</string>
+    <string name="permission_alert">د اجازې خبرتیا</string>
+    <string name="get_permission_for_brightness_manage_desc">موږ د روښانتیا بدلولو لپاره اجازې ته اړتیا لرو او تاسو کولی شئ د ویډیو چلولو پرمهال روښانتیا اداره کړئ. \n مننه.</string>
+    <string name="we_need_storage_permission_for_save_video">مونږ په خارجي ذخیرې کې د میډیا فایل خوندي کولو لپاره د ذخیره کولو اجازې ته اړتیا لرو.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">مونږ د پروفایل انځور پورته کولو لپاره بهرنۍ ذخیرې او د کیمرې اجازې ته اړتیا لرو.</string>
+    <string name="yesterday">پرون</string>
+    <string name="day_ago">ورځ مخکي</string>
+    <!--Network and Permission END-->
+
+    <!--General Strings START-->
+    <string name="please_wait">مهرباني وکړئ انتظار وکړئ...</string>
+    <string name="delete">ړنګول</string>
+    <string name="cancel"> لغوه کول</string>
+    <string name="downloading">ډونلوډ کول...</string>
+    <string name="loading">لوډیږي...</string>
+    <string name="do_you_want_to_exit">ایا ته غواړې چې وتلې شې؟</string>
+    <string name="yes">هو</string>
+    <string name="no">نه</string>
+    <string name="track_selection_title"> ټریک بدلول</string>
+    <!--General Strings END-->
+
+    <!-- Login and OTP START -->
+    <string name="login">ننوتل</string>
+    <string name="or">یا</string>
+    <string name="welcome_back">بیا ښه راغلاست،</string>
+    <string name="login_with_mobile_note"> د ننوتلو لپاره خپل ګرځنده شمیره دننه کړئ</string>
+    <string name="enter_your_mobile_number">خپل د موبایل شمیره دننه کړئ</string>
+    <string name="login_with_google">د ګوګل سره ننوتل</string>
+    <string name="login_with_facebook">د فیسبوک سره ننوتل</string>
+
+    <string name="otp_verification">OTP تصدیق</string>
+    <string name="enter_your_mobile_no">خپل د موبایل شمیره دننه کړئ</string>
+    <string name="enter_coutry_code">د خپل هیواد کوډ دننه کړئ.</string>
+    <string name="verify_phone_number">د تلیفون شمیره تایید کړئ</string>
+    <string name="code_expire_soon">کوډ ژر ختمیږي</string>
+    <string name="resend">بیا لیږل</string>
+    <string name="confirm"> تایید</string>
+    <string name="enter_otp"> ترلاسه شوی OTP داخل کړئ.</string>
+    <string name="select_your_coutry_code">د خپل هیواد کوډ وټاکئ.</string>
+    <string name="you_will_receive_a_6_digit_code_to_verify_next">تاسو به یو 6 عددي کوډ ترلاسه کړئ چې \n بل تایید کړئ.</string>
+    <string name="send_otp">OTP واستوئ</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">د موبايل شمېرې ته د لېږلو لپاره OTP کوډ دننه کړئ.</string>
+    <string name="we_have_sent_code_to_your_number">موږ ستاسو نمبر ته کوډ لېږلی دی</string>
+    <string name="verify_and_proceed">تصديق کړئ &amp;amp; پرمخ لاړشئ</string>
+    <string name="send_">لیږل</string>
+    <string name="resend_otp"> OTP بیا لیږل</string>
+    <string name="already_have_an_account"> د پخوا څخه یو حساب لرئ؟</string>
+    <string name="do_not_have_an_account"> حساب نه لرئ؟</string>
+    <string name="or_Login_using_Social_Media">یا د ټولنیزو رسنیو په کارولو سره ننوتل</string>
+    <!-- Login and OTP END -->
+
+    <!-- Home Fragment START -->
+    <string name="title_home">کور</string>
+    <string name="title_tvshows">تلويزيون خپرونې</string>
+    <string name="title_movies">فلمونه</string>
+    <string name="title_kids">ماشومان</string>
+    <string name="title_channels">چینلونه</string>
+    <string name="title_find">موندل</string>
+    <string name="title_downloads">ډانلوډونه</string>
+    <string name="title_store"> پلورنځي</string>
+    <string name="title_mystuff">زما توکي</string>
+    <string name="title_settings"> ترتیبات</string>
+    <string name="continue_watching"> کتلو ته دوام ورکړئ</string>
+    <string name="top_movies">غوره فلمونه</string>
+    <string name="new_movie_tag">نوی فلم</string>
+    <string name="new_series_tag">نوی لړۍ</string>
+    <string name="new_tvshow_tag">نوی تلویزیوني خپرونه</string>
+    <string name="tvshow">تلويزيون خپرونې</string>
+    <string name="shows">شو</string>
+    <string name="_shows">شو</string>
+    <string name="movies">فلمونه</string>
+    <string name="movies_">فلمونه</string>
+    <string name="tv">تلويزيون</string>
+    <!-- Home Fragment END -->
+
+    <!-- Details START -->
+    <string name="watch_now">اوس وګوره</string>
+    <string name="watch_episode"> قسط وګورئ</string>
+    <string name="no_episode">بښنه غواړم! قسط د لوبولو لپاره شتون نلري.</string>
+    <string name="no_video">بښنه غواړم! ویډیو د چلولو لپاره شتون نلري.</string>
+    <string name="no_trailer">بښنه غواړم! ټریلر د لوبولو لپاره شتون نلري.</string>
+    <string name="no_data">بښنه غواړم! ډاټا ونه موندل شوه.</string>
+    <string name="related"> اړوند</string>
+    <string name="episodes">قسطونه</string>
+    <string name="more_details">نور معلومات</string>
+    <string name="customers_also_watched">پیرودونکو هم کتلي</string>
+    <string name="cast_and_crew">کاسټ او عمله</string>
+    <string name="details_from">جزیات له</string>
+    <string name="genres">ژانرونه</string>
+    <string name="directors"> ډایرکټران</string>
+    <string name="starring">ستوري کول</string>
+    <string name="studios"> سټوډیوز</string>
+    <string name="maturity_rating"> د پختۍ درجه بندي</string>
+    <string name="content_advisory">د منځپانګې مشوره</string>
+    <string name="customer_reviews">د پیرودونکي بیاکتنې</string>
+    <string name="did_you_know">ایا تاسو خبر یاست؟</string>
+    <string name="known_for"> د دې لپاره پیژندل شوی:</string>
+    <string name="included_with">د ګډون سره یوځای شوی</string>
+    <string name="available_to_rent">د کرایه کولو وړ</string>
+    <string name="release_date">Release Date</string>
+    <string name="rent"> کرایه</string>
+    <string name="language_change_note">ژبه د ویډیو د چلولو پر مهال بدلیدای شي.</string>
+    <string name="available_languages">د شته ژبې</string>
+    <string name="audio">آډیو</string>
+    <string name="subtitles"> فرعي سرلیکونه</string>
+    <string name="trailer"> ټریلر</string>
+    <string name="share">شریک کول</string>
+    <string name="watch_party">څارګر ګوند</string>
+    <string name="watchlist">څار لیست</string>
+    <string name="download">ډونلوډ</string>
+    <string name="season">موسم</string>
+    <string name="create_watch_party">د څارنې ګوند جوړ کړئ</string>
+    <string name="watch_party_note">له نورو سره د فلمونو او ټلویزیون د لیدو پر مهال خبرې وکړئ.</string>
+    <string name="create">جوړول</string>
+    <string name="chat_as">په توګه چیټ:</string>
+    <string name="watch_party_tips">د ګوند لارښوونې وګورئ</string>
+    <string name="enter_name">نوم دننه کړئ</string>
+    <string name="more">نور +</string>
+    <string name="less"> لږ -</string>
+    <string name="resume">بیا پیل کړئ</string>
+    <string name="trivia"> Trivia</string>
+    <string name="filter">فلټر</string>
+    <string name="videos">ویډیوګانې</string>
+    <string name="watch_trailer">ټریلر وګورئ</string>
+    <string name="add_to_watchlist">څار لیست کې اضافه کړئ</string>
+    <string name="remove_from_watchlist">له کتلست څخه لیرې کول</string>
+    <string name="complete">بشپړ</string>
+    <string name="delete_download">ډاونلوډ ړنګول</string>
+    <string name="more_">نور</string>
+    <string name="view_details">تفصیلات وګورئ</string>
+    <string name="hide_this_video">دا ویډیو پټ کړئ</string>
+    <string name="unhide_this_video">دا ویډیو پټ کړئ؟</string>
+    <string name="unhide_video_note">د دې ویډیو پټول دا اجازه ورکوي چې ښکاره شي پداسې حال کې چې تاسو د لیدلو لپاره یو څه لټون کوئ. پټ ویډیوګانې د موندلو څخه پلی کیدی شي او لیدل کیدی شي.</string>
+    <string name="instagram_stories">انسټاګرام کیسې</string>
+    <string name="copy_link">کاپي لینک</string>
+    <string name="sms">SMS</string>
+    <string name="sort_by">په ترتیب سره</string>
+    <string name="most_recent_addition">ډیر وروستي اضافه</string>
+    <string name="title_a_z">عنوان A - Z</string>
+    <string name="title_z_a">عنوان Z - A</string>
+    <string name="content_type">د منځپانګې ډول</string>
+    <string name="quality"> کیفیت :</string>
+    <string name="audio_languages">آډیو ژبې:</string>
+    <string name="play_download"> پلی ډاونلوډ</string>
+    <string name="aired"> نشر شوی:</string>
+    <string name="purchases">خریدونه</string>
+    <string name="rent_and_buy_your_favorites"><![CDATA[خپلې خوښې په کرايه او پېرئ]]></string>
+    <string name="no_purchases_note"> په خپلو وسایلو کې پیرود او کرایه وګورئ.</string>
+    <string name="left">کیڼ</string>
+    <string name="share_with">سره شریکول...</string>
+    <string name="link_copied"> لینک کاپي شوی</string>
+    <string name="languages">ژبې:</string>
+    <string name="live">ژوند</string>
+    <string name="finish">پای</string>
+    <string name="replay_all">ټول بیا پلی کړئ!</string>
+    <!-- Details END -->
+
+    <!-- Find START -->
+    <string name="find">موندل</string>
+    <string name="search_by_actor_title">د اداکار، سرلیک له مخې لټون...</string>
+    <string name="browse_by">له خوا لټون کول</string>
+    <string name="language">ژبه</string>
+    <string name="see_more">نور وګورئ</string>
+    <string name="subscribe_to_channels">چینلونو کې ګډون وکړئ</string>
+    <string name="results_for"> پایلې</string>
+    <!-- Find END -->
+
+    <!-- Downloads START -->
+    <string name="downloads">ډاونلوډونه</string>
+    <string name="_downloads">ډانلوډونه</string>
+    <string name="downloads_settings">د ډاونلوډونو ترتیبات</string>
+    <string name="video">ویډیو</string>
+    <string name="videos_">ویډیوګانې</string>
+    <string name="video_">ویډیو</string>
+    <string name="min">منټ</string>
+    <string name="edit"> سمون</string>
+    <string name="seasons">موسمونه</string>
+    <string name="_episode">قسط</string>
+    <string name="episode">قسمه</string>
+    <string name="select_all">ټول وټاکئ</string>
+    <string name="unselect_all">ټول غیر انتخاب کړئ</string>
+    <string name="no_downloads">هیڅ ویډیو نه ده ډاونلوډ شوی</string>
+    <string name="take_me_to_the_downloads_page">ما د ډاونلوډ پاڼې ته بوځه</string>
+    <string name="download_options">د کښته کولو اختیارونه</string>
+    <string name="download_options_note">ستاسو ویډیو په بریالیتوب سره ډاونلوډ شوه. د لیدو لپاره ډاونلوډ ته لاړ شئ او نور انتخابونه.</string>
+    <string name="add_to_watchlist_msg">په بریالیتوب سره د څارنې لیست کې اضافه شو</string>
+    <string name="removed_from_watchlist_msg"> په بریالیتوب سره د څار له لیست څخه ایستل شوی</string>
+    <string name="confirm_deletion"> ړنګول تایید کړئ</string>
+    <string name="delete_video_note">دا ویډیوګانې به آفلاین موجود نه وي.</string>
+    <string name="delete_download_msg">ویډیو په بریالیتوب سره ړنګه شوه.</string>
+    <string name="file_has_been_downloaded">فایل په بریالیتوب سره ډاونلوډ شوی دی</string>
+    <string name="download_has_been_started">ډونلوډ پیل شو...</string>
+    <string name="Downloaded">په بریالیتوب سره ډاونلوډ شو</string>
+    <string name="invalid_url">ناقص URL!!!</string>
+    <string name="something_went_wrong">یو څه غلط شول...</string>
+    <string name="file_already_downloaded">دوتنه لا دمخه ډاونلوډ شوې.</string>
+    <!-- Downloads END -->
+
+    <!-- MyStuff START -->
+    <string name="create_profile">پروفایل جوړ کړئ</string>
+    <string name="manage_profiles">د پروفایلونو اداره کول</string>
+    <string name="manage_profile">د پروفایل اداره کول</string>
+    <string name="learn_more_about_profiles">د پروفایلونو په اړه نور معلومات زده کړئ</string>
+    <string name="browse_now_watch_later">اوس براوز کړئ، وروسته وګورئ</string>
+    <string name="watchlist_note">ستاسو د څار لیست ستاسو په ټولو وسیلو کې شریک شوی دی.</string>
+    <!-- MyStuff END -->
+
+    <!-- Settings START -->
+    <string name="account_details">حساب توضیحات</string>
+    <string name="manage_your_profile">خپل پروفایل اداره کړئ</string>
+    <string name="on">چالو</string>
+    <string name="off">بند</string>
+    <string name="notifications">اطلاعات</string>
+    <string name="receive_notifications">د پش خبرتیا ترلاسه کول</string>
+    <string name="clear_cache"> زیرمه پاکه کړئ</string>
+    <string name="clear_locally_cached_data">په سیمه ایزه توګه زیرمه شوي ډاټا پاک کړئ</string>
+    <string name="clear_cached_data_toast">د زیرمې ډاټا پاکه شوې ده.</string>
+    <string name="change_password"> پټنوم بدلول</string>
+    <string name="update_your_password">خپل پټنوم تازه کړئ</string>
+    <string name="current_password">اوسنی پټنوم</string>
+    <string name="confirm_password"> پټنوم تایید کړئ</string>
+    <string name="new_password">نوی پټنوم</string>
+    <string name="enter_current_password">اوسنی پټنوم دننه کړئ.</string>
+    <string name="enter_new_password">نوی پټنوم دننه کړئ.</string>
+    <string name="enter_confirm_password">د تایید پټنوم دننه کړئ.</string>
+    <string name="password_not_matched_toast">نوی پټنوم چې تاسو داخل کړی، د تایید شوي پاسورډ سره سمون نه خوري!!!</string>
+    <string name="change_password_request_for_type_2">تاسو د خپل ټولنیز حساب په کارولو سره ننوتلی یاست، د پټنوم بدلول د ټولنیزو حسابونو لپاره د تطبیق وړ ندي.</string>
+    <string name="change_language">ژبه بدله کړئ</string>
+    <string name="clear_video_search_history">د ویډیو د لټون تاریخ پاک کړئ</string>
+    <string name="signed_in_as"> په توګه لاسلیک شوی</string>
+    <string name="not_sign_in_desc">تاسو ننوتل نه یاست</string>
+    <string name="sign_out"> ساین آوټ</string>
+    <string name="sign_in">ننننځنه</string>
+    <string name="terms_and_conditions">شرائط &amp;amp; شرایط</string>
+    <string name="privacy_policy">د محرمیت تګلاره</string>
+    <string name="about_us">زموږ په اړه</string>
+    <string name="rate_us"> موږ ته درجه ورکړئ</string>
+    <string name="share_app">ایپ شریکول</string>
+    <string name="rate_us_note">زموږ اپلیکیشن په اپسټور کې درجه بندي کړئ</string>
+    <string name="share_app_note">د خپلو ملګرو سره اپلیکیشن شریک کړئ</string>
+    <string name="version">نسخه</string>
+    <string name="always_ask">تل پوښتنه وکړئ</string>
+    <string name="start_over"> بیا پیل</string>
+    <string name="change_language_mark">ژبه بدله کړئ؟</string>
+    <string name="change_language_note">هو کلیک کول به اپلیکیشن په ټاکل شوې ژبه کې بیا پیل کړي.\nایا تاسو غواړئ دوام ورکړئ؟</string>
+    <string name="terms_and_privacy_notice">شرایط او محرمیت خبرتیا</string>
+    <string name="_3rd_party_notices">د دریمې ډلې خبرتیاوې</string>
+    <string name="about_and_legal">په اړه &amp;amp; قانوني</string>
+    <string name="confirm_sign_out">سان آوټ تایید کړئ</string>
+    <string name="are_you_sure_want_to_sign_out">ایا تاسو ډاډه یاست چې لاسلیک کول غواړئ؟</string>
+    <!-- Settings END -->
+
+    <!-- Rent Products START -->
+    <string name="rent_products">محصولات کرایه کول</string>
+    <string name="view_more">نور وګورئ</string>
+    <string name="submit"> سپارل</string>
+    <string name="rent_movie_at_just">فلم په کرایه </string>
+    <string name="rent_show_at_just"> یوازې په کرایه شو</string>
+    <string name="watch_with">سره وګوره</string>
+    <string name="purchaged_videos"> پیرودل شوي ویډیوګانې</string>
+    <string name="purchaged_shows"> پیرودل شو</string>
+    <string name="rent_videos">ویډیوګانې په کرایه</string>
+    <string name="rent_shows"> د کرایه شو</string>
+    <!-- Rent Products END -->
+
+    <!-- Profile START -->
+    <string name="save">Save</string>
+    <string name="change">بدلون</string>
+    <string name="kid_s_profile">د ماشوم پروفایل؟</string>
+    <string name="learn_more">نور زده کړه</string>
+    <string name="new_">نوی</string>
+    <string name="edit_profiles"> پروفایلونه سمول</string>
+    <string name="edit_profile">پيژندنه سمول</string>
+    <string name="remove_profile">پروفایل لرې کړئ</string>
+    <string name="the_account_holder_s_profile_can_t_be_removed">د حساب لرونکی پروفایل نشي ایستل کیدی</string>
+    <string name="change_profile_image">د پروفایل انځور بدل کړئ</string>
+    <string name="take_photo">عکس واخلئ.</string>
+    <string name="choose_from_gallery"> له ګالري څخه غوره کړئ.</string>
+    <string name="add_photo">عکس اضافه کړئ!</string>
+    <string name="avatar_suggetion">اوتار وړاندیزونه</string>
+    <string name="choose_an_avatar">یو اوتار غوره کړئ.</string>
+    <string name="choose_new_avatar_note">د خپل نوي اوتار غوره کولو لپاره هر ډول انتخاب وټاکئ.</string>
+    <string name="subscription"> ګډون</string>
+    <string name="subscription_desc"> د خپل ګډون څخه د ډیر څه ترلاسه کولو لپاره لوړ کړئ</string>
+    <string name="choose_plan">پلان غوره کړئ</string>
+    <string name="current">اوسنی</string>
+    <string name="enter_phone_number_profile">د تلیفون شمیره دننه کړئ...</string>
+    <string name="enter_email_profile">برېښنالیک داخل کړئ...</string>
+    <string name="enter_address_profile"> پته دننه کړئ...</string>
+    <string name="enter_your_name_profile">خپل نوم ولیکئ...</string>
+    <string name="update_profile">پروفایل تازه کړئ</string>
+    <string name="enter_password_profile"> پټنوم دننه کړئ...</string>
+    <!-- Profile END -->
+
+    <!--Payment Activity START-->
+    <string name="payment_details">د تادیاتو تفصیلات</string>
+    <string name="please_select_any_payment_method">مهرباني وکړئ، د تادیې کومه طریقه غوره کړئ</string>
+    <string name="payment_methods">د تادیاتو طریقې</string>
+    <string name="choose_a_payment_methods_to_pay">ته د تادیې طریقه غوره کړئ</string>
+    <string name="pay_with"> له دې سره پیسې ورکړئ</string>
+    <string name="Continue">دوام ورکړئ</string>
+    <string name="paypal">PayPal</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">PAY</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">بښنه غواړم، موږ نشو کولی ستاسو تادیه تایید کړو، مهرباني وکړئ بیا هڅه وکړئ!!!</string>
+    <string name="wallet_balance"> د والټ بیلانس</string>
+    <string name="payment_gateways">د تادیاتو دروازې</string>
+    <string name="recharge_your_wallet">خپل بټوه بیا چارج کړئ</string>
+    <string name="add_to_wallet">بټوه کې اضافه کړئ</string>
+    <string name="enter_amount"> دودیز مقدار داخل کړئ...</string>
+    <string name="your_current_balance_is">ستاسو اوسنی بیلانس دی :</string>
+    <string name="use_wallet_balance"> د والټ بیلانس وکاروئ</string>
+    <string name="pay_now">اوس تادیه کړئ</string>
+    <string name="please_enter_valid_amount">مهرباني وکړئ د اعتبار وړ مقدار داخل کړئ.</string>
+    <string name="payable_amount_is">د تادیې وړ مقدار دی :</string>
+    <string name="verification"> تایید</string>
+    <string name="verification_success"> تایید بریالی.</string>
+    <string name="verification_note">*مهرباني وکړئ، د دوام لپاره خپل لاندې تفصيلات تاييد کړئ.</string>
+    <string name="download_not_available">د دې ویډیو لپاره د ډاونلوډ فیچر شتون نلري.</string>
+    <string name="already_purchased">تاسو لا دمخه پلان اخیستی دی.</string>
+    <string name="delete_account">حساب ړنګ کړئ</string>
+    <string name="delete_account_msg">ایا تاسو واقعیا غواړئ حساب حذف کړئ؟</string>
+    <string name="refund_policy">د بیرته ورکولو پالیسي</string>
+    <string name="confirm_delete_account">د حساب حذف کول تایید کړئ</string>
+    <!--Payment Activity END-->
+
+</resources>

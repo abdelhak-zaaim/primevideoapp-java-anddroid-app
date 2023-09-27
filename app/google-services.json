@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1093417218492",
+    "project_id": "cinefilmz",
+    "storage_bucket": "cinefilmz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093417218492:android:d31978e9a7196bb2c1bbb9",
+        "android_client_info": {
+          "package_name": "com.cinefilmz.tv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAkVL67-zbR3H5hSyLSKLuXmMm5m8xOW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

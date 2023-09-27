@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="splashDuration">3000</integer>
+
+    <integer name="shimmerDuration">1200</integer>
+    <integer name="swipeRefreshDelay">2000</integer>
+    <integer name="showInfoMsgFor">3000</integer>
+    <integer name="bannerInterval">8000</integer>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/exoPlayerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/playerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:visibility="visible">
+
+                <com.google.android.exoplayer2.ui.PlayerView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:ad_marker_color="@color/yellowButton"
+                    app:ad_marker_width="3dp"
+                    app:buffered_color="@color/white"
+                    app:controller_layout_id="@layout/custom_exo_layout"
+                    app:hide_during_ads="true"
+                    app:played_ad_marker_color="@color/yellowButton"
+                    app:played_color="@color/colorPrimary"
+                    app:unplayed_color="@color/whiteTransparent" />
+
+                <com.google.android.exoplayer2.ui.PlayerControlView
+                    android:id="@+id/castControlView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                </com.google.android.exoplayer2.ui.PlayerControlView>
+
+                <com.google.android.exoplayer2.ui.SubtitleView
+                    android:id="@+id/subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/ivThumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="20dp"
+                app:srcCompat="@drawable/ic_action_back_arrow"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.mediarouter.app.MediaRouteButton
+                android:id="@+id/mediaRouteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:mediaRouteTypes="user"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="20dp"
+                android:visibility="gone"
+                app:mediaRouteButtonTint="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_outline_play_circle_filled_24px"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

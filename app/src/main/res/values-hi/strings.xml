@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">CineFilmz</string>
+    <string name="prime">DT prime</string>
+
+    <!--Welcome START-->
+    <string name="skip">"छोड़ें"</string>
+    <string name="next">अगला</string>
+    <string name="get_started">आरंभ करें!</string>
+    <string name="welcome_slides">होम स्क्रीन</string>
+    <string name="welcome_1_Title">मूवी, शो, किड्स शो देखें &amp;amp; और भी बहुत कुछ।</string>
+    <string name="welcome_1_Desc">Lorem Ipsum प्रिंटिंग और टाइपसेटिंग उद्योग का केवल डमी टेक्स्ट है। लोरेम इप्सम 1500 के दशक से उद्योग का मानक डमी टेक्स्ट रहा है।</string>
+    <string name="welcome_2_Title">डीटी लाइव पर हजारों वीडियो देखें।</string>
+    <string name="welcome_2_Desc">Lorem Ipsum प्रिंटिंग और टाइपसेटिंग उद्योग का केवल डमी टेक्स्ट है। लोरेम इप्सम 1500 के दशक से उद्योग का मानक डमी टेक्स्ट रहा है।</string>
+    <string name="welcome_3_Title">डीटी लाइव पर विश्व समाचार खोजें।</string>
+    <string name="welcome_3_Desc">Lorem Ipsum प्रिंटिंग और टाइपसेटिंग उद्योग का केवल डमी टेक्स्ट है। लोरेम इप्सम 1500 के दशक से उद्योग का मानक डमी टेक्स्ट रहा है।</string>
+    <string name="welcome_4_Title">अपनी सदस्यता का अधिक लाभ उठाने के लिए अपग्रेड करें।</string>
+    <string name="welcome_4_Desc">Lorem Ipsum प्रिंटिंग और टाइपसेटिंग उद्योग का केवल डमी टेक्स्ट है। लोरेम इप्सम 1500 के दशक से उद्योग का मानक डमी टेक्स्ट रहा है।</string>
+    <string name="Lorem_Ipsum">Lorem Ipsum प्रिंटिंग और टाइपसेटिंग उद्योग का केवल डमी टेक्स्ट है।
+      लोरेम इप्सम 1500 के दशक से उद्योग मानक डमी टेक्स्ट रहा है।लोरेम इप्सम 1500 के दशक से उद्योग मानक डमी टेक्स्ट रहा है।
+      लोरेम इप्सम 1500 के दशक से उद्योग मानक डमी टेक्स्ट रहा है।लोरेम इप्सम 1500 के दशक से उद्योग मानक डमी टेक्स्ट रहा है।
+      लोरेम इप्सम 1500 के दशक से उद्योग मानक डमी टेक्स्ट रहा है।</string>
+    <string name="LoremIpsum_less">Lorem Ipsum प्रिंटिंग और टाइपसेटिंग उद्योग का केवल डमी टेक्स्ट है। लोरेम इप्सम उद्योग मानक पाठ रहा है।</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">क्षमा करें! इंटरनेट से कनेक्ट नहीं है।</string>
+    <string name="back_to_online">ऑनलाइन पर वापस जाएं।</string>
+    <string name="permission_desc">अब हमें एप्लिकेशन का पूरी तरह से उपयोग जारी रखने के लिए आपकी अनुमति की आवश्यकता है</string>
+    <string name="permission_title">सब कुछ ठीक है।</string>
+    <string name="okay">ठीक है!</string>
+    <string name="internet_error">नेटवर्क कनेक्शन त्रुटि!!!</string>
+    <string name="permission_necessary">अनुमति आवश्यक</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">इवेंट पढ़ने और लिखने के लिए संग्रहण अनुमति आवश्यक है</string>
+    <string name="settings">सेटिंग</string>
+    <string name="cancel_">रद्द करें</string>
+    <string name="permission">अनुमति</string>
+    <string name="permission_alert">अनुमति चेतावनी</string>
+    <string name="get_permission_for_brightness_manage_desc">हमें चमक बदलने के लिए अनुमति चाहिए और आप वीडियो चलाते समय चमक को प्रबंधित कर सकते हैं। \n धन्यवाद.</string>
+    <string name="we_need_storage_permission_for_save_video">मीडिया फ़ाइल को बाहरी संग्रहण में सहेजने के लिए हमें संग्रहण अनुमति की आवश्यकता है।</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">प्रोफ़ाइल तस्वीर अपलोड करने के लिए हमें बाहरी मेमोरी और कैमरा अनुमति की आवश्यकता है।</string>
+    <string name="yesterday">कल</string>
+    <string name="day_ago">दिन पहले</string>
+    <!--Network and Permission END-->
+
+    <!--General Strings START-->
+    <string name="please_wait">कृपया प्रतीक्षा करें...</string>
+    <string name="delete">डिलीट करें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="downloading">डाउनलोड हो रहा है...</string>
+    <string name="loading">लोड हो रहा है...</string>
+    <string name="do_you_want_to_exit">क्या आप बाहर निकलना चाहते हैं?</string>
+    <string name="yes">हां</string>
+    <string name="no">नहीं</string>
+    <string name="track_selection_title">ट्रैक बदलें</string>
+    <!--General Strings END-->
+
+    <!-- Login and OTP START -->
+    <string name="login">लॉगिन करें</string>
+    <string name="or">या</string>
+    <string name="welcome_back">वापस स्वागत है,</string>
+    <string name="login_with_mobile_note">लॉगिन करने के लिए अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="enter_your_mobile_number">अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="login_with_google">Google से लॉगिन करें</string>
+    <string name="login_with_facebook">फेसबुक से लॉगिन करें</string>
+
+    <string name="otp_verification">OTP सत्यापन</string>
+    <string name="enter_your_mobile_no">अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="enter_coutry_code">अपना देश कोड दर्ज करें।</string>
+    <string name="verify_phone_number">फ़ोन नंबर सत्यापित करें</string>
+    <string name="code_expire_soon">कोड जल्द ही समाप्त हो जाएगा</string>
+    <string name="resend">फिर से भेजें</string>
+    <string name="confirm">पुष्टि करें</string>
+    <string name="enter_otp">प्राप्त OTP दर्ज करें।</string>
+    <string name="select_your_coutry_code">अपना देश कोड चुनें।</string>
+    <string name="you_will_receive_a_6_digit_code_to_verify_next">अगले सत्यापन के लिए आपको एक 6 अंकों का कोड प्राप्त होगा।</string>
+    <string name="send_otp">ओटीपी भेजें</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">मोबाइल नंबर पर भेजने के लिए OTP कोड दर्ज करें।</string>
+    <string name="we_have_sent_code_to_your_number">हमने आपके नंबर पर कोड भेज दिया है</string>
+    <string name="verify_and_proceed">सत्यापित करें और amp; आगे बढ़ें</string>
+    <string name="send_">भेजें</string>
+    <string name="resend_otp">ओटीपी फिर से भेजें</string>
+    <string name="already_have_an_account">पहले से ही एक खाता है?</string>
+    <string name="do_not_have_an_account">क्या आपका कोई खाता नहीं है?</string>
+    <string name="or_Login_using_Social_Media">या सोशल मीडिया का उपयोग करके लॉग इन करें</string>
+    <!-- Login and OTP END -->
+
+    <!-- Home Fragment START -->
+    <string name="title_home">होम</string>
+    <string name="title_tvshows">टीवी शो</string>
+    <string name="title_movies">फ़िल्में</string>
+    <string name="title_kids">बच्चे</string>
+    <string name="title_channels">चैनल</string>
+    <string name="title_find">ढूंढें</string>
+    <string name="title_downloads">डाउनलोड</string>
+    <string name="title_store">स्टोर</string>
+    <string name="title_mystuff">मेरी सामग्री</string>
+    <string name="title_settings">सेटिंग</string>
+    <string name="continue_watching">देखना जारी रखें</string>
+    <string name="top_movies">शीर्ष फिल्में</string>
+    <string name="new_movie_tag">नई मूवी</string>
+    <string name="new_series_tag">नई श्रृंखला</string>
+    <string name="new_tvshow_tag">नया टीवीशो</string>
+    <string name="tvshow">टीवी शो</string>
+    <string name="shows">दिखाता है</string>
+    <string name="_shows">दिखाता है</string>
+    <string name="movies">फिल्में</string>
+    <string name="movies_">फ़िल्में</string>
+    <string name="tv">TV</string>
+    <!-- Home Fragment END -->
+
+    <!-- Details START -->
+    <string name="watch_now">अभी देखें</string>
+    <string name="watch_episode">एपिसोड देखें</string>
+    <string name="no_episode">क्षमा करें! एपिसोड चलाने के लिए उपलब्ध नहीं है।</string>
+    <string name="no_video">क्षमा करें! वीडियो चलाने के लिए उपलब्ध नहीं है।</string>
+    <string name="no_trailer">क्षमा करें! ट्रेलर चलाने के लिए उपलब्ध नहीं है।</string>
+    <string name="no_data">क्षमा करें! डेटा नहीं मिला।</string>
+    <string name="related">संबंधित</string>
+    <string name="episodes">एपिसोड</string>
+    <string name="more_details">अधिक विवरण</string>
+    <string name="customers_also_watched">ग्राहकों ने भी देखा</string>
+    <string name="cast_and_crew">कास्ट करें और amp; क्रू</string>
+    <string name="details_from"> से विवरण</string>
+    <string name="genres">शैलियां</string>
+    <string name="directors">निर्देशक</string>
+    <string name="starring">तारांकित</string>
+    <string name="studios">स्टूडियो</string>
+    <string name="maturity_rating">परिपक्वता रेटिंग</string>
+    <string name="content_advisory">सामग्री सलाह</string>
+    <string name="customer_reviews">ग्राहक समीक्षाएं</string>
+    <string name="did_you_know">क्या आप जानते हैं?</string>
+    <string name="known_for">के लिए जाना जाता है:</string>
+    <string name="included_with">सदस्यता के साथ शामिल</string>
+    <string name="available_to_rent">किराए पर उपलब्ध है</string>
+    <string name="release_date">Release Date</string>
+    <string name="rent">किराया</string>
+    <string name="language_change_note">वीडियो चलने के दौरान भाषा बदली जा सकती है।</string>
+    <string name="available_languages">उपलब्ध भाषाएं</string>
+    <string name="audio">ऑडियो</string>
+    <string name="subtitles">उपशीर्षक</string>
+    <string name="trailer">ट्रेलर</string>
+    <string name="share">साझा करें</string>
+    <string name="watch_party">पार्टी देखें</string>
+    <string name="watchlist">वॉचलिस्ट</string>
+    <string name="download">डाउनलोड करें</string>
+    <string name="season">सीज़न</string>
+    <string name="create_watch_party">वॉच पार्टी बनाएं</string>
+    <string name="watch_party_note">फ़िल्में और टीवी देखते समय दूसरों के साथ चैट करें।</string>
+    <string name="create">बनाएं</string>
+    <string name="chat_as">इस रूप में चैट करें:</string>
+    <string name="watch_party_tips">पार्टी टिप्स देखें</string>
+    <string name="enter_name">name दर्ज करें</string>
+    <string name="more">अधिक +</string>
+    <string name="less">कम -</string>
+    <string name="resume">फिर से शुरू करें</string>
+    <string name="trivia"> सामान्य ज्ञान</string>
+    <string name="filter">फ़िल्टर करें</string>
+    <string name="videos">वीडियो</string>
+    <string name="watch_trailer">ट्रेलर देखें</string>
+    <string name="add_to_watchlist">देखे जाने की सूची में जोड़ें</string>
+    <string name="remove_from_watchlist">वॉचलिस्ट से हटाएं</string>
+    <string name="complete"> पूर्ण</string>
+    <string name="delete_download">डाउनलोड हटाएं</string>
+    <string name="more_">अधिक</string>
+    <string name="view_details">विवरण देखें</string>
+    <string name="hide_this_video">इस वीडियो को छुपाएं</string>
+    <string name="unhide_this_video">इस वीडियो को सामने लाएं?</string>
+    <string name="unhide_video_note">जब आप कुछ देखने के लिए ब्राउज़ कर रहे हों तो इस वीडियो को दिखाने से यह दिखाई देता है। छिपे हुए वीडियो को फाइंड से चलाया और देखा जा सकता है।</string>
+    <string name="instagram_stories">इंस्टाग्राम कहानियां</string>
+    <string name="copy_link">लिंक कॉपी करें</string>
+    <string name="sms">एसएमएस</string>
+    <string name="sort_by">क्रमबद्ध करें</string>
+    <string name="most_recent_addition">सबसे हाल का जोड़ा</string>
+    <string name="title_a_z">शीर्षक A - Z</string>
+    <string name="title_z_a">शीर्षक Z - A</string>
+    <string name="content_type">सामग्री प्रकार</string>
+    <string name="quality">गुणवत्ता:</string>
+    <string name="audio_languages">ऑडियो भाषाएं:</string>
+    <string name="play_download">डाउनलोड चलाएं</string>
+    <string name="aired">प्रसारित:</string>
+    <string name="purchases">खरीदारी</string>
+    <string name="rent_and_buy_your_favorites"><![CDATA[किराए पर लें और अपने पसंदीदा खरीदें]]></string>
+    <string name="no_purchases_note">अपने किसी भी डिवाइस पर ख़रीदारी और रेंटल देखें।</string>
+    <string name="left">बाएं</string>
+    <string name="share_with">साझा करें...</string>
+    <string name="link_copied">लिंक कॉपी किया गया</string>
+    <string name="languages">भाषाएं:</string>
+    <string name="live">लाइव</string>
+    <string name="finish">समाप्त करें</string>
+    <string name="replay_all">सभी को फिर से चलाएं!</string>
+    <!-- Details END -->
+
+    <!-- Find START -->
+    <string name="find">ढूंढें</string>
+    <string name="search_by_actor_title">अभिनेता द्वारा खोजें, शीर्षक...</string>
+    <string name="browse_by">इसके द्वारा ब्राउज़ करें</string>
+    <string name="language">भाषा</string>
+    <string name="see_more">और देखें</string>
+    <string name="subscribe_to_channels">चैनलों की सदस्यता लें</string>
+    <string name="results_for">के लिए परिणाम</string>
+    <!-- Find END -->
+
+    <!-- Downloads START -->
+    <string name="downloads">डाउनलोड</string>
+    <string name="_downloads">डाउनलोड</string>
+    <string name="downloads_settings">डाउनलोड सेटिंग</string>
+    <string name="video">वीडियो</string>
+    <string name="videos_">वीडियो</string>
+    <string name="video_">वीडियो</string>
+    <string name="min">मिनट</string>
+    <string name="edit">संपादित करें</string>
+    <string name="seasons">मौसम</string>
+    <string name="_episode">एपिसोड</string>
+    <string name="episode">एपिसोड</string>
+    <string name="select_all">सभी का चयन करें</string>
+    <string name="unselect_all">सभी को अचयनित करें</string>
+    <string name="no_downloads">कोई वीडियो डाउनलोड नहीं हुआ</string>
+    <string name="take_me_to_the_downloads_page">मुझे डाउनलोड पेज पर ले जाएं</string>
+    <string name="download_options">डाउनलोड विकल्प</string>
+    <string name="download_options_note">आपका वीडियो सफलतापूर्वक डाउनलोड किया गया था। देखने और अन्य विकल्पों के लिए डाउनलोड पर जाएं।</string>
+    <string name="add_to_watchlist_msg">देखे जाने की सूची में सफलतापूर्वक जोड़ा गया</string>
+    <string name="removed_from_watchlist_msg">वॉचलिस्ट से सफलतापूर्वक हटाया गया</string>
+    <string name="confirm_deletion">हटाने की पुष्टि करें</string>
+    <string name="delete_video_note">ये वीडियो ऑफ़लाइन उपलब्ध नहीं होंगे।</string>
+    <string name="delete_download_msg">वीडियो सफलतापूर्वक हटाया गया।</string>
+    <string name="file_has_been_downloaded">फ़ाइल सफलतापूर्वक डाउनलोड हो गई है</string>
+    <string name="download_has_been_started">डाउनलोड शुरू हो गया है...</string>
+    <string name="Downloaded">सफलतापूर्वक डाउनलोड किया गया</string>
+    <string name="invalid_url">अमान्य URL!!!</string>
+    <string name="something_went_wrong">कुछ गलत हो गया...</string>
+    <string name="file_already_downloaded">फ़ाइल पहले ही डाउनलोड हो चुकी है।</string>
+    <!-- Downloads END -->
+
+    <!-- MyStuff START -->
+    <string name="create_profile">प्रोफ़ाइल बनाएं</string>
+    <string name="manage_profiles">प्रोफाइल प्रबंधित करें</string>
+    <string name="manage_profile">प्रोफ़ाइल प्रबंधित करें</string>
+    <string name="learn_more_about_profiles">प्रोफाइल के बारे में अधिक जानें</string>
+    <string name="browse_now_watch_later">अभी ब्राउज़ करें, बाद में देखें</string>
+    <string name="watchlist_note">आपकी वॉचलिस्ट आपके सभी उपकरणों पर साझा की जाती है।</string>
+    <!-- MyStuff END -->
+
+    <!-- Settings START -->
+    <string name="account_details">खाता विवरण</string>
+    <string name="manage_your_profile">अपनी प्रोफ़ाइल प्रबंधित करें</string>
+    <string name="on">चालू</string>
+    <string name="off">ऑफ़</string>
+    <string name="notifications"> सूचनाएं</string>
+    <string name="receive_notifications">पुश नोटिफिकेशन प्राप्त करें</string>
+    <string name="clear_cache">कैश साफ़ करें</string>
+    <string name="clear_locally_cached_data">स्थानीय रूप से संचित डेटा साफ़ करें</string>
+    <string name="clear_cached_data_toast">कैश डेटा साफ़ कर दिया गया है।</string>
+    <string name="change_password">पासवर्ड बदलें</string>
+    <string name="update_your_password">अपना पासवर्ड अपडेट करें</string>
+    <string name="current_password">वर्तमान पासवर्ड</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि करें</string>
+    <string name="new_password">नया पासवर्ड</string>
+    <string name="enter_current_password">वर्तमान पासवर्ड दर्ज करें।</string>
+    <string name="enter_new_password">नया पासवर्ड दर्ज करें।</string>
+    <string name="enter_confirm_password">पुष्टि पासवर्ड दर्ज करें।</string>
+    <string name="password_not_matched_toast">नया पासवर्ड जो आपने डाला है, कन्फर्म पासवर्ड से मेल नहीं खाता!!!</string>
+    <string name="change_password_request_for_type_2">आप अपने सामाजिक खाते का उपयोग करके लॉग इन हैं, सामाजिक खातों के लिए पासवर्ड बदलें सुविधा लागू नहीं है।</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="clear_video_search_history">वीडियो खोज इतिहास साफ़ करें</string>
+    <string name="signed_in_as">इस रूप में साइन इन किया है</string>
+    <string name="not_sign_in_desc">आप साइन इन नहीं कर रहे हैं</string>
+    <string name="sign_out">साइन आउट करें</string>
+    <string name="sign_in">साइन इन करें</string>
+    <string name="terms_and_conditions">शर्तें &amp;amp; शर्तें</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <string name="about_us">हमारे बारे में</string>
+    <string name="rate_us">हमें रेट करें</string>
+    <string name="share_app">एप्लिकेशन साझा करें</string>
+    <string name="rate_us_note">ऐपस्टोर पर हमारे ऐप को रेट करें</string>
+    <string name="share_app_note">ऐप्स को अपने दोस्तों के साथ शेयर करें</string>
+    <string name="version">संस्करण</string>
+    <string name="always_ask">हमेशा पूछें</string>
+    <string name="start_over">फिर से शुरू करें</string>
+    <string name="change_language_mark">भाषा बदलें?</string>
+    <string name="change_language_note">हां क्लिक करने से ऐप चयनित भाषा में फिर से शुरू हो जाएगा।\nक्या आप जारी रखना चाहते हैं?</string>
+    <string name="terms_and_privacy_notice">नियम और गोपनीयता सूचना</string>
+    <string name="_3rd_party_notices">तृतीय पक्ष नोटिस</string>
+    <string name="about_and_legal">के बारे में &amp;amp; कानूनी</string>
+    <string name="confirm_sign_out">साइन आउट की पुष्टि करें</string>
+    <string name="are_you_sure_want_to_sign_out">क्या आप वाकई साइन आउट करना चाहते हैं?</string>
+    <!-- Settings END -->
+
+    <!-- Rent Products START -->
+    <string name="rent_products">उत्पाद किराए पर लें</string>
+    <string name="view_more">और देखें</string>
+    <string name="submit">सबमिट करें</string>
+    <string name="rent_movie_at_just">मूवी किराए पर लें</string>
+    <string name="rent_show_at_just">किराया शो बस में</string>
+    <string name="watch_with">इसके साथ देखें</string>
+    <string name="purchaged_videos">खरीदे गए वीडियो</string>
+    <string name="purchaged_shows">खरीदे गए शो</string>
+    <string name="rent_videos">वीडियो किराए पर लें</string>
+    <string name="rent_shows">किराया शो</string>
+    <!-- Rent Movie END -->
+
+    <!-- Profile START -->
+    <string name="save">सहेजें</string>
+    <string name="change">बदलें</string>
+    <string name="kid_s_profile">बच्चे की प्रोफ़ाइल?</string>
+    <string name="learn_more">और जानें</string>
+    <string name="new_">नया</string>
+    <string name="edit_profiles">प्रोफाइल संपादित करें</string>
+    <string name="edit_profile">प्रोफ़ाइल संपादित करें</string>
+    <string name="remove_profile">प्रोफ़ाइल हटाएं</string>
+    <string name="the_account_holder_s_profile_can_t_be_removed">खाता धारक की प्रोफ़ाइल को हटाया नहीं जा सकता</string>
+    <string name="change_profile_image">प्रोफ़ाइल छवि बदलें</string>
+    <string name="take_photo">फ़ोटो लें।</string>
+    <string name="choose_from_gallery">गैलरी से चुनें।</string>
+    <string name="add_photo">फ़ोटो जोड़ें!</string>
+    <string name="avatar_suggetion">अवतार सुझाव</string>
+    <string name="choose_an_avatar">एक अवतार चुनें।</string>
+    <string name="choose_new_avatar_note">अपना नया अवतार चुनने के लिए कोई भी विकल्प चुनें।</string>
+    <string name="subscription">सदस्यता</string>
+    <string name="subscription_desc">अपनी सदस्यता का अधिक लाभ उठाने के लिए अपग्रेड करें</string>
+    <string name="choose_plan">योजना चुनें</string>
+    <string name="current">वर्तमान</string>
+    <string name="enter_phone_number_profile">फ़ोन नंबर दर्ज करें...</string>
+    <string name="enter_email_profile">ईमेल दर्ज करें...</string>
+    <string name="enter_address_profile">पता दर्ज करें...</string>
+    <string name="enter_your_name_profile">अपना name दर्ज करें...</string>
+    <string name="update_profile">प्रोफ़ाइल अपडेट करें</string>
+    <string name="enter_password_profile">पासवर्ड दर्ज करें...</string>
+    <!-- Profile END -->
+
+    <!--Payment Activity START-->
+    <string name="payment_details">भुगतान विवरण</string>
+    <string name="please_select_any_payment_method">कृपया, कोई भी भुगतान विधि चुनें</string>
+    <string name="payment_methods">भुगतान के तरीके</string>
+    <string name="choose_a_payment_methods_to_pay">के लिए भुगतान विधि चुनें</string>
+    <string name="pay_with">इससे भुगतान करें</string>
+    <string name="Continue">जारी रखें</string>
+    <string name="paypal">पेपाल</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">Pay</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">क्षमा करें, हम आपका भुगतान सत्यापित नहीं कर सके, कृपया पुन: प्रयास करें!!!</string>
+    <string name="wallet_balance">वॉलेट बैलेंस</string>
+    <string name="payment_gateways">पेमेंट गेटवे</string>
+    <string name="recharge_your_wallet">अपना वॉलेट रिचार्ज करें</string>
+    <string name="add_to_wallet">वॉलेट में जोड़ें</string>
+    <string name="enter_amount">कस्टम राशि दर्ज करें...</string>
+    <string name="your_current_balance_is">आपका वर्तमान बैलेंस है:</string>
+    <string name="use_wallet_balance">वॉलेट बैलेंस का उपयोग करें</string>
+    <string name="pay_now">अभी भुगतान करें</string>
+    <string name="please_enter_valid_amount">कृपया मान्य राशि दर्ज करें।</string>
+    <string name="payable_amount_is">देय राशि है:</string>
+    <string name="verification">सत्यापन</string>
+    <string name="verification_success">सत्यापन सफल।</string>
+    <string name="verification_note">*कृपया, जारी रखने के लिए अपने निम्नलिखित विवरण सत्यापित करें।</string>
+    <string name="download_not_available">इस वीडियो के लिए डाउनलोड सुविधा उपलब्ध नहीं है।</string>
+    <string name="already_purchased">आपने पहले ही योजना खरीद ली है।</string>
+    <string name="delete_account">खाता हटा दो</string>
+    <string name="delete_account_msg">क्या आप वाकई खाता हटाना चाहते हैं?</string>
+    <string name="refund_policy">भुगतान वापसी की नीति</string>
+    <string name="confirm_delete_account">डिलीट अकाउंट की पुष्टि करें</string>
+    <!--Payment Activity END-->
+
+</resources>

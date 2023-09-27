@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="@dimen/detailTabs"
+    android:orientation="horizontal">
+
+    <!-- Tab 1 -->
+    <LinearLayout
+        android:id="@+id/lyTab1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minHeight="@dimen/detailTabs"
+        android:orientation="horizontal"
+        android:theme="@style/AppTheme.detailPageRipple_selected">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/detailTabs"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/public_bold"
+                android:gravity="center"
+                android:minHeight="@dimen/detailTabs"
+                android:textColor="@drawable/text_selector_white"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:id="@+id/viewLine1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/tab_indicator_line" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Tab 2 -->
+    <LinearLayout
+        android:id="@+id/lyTab2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minHeight="@dimen/detailTabs"
+        android:orientation="horizontal"
+        android:theme="@style/AppTheme.detailPageRipple_selected">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/detailTabs"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/public_bold"
+                android:gravity="center"
+                android:minHeight="@dimen/detailTabs"
+                android:textColor="@drawable/text_selector_white"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:id="@+id/viewLine2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/tab_indicator_line"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

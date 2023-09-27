@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin22"
+            android:orientation="vertical">
+
+            <!--Title & Description-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <!--Language-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/available_languages"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_17"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtLanguages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:singleLine="false"
+                    android:text="@string/language_change_note"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_13"
+                    android:visibility="visible" />
+
+                <!--Audio-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/public_bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/audio"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_17"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtSupportedAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:singleLine="false"
+                    android:text="-"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_13"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/otherColor" />
+
+                <!--Subtitles-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/public_bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/subtitles"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_17"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtSubtitles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:singleLine="false"
+                    android:text="-"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_13"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

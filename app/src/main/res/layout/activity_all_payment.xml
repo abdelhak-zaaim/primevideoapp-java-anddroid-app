@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBG"
+    android:orientation="vertical"
+    tools:context="com.cinefilmz.tv.Activity.AllPaymentActivity">
+
+    <!--Toolbar-->
+    <include layout="@layout/toolbar_with_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lyTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/public_semibold"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="@string/payable_amount_is"
+                android:textColor="@color/text_blackLight"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/txtPayableAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/public_round_bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_20" />
+
+        </LinearLayout>
+
+        <!--Main Content-->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lyBottom"
+            android:layout_below="@+id/lyTop"
+            android:fillViewport="true">
+
+            <!--Details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Heading-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/public_medium"
+                        android:gravity="center"
+                        android:text="@string/payment_methods"
+                        android:textColor="@color/text_whiteLight"
+                        android:textSize="@dimen/pay_topic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_regular"
+                        android:gravity="center"
+                        android:text="@string/choose_a_payment_methods_to_pay"
+                        android:textColor="@color/text_lightGray"
+                        android:textSize="@dimen/default_texts" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/public_bold"
+                        android:gravity="center"
+                        android:text="@string/pay_with"
+                        android:textColor="@color/complimentryColor"
+                        android:textSize="@dimen/pay_sub_topic" />
+
+                </LinearLayout>
+
+                <!--Payment GateWays-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <!--In-App purchase-->
+                    <LinearLayout
+                        android:id="@+id/lyInApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/pay_card_margin_start_end"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="visible"
+                            app:cardBackgroundColor="@color/lightBlack"
+                            app:cardCornerRadius="@dimen/pay_card_radius"
+                            app:cardElevation="@dimen/pay_card_elevation"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="85dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="12dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.55"
+                                        android:gravity="center_vertical">
+
+                                        <ImageView
+                                            android:layout_width="100dp"
+                                            android:layout_height="35dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/inapp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.35"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/public_medium"
+                                            android:gravity="center"
+                                            android:text="In-App purchase"
+                                            android:textColor="@color/text_primary"
+                                            android:textSize="@dimen/pay_sub_topic" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="18dp"
+                                            android:layout_height="22dp"
+                                            android:background="@drawable/ic_right"
+                                            android:backgroundTint="@color/white" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!--PayPal-->
+                    <LinearLayout
+                        android:id="@+id/lyPaypal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/pay_card_margin_start_end"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="visible"
+                            app:cardBackgroundColor="@color/lightBlack"
+                            app:cardCornerRadius="@dimen/pay_card_radius"
+                            app:cardElevation="@dimen/pay_card_elevation"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="85dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="12dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.55"
+                                        android:gravity="center_vertical">
+
+                                        <ImageView
+                                            android:layout_width="130dp"
+                                            android:layout_height="30dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/paypal" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.35"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/public_medium"
+                                            android:gravity="center"
+                                            android:text="@string/paypal"
+                                            android:textColor="@color/text_primary"
+                                            android:textSize="@dimen/pay_sub_topic" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="18dp"
+                                            android:layout_height="22dp"
+                                            android:background="@drawable/ic_right"
+                                            android:backgroundTint="@color/white" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!--RazorPay-->
+                    <LinearLayout
+                        android:id="@+id/lyRazorpay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/pay_card_margin_start_end"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="visible"
+                            app:cardBackgroundColor="@color/lightBlack"
+                            app:cardCornerRadius="@dimen/pay_card_radius"
+                            app:cardElevation="@dimen/pay_card_elevation"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="85dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="12dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.55"
+                                        android:gravity="center_vertical">
+
+                                        <ImageView
+                                            android:layout_width="130dp"
+                                            android:layout_height="30dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/razorpay" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.35"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/public_medium"
+                                            android:gravity="center"
+                                            android:text="@string/razorpay"
+                                            android:textColor="@color/text_primary"
+                                            android:textSize="@dimen/pay_sub_topic" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="18dp"
+                                            android:layout_height="22dp"
+                                            android:background="@drawable/ic_right"
+                                            android:backgroundTint="?attr/toolbarbackTint" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!--PayTm-->
+                    <LinearLayout
+                        android:id="@+id/lyPaytm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/pay_card_margin_start_end"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="visible"
+                            app:cardBackgroundColor="@color/lightBlack"
+                            app:cardCornerRadius="@dimen/pay_card_radius"
+                            app:cardElevation="@dimen/pay_card_elevation"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="85dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="12dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.55"
+                                        android:gravity="center_vertical">
+
+                                        <ImageView
+                                            android:layout_width="80dp"
+                                            android:layout_height="30dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/ic_paytm" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.35"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/public_medium"
+                                            android:gravity="center"
+                                            android:text="@string/paytm"
+                                            android:textColor="@color/text_primary"
+                                            android:textSize="@dimen/pay_sub_topic" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="18dp"
+                                            android:layout_height="22dp"
+                                            android:background="@drawable/ic_right"
+                                            android:backgroundTint="@color/white" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!--Flutter Wave-->
+                    <LinearLayout
+                        android:id="@+id/lyFlutterwave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/pay_card_margin_start_end"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="visible"
+                            app:cardBackgroundColor="@color/lightBlack"
+                            app:cardCornerRadius="@dimen/pay_card_radius"
+                            app:cardElevation="@dimen/pay_card_elevation"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="85dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="12dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.55"
+                                        android:gravity="center_vertical">
+
+                                        <ImageView
+                                            android:layout_width="140dp"
+                                            android:layout_height="30dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/ic_flutter_wave" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.35"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/public_medium"
+                                            android:gravity="center"
+                                            android:text="@string/flutterwave"
+                                            android:textColor="@color/text_primary"
+                                            android:textSize="@dimen/pay_sub_topic" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="18dp"
+                                            android:layout_height="22dp"
+                                            android:background="@drawable/ic_right"
+                                            android:backgroundTint="@color/white" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!--Pay U Money-->
+                    <LinearLayout
+                        android:id="@+id/lyPayumoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/pay_card_margin_start_end"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="visible"
+                            app:cardBackgroundColor="@color/lightBlack"
+                            app:cardCornerRadius="@dimen/pay_card_radius"
+                            app:cardElevation="@dimen/pay_card_elevation"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="85dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="12dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.55"
+                                        android:gravity="center_vertical">
+
+                                        <ImageView
+                                            android:layout_width="150dp"
+                                            android:layout_height="30dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/ic_pay_u_money" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.35"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/public_medium"
+                                            android:gravity="center"
+                                            android:text="@string/payumoney"
+                                            android:textColor="@color/text_primary"
+                                            android:textSize="@dimen/pay_sub_topic" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center|end">
+
+                                        <TextView
+                                            android:layout_width="18dp"
+                                            android:layout_height="22dp"
+                                            android:background="@drawable/ic_right"
+                                            android:backgroundTint="@color/white" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/lyBottom"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lyPayNow"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:background="@drawable/round_bg_r12"
+                android:backgroundTint="@color/complimentryColor"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.MyRipple"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/public_bold"
+                    android:gravity="center"
+                    android:text="@string/pay_now"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

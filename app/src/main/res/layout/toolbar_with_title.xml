@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyToolbarTitle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBarHeight"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/txtToolbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/public_bold"
+        android:gravity="center"
+        android:textColor="@color/text_title"
+        android:textSize="@dimen/text_17" />
+
+</LinearLayout>

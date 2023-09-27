@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBG"
+        android:orientation="vertical">
+
+        <!--Shimmer-->
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:shimmer_duration="@integer/shimmerDuration">
+
+            <!-- Adding 3 rows of placeholders -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<include layout="@layout/shim_home" />-->
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/colorPrimary">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/coordinatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Details-->
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appBarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fitsSystemWindows="true"
+                    android:visibility="visible"
+                    app:elevation="0dp">
+
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:id="@+id/collapsing_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fitsSystemWindows="true"
+                        android:maxHeight="@dimen/castCrewPoster"
+                        android:minHeight="200dp"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                        app:titleEnabled="false">
+
+                        <!-- Person Image, Name and Desc -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxHeight="@dimen/castCrewPoster"
+                            app:layout_collapseMode="parallax">
+
+                            <!-- Perason Image -->
+                            <ImageView
+                                android:id="@+id/ivCastCrew"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/castCrewPoster"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/castCrewPoster"
+                                android:background="@drawable/bottom_grad_windowbg" />
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-175dp"
+                    android:fillViewport="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Perason Details -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin23"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <!-- Person Name -->
+                            <TextView
+                                android:id="@+id/txtPersonName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/public_bold"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/text_29" />
+
+                            <!-- Person Description -->
+                            <TextView
+                                android:id="@+id/txtPersonDesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin5"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:lineSpacingExtra="2dp"
+                                android:maxLines="4"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/default_texts" />
+
+                            <!-- More/Less -->
+                            <TextView
+                                android:id="@+id/txtMoreLess"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/public_semibold"
+                                android:gravity="center_vertical"
+                                android:text="@string/more"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/default_texts" />
+
+                        </LinearLayout>
+
+                        <!-- Interesting Title & Desc -->
+                        <LinearLayout
+                            android:id="@+id/lyInterestingDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin23"
+                            android:layout_marginEnd="@dimen/margin23"
+                            android:layout_marginBottom="@dimen/margin12"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/public_bold"
+                                android:gravity="center_vertical"
+                                android:text="@string/trivia"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/text_18" />
+
+                            <!-- Interesting Desc -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin10"
+                                android:background="@color/lightBlack"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/margin23">
+
+                                <TextView
+                                    android:id="@+id/txtInterestingDesc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/public_medium"
+                                    android:gravity="center_vertical"
+                                    android:lineSpacingExtra="2dp"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_16" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Source of Details -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin23"
+                            android:layout_marginTop="@dimen/margin25"
+                            android:layout_marginEnd="@dimen/margin23"
+                            android:layout_marginBottom="@dimen/margin12"
+                            android:background="@drawable/round_bor_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/margin5"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="@dimen/margin5"
+                            android:paddingBottom="2dp">
+
+                            <TextView
+                                android:id="@+id/txtSourceOfDetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/public_round_bold"
+                                android:gravity="center"
+                                android:text="IMDb"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_15" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,390 @@
+<resources>
+    <string name="app_name">CineFilmz</string>
+    <string name="prime">DT prime</string>
+
+    <!--Razorpay Payment-->
+    <string name="razorpayAPIKey" translatable="false">rzp_test_E7TfP2p9bA9q75</string>
+
+    <!--Facebook  F6 74 30 28 5C 02 0C 72 FB EA A8 18 70 B4 2C 79 BC C1 59 B0 8B E2 DD D8 37 89 D0 EA E6 82 15 FD-->
+    <string name="facebook_app_id" translatable="false">98369</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb98369</string>
+    <string name="facebook_client_token" translatable="false">21c5df3</string>
+
+    <!--Gmail-->
+    <string name="web_client_id" translatable="false">1093417218492-rlk4t23uo8533gpilp5gri7tqu3b8rc9.apps.googleusercontent.com</string>
+    <string name="Secrate" translatable="false">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</string>
+
+    <!-- youtube START -->
+    <string name="youtube_api_key" translatable="false">AIzaSyBt2kWDmwyn</string>
+    <string name="error_player" translatable="false">There was an error initializing the YouTubePlayer.</string>
+    <string name="loading_video" translatable="false">Loading video...</string>
+    <string name="invalid_youtube_url" translatable="false">Youtube video link is not valid.</string>
+    <!-- youtube END -->
+
+    <string name="msg_for_checkbox" translatable="false">Before continue to this app, please accept these policies.</string>
+
+    <!--Welcome START-->
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started!</string>
+    <string name="welcome_slides">Home Screen</string>
+    <string name="welcome_1_Title">Watch Movies, Shows, Kids show &amp; much more.</string>
+    <string name="welcome_1_Desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.</string>
+    <string name="welcome_2_Title">Explore Thousands of Videos on CineFilmz.</string>
+    <string name="welcome_2_Desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.</string>
+    <string name="welcome_3_Title">Find World news on CineFilmz.</string>
+    <string name="welcome_3_Desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.</string>
+    <string name="welcome_4_Title">Upgrade to get more out of your subscription.</string>
+    <string name="welcome_4_Desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.</string>
+    <string name="Lorem_Ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry standard dummy text ever since the 1500s.
+        Lorem Ipsum has been the industry standard dummy text ever since the 1500s.
+        Lorem Ipsum has been the industry standard dummy text ever since the 1500s.
+        Lorem Ipsum has been the industry standard dummy text ever since the 1500s.
+        Lorem Ipsum has been the industry standard dummy text ever since the 1500s.</string>
+    <string name="LoremIpsum_less">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard text.</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">Sorry! Not connected to internet.</string>
+    <string name="back_to_online">Back to online.</string>
+    <string name="permission_desc">Now we need your permission to continue use the application perfectly</string>
+    <string name="permission_title">Everything is okay.</string>
+    <string name="isRTL" translatable="false">true</string>
+    <string name="okay">Okay!</string>
+    <string name="internet_error">Network connection error!!!</string>
+    <string name="permission_necessary">Permission Necessary</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">Storage permission is necessary to read and write event</string>
+    <string name="settings">Settings</string>
+    <string name="cancel_">Cancel</string>
+    <string name="permission">Permission</string>
+    <string name="permission_alert">Permission Alert</string>
+    <string name="get_permission_for_brightness_manage_desc">We need permission to change brightness and you can manage brightness while playing video. \n Thanks.</string>
+    <string name="we_need_storage_permission_for_save_video">We need storage permission for save media file into external storage.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">We need external storage and camera permission for upload profile picture.</string>
+    <string name="yesterday">yesterday</string>
+    <string name="day_ago">day ago</string>
+    <!--Network and Permission END-->
+
+    <!--General Strings START-->
+    <string name="please_wait">please wait...</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="downloading">Downloading...</string>
+    <string name="loading">Loading...</string>
+    <string name="do_you_want_to_exit">Do you want to exit ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="track_selection_title">Change Track</string>
+    <!--General Strings END-->
+
+    <!-- Login and OTP START -->
+    <string name="login">Login</string>
+    <string name="or">Or</string>
+    <string name="welcome_back">Welcome back,</string>
+    <string name="login_with_mobile_note">Enter your mobile number to login</string>
+    <string name="enter_your_mobile_number">Enter Your mobile number</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_otp">Enter received OTP.</string>
+    <string name="enter_your_mobile_no">Enter Your Mobile number</string>
+    <string name="enter_coutry_code">Enter your country code.</string>
+    <string name="verify_phone_number">Verify Phone Number</string>
+    <string name="code_expire_soon">Code expire soon</string>
+    <string name="resend">Resend</string>
+    <string name="confirm">Confirm</string>
+    <string name="select_your_coutry_code">Select your country code.</string>
+    <string name="you_will_receive_a_6_digit_code_to_verify_next">You will receive a 6 digit code to \n verify next.</string>
+    <string name="send_otp">SEND OTP</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">Enter OTP code to send to Mobile number.</string>
+    <string name="we_have_sent_code_to_your_number">We have sent code to your number</string>
+    <string name="verify_and_proceed">VERIFY &amp; PROCEED</string>
+    <string name="send_">SEND</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="already_have_an_account">Already have an Account ?</string>
+    <string name="do_not_have_an_account">Don\'t have an Account ?</string>
+    <string name="or_Login_using_Social_Media">Or Login using Social Media</string>
+    <!-- Login and OTP END -->
+
+    <!-- Home Fragment START -->
+    <string name="title_home">Home</string>
+    <string name="title_tvshows">TV Shows</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_kids">Kids</string>
+    <string name="title_channels">Channels</string>
+    <string name="title_find">Find</string>
+    <string name="title_downloads">Downloads</string>
+    <string name="title_store">Store</string>
+    <string name="title_mystuff">My Stuff</string>
+    <string name="title_settings">Settings</string>
+    <string name="continue_watching">Continue watching</string>
+    <string name="top_movies">Top movies</string>
+    <string name="new_movie_tag">NEW MOVIE</string>
+    <string name="new_series_tag">NEW SERIES</string>
+    <string name="new_tvshow_tag">NEW TVSHOW</string>
+    <string name="tvshow">TV shows</string>
+    <string name="shows">Shows</string>
+    <string name="_shows">shows</string>
+    <string name="movies">movies</string>
+    <string name="movies_">Movies</string>
+    <string name="tv">TV</string>
+    <!-- Home Fragment END -->
+
+    <!-- Details START -->
+    <string name="watch_now">Watch Now</string>
+    <string name="watch_episode">Watch Episode</string>
+    <string name="no_episode">Sorry! episode not available to play.</string>
+    <string name="no_video">Sorry! video not available to play.</string>
+    <string name="no_trailer">Sorry! trailer not available to play.</string>
+    <string name="no_data">Sorry! data not found.</string>
+    <string name="related">Related</string>
+    <string name="seasons">Seasons</string>
+    <string name="episodes">Episodes</string>
+    <string name="more_details">More details</string>
+    <string name="customers_also_watched">Customers also watched</string>
+    <string name="cast_and_crew">Cast &amp; Crew</string>
+    <string name="details_from">Details from</string>
+    <string name="genres">Genres</string>
+    <string name="directors">Directors</string>
+    <string name="starring">Starring</string>
+    <string name="studios">Studios</string>
+    <string name="maturity_rating">Maturity rating</string>
+    <string name="content_advisory">Content advisory</string>
+    <string name="customer_reviews">Customer reviews</string>
+    <string name="did_you_know">Did you know?</string>
+    <string name="known_for">Known for:</string>
+    <string name="included_with">included with subscription</string>
+    <string name="available_to_rent">Available to rent</string>
+    <string name="release_date">Release Date</string>
+    <string name="rent">Rent</string>
+    <string name="language_change_note">Language can be changed while the video is playing.</string>
+    <string name="available_languages">Available languages</string>
+    <string name="audio">Audio</string>
+    <string name="subtitles">Subtitles</string>
+    <string name="trailer">Trailer</string>
+    <string name="share">Share</string>
+    <string name="watch_party">Watch Party</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="download">Download</string>
+    <string name="season">Season</string>
+    <string name="create_watch_party">Create Watch Party</string>
+    <string name="watch_party_note">Chat while watching movies and TV with others.</string>
+    <string name="create">Create</string>
+    <string name="chat_as">Chat as:</string>
+    <string name="watch_party_tips">Watch Party tips</string>
+    <string name="enter_name">Enter name</string>
+    <string name="more">More +</string>
+    <string name="less">Less -</string>
+    <string name="resume">Resume</string>
+    <string name="trivia">Trivia</string>
+    <string name="filter">Filter</string>
+    <string name="videos">videos</string>
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="add_to_watchlist">Add to Watchlist</string>
+    <string name="remove_from_watchlist">Remove from Watchlist</string>
+    <string name="complete">Complete</string>
+    <string name="delete_download">Delete download</string>
+    <string name="more_">More</string>
+    <string name="view_details">View details</string>
+    <string name="hide_this_video">Hide this video</string>
+    <string name="unhide_this_video">Unhide this video?</string>
+    <string name="unhide_video_note">Unhiding this video allows it to appear while you\'re browsing for something to watch. Hidden videos can be played and viewed from Find.</string>
+    <string name="instagram_stories">Instagram stories</string>
+    <string name="copy_link">Copy link</string>
+    <string name="sms">SMS</string>
+    <string name="sort_by">Sort by</string>
+    <string name="most_recent_addition">Most Recent Addition</string>
+    <string name="title_a_z">Title A - Z</string>
+    <string name="title_z_a">Title Z - A</string>
+    <string name="content_type">Content Type</string>
+    <string name="quality">Quality :</string>
+    <string name="audio_languages">Audio languages :</string>
+    <string name="play_download">Play download</string>
+    <string name="aired">Aired:</string>
+    <string name="purchases">Purchases</string>
+    <string name="rent_and_buy_your_favorites"><![CDATA[Rent & buy your favorites]]></string>
+    <string name="no_purchases_note">Watch purchases and rentals on any of your devices.</string>
+    <string name="left">left</string>
+    <string name="share_with">Share with...</string>
+    <string name="link_copied">Link copied</string>
+    <string name="languages">Languages:</string>
+    <string name="live">Live</string>
+    <string name="finish">Finish</string>
+    <string name="replay_all">Replay all!</string>
+    <string name="download_not_available">Download feature not available for this video.</string>
+    <!-- Details END -->
+
+    <!-- Find START -->
+    <string name="find">Find</string>
+    <string name="search_by_actor_title">Search by actor, title...</string>
+    <string name="browse_by">Browse by</string>
+    <string name="language">Language</string>
+    <string name="see_more">See more</string>
+    <string name="subscribe_to_channels">Subscribe to Channels</string>
+    <string name="results_for">Results for</string>
+    <!-- Find END -->
+
+    <!-- Downloads START -->
+    <string name="downloads">Downloads</string>
+    <string name="_downloads">downloads</string>
+    <string name="downloads_settings">Downloads settings</string>
+    <string name="video">Video</string>
+    <string name="videos_">Videos</string>
+    <string name="video_">video</string>
+    <string name="min">min</string>
+    <string name="edit">Edit</string>
+    <string name="_episode">episode</string>
+    <string name="episode">Episode</string>
+    <string name="select_all">Select all</string>
+    <string name="unselect_all">Unselect all</string>
+    <string name="no_downloads">No videos downloaded</string>
+    <string name="take_me_to_the_downloads_page">Take me to the downloads page</string>
+    <string name="download_options">Download options</string>
+    <string name="download_options_note">Your video was downloaded successfully. Go to Downloads to watch and other options.</string>
+    <string name="add_to_watchlist_msg">Successfully added to Watchlist</string>
+    <string name="removed_from_watchlist_msg">Successfully removed from Watchlist</string>
+    <string name="confirm_deletion">Confirm deletion</string>
+    <string name="delete_video_note">These videos will not be available offline.</string>
+    <string name="delete_download_msg">Successfully deleted video.</string>
+    <string name="file_has_been_downloaded">File has been downloaded successfully</string>
+    <string name="download_has_been_started">Download has been started...</string>
+    <string name="Downloaded">Downloaded successfully</string>
+    <string name="invalid_url">Invalid URL!!!</string>
+    <string name="something_went_wrong">Something went wrong...</string>
+    <string name="file_already_downloaded">File already downloaded.</string>
+    <!-- Downloads END -->
+
+    <!-- MyStuff START -->
+    <string name="create_profile">Create profile</string>
+    <string name="manage_profiles">Manage profiles</string>
+    <string name="manage_profile">Manage profile</string>
+    <string name="learn_more_about_profiles">Learn more about profiles</string>
+    <string name="browse_now_watch_later">Browse now, watch later</string>
+    <string name="watchlist_note">Your Watchlist is shared across all of your devices.</string>
+    <!-- MyStuff END -->
+
+    <!-- Settings START -->
+    <string name="account_details">Account details</string>
+    <string name="manage_your_profile">Manage your profile</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="notifications">Notifications</string>
+    <string name="receive_notifications">Receive push notifications</string>
+    <string name="clear_cache">Clear cache</string>
+    <string name="clear_locally_cached_data">Clear locally cached data</string>
+    <string name="clear_cached_data_toast">Cache data has been cleared.</string>
+    <string name="change_password">Change password</string>
+    <string name="update_your_password">Update your password</string>
+    <string name="current_password">Current password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="new_password">New password</string>
+    <string name="enter_current_password">Enter current password.</string>
+    <string name="enter_new_password">Enter new password.</string>
+    <string name="enter_confirm_password">Enter confirm password.</string>
+    <string name="password_not_matched_toast">New password you have entered, not match with confirm password!!!</string>
+    <string name="change_password_request_for_type_2">You are logged in using your Social account, Change password facility is not applicable for social accounts.</string>
+    <string name="change_language">Change language</string>
+    <string name="clear_video_search_history">Clear video search history</string>
+    <string name="signed_in_as">Signed in as</string>
+    <string name="not_sign_in_desc">You are not Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_in">Sign in</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="confirm_delete_account">Confirm Delete Account</string>
+    <string name="delete_account_msg">Are you sure want to Delete Account ?</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="about_us">About us</string>
+    <string name="refund_policy">Refund policy</string>
+    <string name="rate_us">Rate us</string>
+    <string name="share_app">Share app</string>
+    <string name="rate_us_note">Rate our app on appstore</string>
+    <string name="share_app_note">Share app with your friends</string>
+    <string name="version">Version</string>
+    <string name="always_ask">Always ask</string>
+    <string name="start_over">Start over</string>
+    <string name="change_language_mark">Change language?</string>
+    <string name="change_language_note">Clicking Yes will restart the app in the selected language.\nDo you want to continue?</string>
+    <string name="terms_and_privacy_notice">Terms and Privacy Notice</string>
+    <string name="_3rd_party_notices">3rd party notices</string>
+    <string name="about_and_legal">About &amp; Legal</string>
+    <string name="confirm_sign_out">Confirm sign out</string>
+    <string name="are_you_sure_want_to_sign_out">Are you sure want to sign out?</string>
+    <!-- Settings END -->
+
+    <!-- Rent Products START -->
+    <string name="rent_products">Rent Products</string>
+    <string name="view_more">View More</string>
+    <string name="submit">Submit</string>
+    <string name="rent_movie_at_just">Rent movie at just</string>
+    <string name="rent_show_at_just">Rent show at just</string>
+    <string name="watch_with">Watch with</string>
+    <string name="purchaged_videos">Purchaged Videos</string>
+    <string name="purchaged_shows">Purchaged Shows</string>
+    <string name="rent_videos">Rent Videos</string>
+    <string name="rent_shows">Rent Shows</string>
+    <!-- Rent Movie END -->
+
+    <!-- Profile START -->
+    <string name="save">Save</string>
+    <string name="change">Change</string>
+    <string name="kid_s_profile">Kid\'s profile?</string>
+    <string name="learn_more">Learn more</string>
+    <string name="new_">New</string>
+    <string name="edit_profiles">Edit profiles</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="remove_profile">Remove profile</string>
+    <string name="the_account_holder_s_profile_can_t_be_removed">The account holder\'s profile can\'t be removed</string>
+    <string name="change_profile_image">Change profile image</string>
+    <string name="take_photo">Take photo.</string>
+    <string name="choose_from_gallery">Choose from gallery.</string>
+    <string name="add_photo">Add photo!</string>
+    <string name="avatar_suggetion">Avatar suggestions</string>
+    <string name="choose_an_avatar">Choose an Avatar.</string>
+    <string name="choose_new_avatar_note">Select any option to choose your new avatar.</string>
+    <string name="subscription">Subscription</string>
+    <string name="subscription_desc">Upgrade to get more out of your Subscription</string>
+    <string name="choose_plan">Choose Plan</string>
+    <string name="current">Current</string>
+    <string name="enter_phone_number_profile">Enter phone number...</string>
+    <string name="enter_email_profile">Enter email...</string>
+    <string name="enter_address_profile">Enter address...</string>
+    <string name="enter_your_name_profile">Enter your name...</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="enter_password_profile">Enter password...</string>
+    <!-- Profile END -->
+
+    <!--Payment Activity START-->
+    <string name="payment_details">Payment Details</string>
+    <string name="please_select_any_payment_method">Please, select any Payment method</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="choose_a_payment_methods_to_pay">Choose a payment method To</string>
+    <string name="pay_with">Pay with</string>
+    <string name="Continue">Continue</string>
+    <string name="paypal">PayPal</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">PAY</string>
+    <string name="already_purchased">You have already purchased the plan.</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">Sorry, we could not verify your payment, try again please!!!</string>
+    <string name="wallet_balance">Wallet balance</string>
+    <string name="payment_gateways">Payment gateways</string>
+    <string name="recharge_your_wallet">Recharge your wallet</string>
+    <string name="add_to_wallet">Add to wallet</string>
+    <string name="enter_amount">Enter custom amount...</string>
+    <string name="your_current_balance_is">Your current balance is :</string>
+    <string name="use_wallet_balance">Use wallet balance</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="please_enter_valid_amount">Please enter valid amount.</string>
+    <string name="payable_amount_is">Payable amount is :</string>
+    <string name="verification">Verification</string>
+    <string name="verification_success">Verification successful.</string>
+    <string name="verification_note">*Please, verify your following detail/s to continue.</string>
+    <!--Payment Activity END-->
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cinefilmz.tv.players.PlayerActivity">
+
+    <include
+        android:id="@+id/content_details"
+        layout="@layout/player_details" />
+
+    <RelativeLayout
+        android:id="@+id/rlNextEpisode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivNextEpiPoster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_image_land"
+            app:riv_corner_radius="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/full_gradient" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginBottom="@dimen/margin15"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lyPlayCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin8"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg_r5_white"
+                android:backgroundTint="@color/lightBlack"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.MyPageRippleBlack">
+
+                <TextView
+                    android:id="@+id/txtPlayCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/margin5"
+                    android:text="@string/cancel"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/default_texts" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyPlayNext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin8"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg_r5_white"
+                android:backgroundTint="@color/colorPrimary"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.MyRipple">
+
+                <TextView
+                    android:id="@+id/txtPlayNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/public_round_bold"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/margin5"
+                    android:text="@string/next"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

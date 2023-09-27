@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyFilterDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/lightBlack"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:paddingVertical="40dp">
+
+        <!-- Sort By -->
+        <LinearLayout
+            android:id="@+id/lySortBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightBlack"
+                android:minHeight="53dp"
+                app:expansion_headerIndicator="@id/txtSortByDropDownIcon"
+                app:expansion_layout="@id/expandFilter"
+                app:expansion_toggleOnClick="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Title -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.83"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/public_bold"
+                            android:gravity="center_vertical"
+                            android:text="@string/sort_by"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_15" />
+
+                        <TextView
+                            android:id="@+id/txtSortFilter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/public_medium"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_other"
+                            android:textSize="@dimen/text_15"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <!-- DropDown -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.17"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtSortByDropDownIcon"
+                            android:layout_width="18dp"
+                            android:layout_height="17dp"
+                            android:background="@drawable/ic_right_arrow"
+                            android:backgroundTint="@color/lightGray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expandFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:expansion_expanded="false">
+
+                <LinearLayout
+                    android:id="@+id/slideSortLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:orientation="vertical">
+
+                    <worker8.com.github.radiogroupplus.RadioGroupPlus
+                        android:id="@+id/rgpSortBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@color/darkGray" />
+
+                        <!-- MostRecent -->
+                        <RelativeLayout
+                            android:id="@+id/rlMostRecent"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="@dimen/margin8"
+                            android:layout_marginEnd="@dimen/margin8"
+                            android:clickable="true">
+
+                            <!-- Title -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:text="@string/most_recent_addition"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_13" />
+
+                            <!-- RadioButton -->
+                            <RadioButton
+                                android:id="@+id/rbMostRecent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin8"
+                                android:checked="false"
+                                android:clickable="false"
+                                android:theme="@style/radioButtonTheme" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@color/lightBlack" />
+
+                        <!-- Title A to Z -->
+                        <RelativeLayout
+                            android:id="@+id/rlTitleAtoZ"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="@dimen/margin8"
+                            android:layout_marginEnd="@dimen/margin8">
+
+                            <!-- Title -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_a_z"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_13" />
+
+                            <!-- RadioButton -->
+                            <RadioButton
+                                android:id="@+id/rbTitleAtoZ"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin8"
+                                android:checked="false"
+                                android:clickable="false"
+                                android:theme="@style/radioButtonTheme" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@color/lightBlack" />
+
+                        <!-- Title Z to A -->
+                        <RelativeLayout
+                            android:id="@+id/rlTitleZtoA"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="@dimen/margin8"
+                            android:layout_marginEnd="@dimen/margin8">
+
+                            <!-- Title -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_z_a"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_13" />
+
+                            <!-- RadioButton -->
+                            <RadioButton
+                                android:id="@+id/rbTitleZtoA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin8"
+                                android:checked="false"
+                                android:clickable="false"
+                                android:theme="@style/radioButtonTheme" />
+
+                        </RelativeLayout>
+
+                    </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/darkGray" />
+
+        </LinearLayout>
+
+        <!-- Content Type -->
+        <LinearLayout
+            android:id="@+id/lyContentType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightBlack"
+                android:minHeight="53dp"
+                app:expansion_headerIndicator="@id/txtContentDropDownIcon"
+                app:expansion_layout="@id/expandContentFilter"
+                app:expansion_toggleOnClick="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Title -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.83"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/public_bold"
+                            android:gravity="center_vertical"
+                            android:text="@string/content_type"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_15" />
+
+                        <TextView
+                            android:id="@+id/txtContentFilter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/public_medium"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_other"
+                            android:textSize="@dimen/text_14"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <!-- DropDown -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.17"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtContentDropDownIcon"
+                            android:layout_width="18dp"
+                            android:layout_height="17dp"
+                            android:background="@drawable/ic_right_arrow"
+                            android:backgroundTint="@color/lightGray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expandContentFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:expansion_expanded="false">
+
+                <LinearLayout
+                    android:id="@+id/slideContentLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:orientation="vertical">
+
+                    <worker8.com.github.radiogroupplus.RadioGroupPlus
+                        android:id="@+id/rgpContentType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@color/darkGray" />
+
+                        <!-- TV Shows -->
+                        <RelativeLayout
+                            android:id="@+id/rlTVShows"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="@dimen/margin8"
+                            android:layout_marginEnd="@dimen/margin8"
+                            android:clickable="true">
+
+                            <!-- Title -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:text="@string/tvshow"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_13" />
+
+                            <!-- RadioButton -->
+                            <RadioButton
+                                android:id="@+id/rbTVShows"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin8"
+                                android:checked="false"
+                                android:clickable="false"
+                                android:theme="@style/radioButtonTheme" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@color/lightBlack" />
+
+                        <!-- Movies -->
+                        <RelativeLayout
+                            android:id="@+id/rlMovies"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="@dimen/margin8"
+                            android:layout_marginEnd="@dimen/margin8">
+
+                            <!-- Title -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:fontFamily="@font/public_medium"
+                                android:gravity="center_vertical"
+                                android:text="@string/movies_"
+                                android:textColor="@color/text_other"
+                                android:textSize="@dimen/text_13" />
+
+                            <!-- RadioButton -->
+                            <RadioButton
+                                android:id="@+id/rbMovies"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin8"
+                                android:checked="false"
+                                android:clickable="false"
+                                android:theme="@style/radioButtonTheme" />
+
+                        </RelativeLayout>
+
+                    </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/darkGray" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

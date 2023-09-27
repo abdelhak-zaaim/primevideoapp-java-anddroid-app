@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin23"
+            android:orientation="vertical">
+
+            <!-- Main Video Title -->
+            <TextView
+                android:id="@+id/txtVideoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/public_bold"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_18" />
+
+            <!-- Age limit and Comment Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Release Year -->
+                <TextView
+                    android:id="@+id/txtReleaseYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_14" />
+
+                <!-- Age limit -->
+                <TextView
+                    android:id="@+id/txtAgeLimit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:background="@drawable/round_bor_bg"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_10" />
+
+                <!-- Comment -->
+                <TextView
+                    android:id="@+id/txtCommentIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/ic_comment"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <!-- Quality -->
+            <LinearLayout
+                android:id="@+id/lyVideoQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/quality"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_14" />
+
+                <!-- Quality -->
+                <TextView
+                    android:id="@+id/txtVideoQuality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_14" />
+
+            </LinearLayout>
+
+            <!-- Audio Languages -->
+            <LinearLayout
+                android:id="@+id/lyAudioLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/audio_languages"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_14" />
+
+                <!-- Languages -->
+                <TextView
+                    android:id="@+id/txtAudioLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/public_medium"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_other"
+                    android:textSize="@dimen/text_14" />
+
+            </LinearLayout>
+
+            <!-- <- <-  Video Details related features -> -> -->
+
+            <!-- Watch Now / Resume -->
+            <LinearLayout
+                android:id="@+id/lyWatchResume"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/minHeightOfView"
+                android:layout_marginTop="@dimen/margin10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.detailPageRipple_selected">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtWatchResumeIcon"
+                        android:layout_width="@dimen/dialogIconSize"
+                        android:layout_height="@dimen/dialogIconSize"
+                        android:background="@drawable/ic_play2"
+                        android:backgroundTint="@color/otherColor"
+                        android:clickable="false"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.88"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtWatchResume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/public_medium"
+                        android:text="@string/play_download"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Download / Delete Download -->
+            <LinearLayout
+                android:id="@+id/lyAddDeleteDownload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/minHeightOfView"
+                android:layout_marginTop="@dimen/margin2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.detailPageRipple_selected">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtAddDeleteDownloadIcon"
+                        android:layout_width="@dimen/dialogIconSize"
+                        android:layout_height="@dimen/dialogIconSize"
+                        android:background="@drawable/ic_delete"
+                        android:backgroundTint="@color/otherColor"
+                        android:clickable="false"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.88"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtAddDeleteDownload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/public_medium"
+                        android:text="@string/delete_download"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- View details -->
+            <LinearLayout
+                android:id="@+id/lyViewDetails"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/minHeightOfView"
+                android:layout_marginTop="@dimen/margin2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:theme="@style/AppTheme.detailPageRipple_selected">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/dialogIconSize"
+                        android:layout_height="@dimen/dialogIconSize"
+                        android:background="@drawable/ic_info_circle"
+                        android:backgroundTint="@color/otherColor"
+                        android:clickable="false"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.88"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/public_medium"
+                        android:text="@string/view_details"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

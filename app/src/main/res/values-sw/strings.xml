@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">CineFilmz</string>
+    <string name="prime">DT mkuu</string>
+
+    <!--Welcome START-->
+    <string name="skip">Ruka</string>
+    <string name="next">Inayofuata</string>
+    <string name="get_started">Anza!</string>
+    <string name="welcome_slides">Skrini ya Nyumbani</string>
+    <string name="welcome_1_Title">Tazama Filamu, Vipindi, Vipindi vya Watoto &amp;amp; mengi zaidi.</string>
+    <string name="welcome_1_Desc">Lorem Ipsum ni maandishi duni ya tasnia ya uchapishaji na upangaji. Lorem Ipsum imekuwa maandishi ya kawaida ya tasnia tangu miaka ya 1500.</string>
+    <string name="welcome_2_Title">Gundua Maelfu ya Video kwenye CineFilmz.</string>
+    <string name="welcome_2_Desc">Lorem Ipsum ni maandishi duni ya tasnia ya uchapishaji na uchapaji. Lorem Ipsum imekuwa maandishi ya kawaida ya tasnia tangu miaka ya 1500.</string>
+    <string name="welcome_3_Title">Tafuta habari za Ulimwenguni kwenye CineFilmz.</string>
+    <string name="welcome_3_Desc">Lorem Ipsum ni maandishi duni ya tasnia ya uchapishaji na uchapaji. Lorem Ipsum imekuwa maandishi ya kawaida ya tasnia tangu miaka ya 1500.</string>
+    <string name="welcome_4_Title">Boresha ili kupata zaidi kutokana na usajili wako.</string>
+    <string name="welcome_4_Desc">Lorem Ipsum ni maandishi duni ya tasnia ya uchapishaji na upangaji. Lorem Ipsum imekuwa maandishi ya kawaida ya tasnia tangu miaka ya 1500.</string>
+    <string name="Lorem_Ipsum">Lorem Ipsum ni maandishi dumu tu ya tasnia ya uchapishaji na uchapaji.
+        Lorem Ipsum imekuwa maandishi ya kawaida ya tasnia tangu miaka ya 1500. Lorem Ipsum imekuwa maandishi ya kawaida ya tasnia tangu miaka ya 1500.
+        Lorem Ipsum imekuwa maandishi ya kawaida ya tasnia tangu miaka ya 1500. Lorem Ipsum imekuwa maandishi ya kawaida ya tasnia tangu miaka ya 1500.
+        Lorem Ipsum imekuwa maandishi ya kawaida ya tasnia tangu miaka ya 1500.</string>
+    <string name="LoremIpsum_less">Lorem Ipsum ni maandishi duni ya tasnia ya uchapishaji na uchapaji. Lorem Ipsum imekuwa maandishi ya kawaida ya sekta.</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">Samahani! Haijaunganishwa kwenye mtandao.</string>
+    <string name="back_to_online">Rudi kwenye mtandao.</string>
+    <string name="permission_desc">Sasa tunahitaji ruhusa yako ili kuendelea kutumia programu kikamilifu</string>
+    <string name="permission_title">Kila kitu kiko sawa.</string>
+    <string name="okay">Sawa!</string>
+    <string name="internet_error">Hitilafu ya muunganisho wa mtandao!!!</string>
+    <string name="permission_necessary">Ruhusa Ni Muhimu</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">Ruhusa ya kuhifadhi inahitajika ili kusoma na kuandika tukio</string>
+    <string name="settings">Mipangilio</string>
+    <string name="cancel_">Ghairi</string>
+    <string name="permission">Ruhusa</string>
+    <string name="permission_alert">Arifa ya Ruhusa</string>
+    <string name="get_permission_for_brightness_manage_desc">Tunahitaji ruhusa ili kubadilisha mwangaza na unaweza kudhibiti mwangaza unapocheza video. \n Asante.</string>
+    <string name="we_need_storage_permission_for_save_video">Tunahitaji ruhusa ya hifadhi ili kuhifadhi faili ya midia kwenye hifadhi ya nje.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">Tunahitaji hifadhi ya nje na ruhusa ya kamera ili kupakia picha ya wasifu.</string>
+    <string name="yesterday">jana</string>
+    <string name="day_ago">siku iliyopita</string>
+    <!--Network and Permission END-->
+
+    <!--General Strings START-->
+    <string name="please_wait">tafadhali subiri...</string>
+    <string name="delete">Futa</string>
+    <string name="cancel">Ghairi</string>
+    <string name="downloading">Inapakua...</string>
+    <string name="loading">Inapakia...</string>
+    <string name="do_you_want_to_exit">Je, ungependa kutoka?</string>
+    <string name="yes">Ndiyo</string>
+    <string name="no">Hapana</string>
+    <string name="track_selection_title">Badilisha Wimbo</string>
+    <!--General Strings END-->
+
+    <!-- Login and OTP START -->
+    <string name="login">Ingia</string>
+    <string name="or">Au</string>
+    <string name="welcome_back">Karibu tena,</string>
+    <string name="login_with_mobile_note">Ingiza nambari yako ya simu ili kuingia</string>
+    <string name="enter_your_mobile_number">Weka nambari yako ya simu</string>
+    <string name="login_with_google">Ingia kwa kutumia Google</string>
+    <string name="login_with_facebook">Ingia kwa kutumia Facebook</string>
+
+    <string name="otp_verification">Uthibitishaji wa OTP</string>
+    <string name="enter_your_mobile_no">Weka Nambari Yako ya Simu</string>
+    <string name="enter_coutry_code">Weka msimbo wa nchi yako.</string>
+    <string name="verify_phone_number">Thibitisha Nambari ya Simu</string>
+    <string name="code_expire_soon">Nambari ya kuthibitisha itakwisha hivi karibuni</string>
+    <string name="resend">Tuma tena</string>
+    <string name="confirm">Thibitisha</string>
+    <string name="enter_otp">Ingiza OTP iliyopokelewa.</string>
+    <string name="select_your_coutry_code">Chagua msimbo wa nchi yako.</string>
+    <string name="you_will_receive_a_6_digit_code_to_verify_next">Utapokea nambari ya kuthibitisha yenye tarakimu 6 ili \n uthibitishe inayofuata.</string>
+    <string name="send_otp">TUMA OTP</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">Weka msimbo wa OTP ili kutuma kwa nambari ya Simu ya Mkononi.</string>
+    <string name="we_have_sent_code_to_your_number">Tumetuma nambari ya kuthibitisha kwa nambari yako</string>
+    <string name="verify_and_proceed">THIBITISHA &amp;amp; ENDELEA</string>
+    <string name="send_">TUMA</string>
+    <string name="resend_otp">Tuma tena OTP</string>
+    <string name="already_have_an_account">Je, tayari una Akaunti?</string>
+    <string name="do_not_have_an_account">Je, huna Akaunti?</string>
+    <string name="or_Login_using_Social_Media">Au Ingia kwa kutumia Mitandao ya Kijamii</string>
+    <!-- Login and OTP END -->
+
+    <!-- Home Fragment START -->
+    <string name="title_home">Nyumbani</string>
+    <string name="title_tvshows">Vipindi vya Televisheni</string>
+    <string name="title_movies">Filamu</string>
+    <string name="title_kids">Watoto</string>
+    <string name="title_channels">Vituo</string>
+    <string name="title_find">Pata</string>
+    <string name="title_downloads">Vipakuliwa</string>
+    <string name="title_store">Hifadhi</string>
+    <string name="title_mystuff">Mambo Yangu</string>
+    <string name="title_settings">Mipangilio</string>
+    <string name="continue_watching">Endelea kutazama</string>
+    <string name="top_movies">Filamu maarufu</string>
+    <string name="new_movie_tag">FILAMU MPYA</string>
+    <string name="new_series_tag">MFUMO MPYA</string>
+    <string name="new_tvshow_tag">SHOW MPYA YA TV</string>
+    <string name="tvshow">Vipindi vya televisheni</string>
+    <string name="shows">Maonyesho</string>
+    <string name="_shows">maonyesho</string>
+    <string name="movies">filamu</string>
+    <string name="movies_">Filamu</string>
+    <string name="tv">TV</string>
+    <!-- Home Fragment END -->
+
+    <!-- Details START -->
+    <string name="watch_now">Tazama Sasa</string>
+    <string name="watch_episode">Tazama Kipindi</string>
+    <string name="no_episode">Samahani! kipindi hakipatikani kuchezwa.</string>
+    <string name="no_video">Samahani! video haipatikani kuchezwa.</string>
+    <string name="no_trailer">Samahani! trela haipatikani kuchezwa.</string>
+    <string name="no_data">Samahani! data haijapatikana.</string>
+    <string name="related">Kuhusiana</string>
+    <string name="episodes">Vipindi</string>
+    <string name="more_details">Maelezo zaidi</string>
+    <string name="customers_also_watched">Wateja pia walitazama</string>
+    <string name="cast_and_crew">Tuma &amp;amp; Wafanyakazi</string>
+    <string name="details_from">Maelezo kutoka</string>
+    <string name="genres">Aina</string>
+    <string name="directors">Wakurugenzi</string>
+    <string name="starring">Mchezaji</string>
+    <string name="studios">Studio</string>
+    <string name="maturity_rating">Ukadiriaji wa ukomavu</string>
+    <string name="content_advisory">Ushauri wa maudhui</string>
+    <string name="customer_reviews">Maoni ya mteja</string>
+    <string name="did_you_know">Je, wajua?</string>
+    <string name="known_for">Inajulikana kwa:</string>
+    <string name="included_with">pamoja na usajili</string>
+    <string name="available_to_rent">Inapatikana kwa kukodisha</string>
+    <string name="release_date">Release Date</string>
+    <string name="rent">Kodisha</string>
+    <string name="language_change_note">Lugha inaweza kubadilishwa wakati video inacheza.</string>
+    <string name="available_languages">Lugha zinazopatikana</string>
+    <string name="audio">Sauti</string>
+    <string name="subtitles">Manukuu</string>
+    <string name="trailer">Trailer</string>
+    <string name="share">Shiriki</string>
+    <string name="watch_party">Sherehe ya Kutazama</string>
+    <string name="watchlist">Orodha ya kutazama</string>
+    <string name="download">Pakua</string>
+    <string name="season">Msimu</string>
+    <string name="create_watch_party">Unda Sherehe ya Kutazama</string>
+    <string name="watch_party_note">Piga gumzo unapotazama filamu na TV na wengine.</string>
+    <string name="create">Unda</string>
+    <string name="chat_as">Sogoa kama:</string>
+    <string name="watch_party_tips">Vidokezo vya Sherehe ya Tazama</string>
+    <string name="enter_name">Andika jina</string>
+    <string name="more">Zaidi +</string>
+    <string name="less">Chini -</string>
+    <string name="resume">Rejea</string>
+    <string name="trivia">Trivia</string>
+    <string name="filter">Chuja</string>
+    <string name="videos">video</string>
+    <string name="watch_trailer">Tazama Kionjo</string>
+    <string name="add_to_watchlist">Ongeza kwenye Orodha ya Kufuatilia</string>
+    <string name="remove_from_watchlist">Ondoa kwenye Orodha ya Kufuatilia</string>
+    <string name="complete">Kamilisha</string>
+    <string name="delete_download">Futa upakuaji</string>
+    <string name="more_">Zaidi</string>
+    <string name="view_details">Angalia maelezo</string>
+    <string name="hide_this_video">Ficha video hii</string>
+    <string name="unhide_this_video">Ungependa kufichua video hii?</string>
+    <string name="unhide_video_note">Kufichua video hii kunairuhusu kuonekana wakati unavinjari kitu cha kutazama. Video zilizofichwa zinaweza kuchezwa na kutazamwa kutoka Tafuta.</string>
+    <string name="instagram_stories">Hadithi za Instagram</string>
+    <string name="copy_link">Nakili kiungo</string>
+    <string name="sms">SMS</string>
+    <string name="sort_by">Panga kwa</string>
+    <string name="most_recent_addition">Ongezeko la Hivi Punde Zaidi</string>
+    <string name="title_a_z">Kichwa A - Z</string>
+    <string name="title_z_a">Kichwa Z - A</string>
+    <string name="content_type">Aina ya Maudhui</string>
+    <string name="quality">Ubora :</string>
+    <string name="audio_languages">Lugha za sauti :</string>
+    <string name="play_download">Cheza pakua</string>
+    <string name="aired">Inapeperushwa:</string>
+    <string name="purchases">Ununuzi</string>
+    <string name="rent_and_buy_your_favorites"><![CDATA[Kodisha na ununue vipendwa vyako]]></string>
+    <string name="no_purchases_note">Tazama ununuzi na ukodishaji kwenye kifaa chako chochote.</string>
+    <string name="left">kushoto</string>
+    <string name="share_with">Shiriki na...</string>
+    <string name="link_copied">Kiungo kimenakiliwa</string>
+    <string name="languages">Lugha:</string>
+    <string name="live">Moja kwa moja</string>
+    <string name="finish">Maliza</string>
+    <string name="replay_all">Cheza tena zote!</string>
+    <!-- Details END -->
+
+    <!-- Find START -->
+    <string name="find">Pata</string>
+    <string name="search_by_actor_title">Tafuta kwa mwigizaji, kichwa...</string>
+    <string name="browse_by">Vinjari kwa</string>
+    <string name="language">Lugha</string>
+    <string name="see_more">Angalia zaidi</string>
+    <string name="subscribe_to_channels">Jisajili kwa Vituo</string>
+    <string name="results_for">Matokeo ya</string>
+    <!-- Find END -->
+
+    <!-- Downloads START -->
+    <string name="downloads">Vipakuliwa</string>
+    <string name="_downloads">vipakuliwa</string>
+    <string name="downloads_settings">Mipangilio ya upakuaji</string>
+    <string name="video">Video</string>
+    <string name="videos_">Video</string>
+    <string name="video_">video</string>
+    <string name="min">min</string>
+    <string name="edit">Hariri</string>
+    <string name="seasons">Misimu</string>
+    <string name="_episode">kipindi</string>
+    <string name="episode">Kipindi</string>
+    <string name="select_all">Chagua zote</string>
+    <string name="unselect_all">Acha kuchagua zote</string>
+    <string name="no_downloads">Hakuna video zilizopakuliwa</string>
+    <string name="take_me_to_the_downloads_page">Nipeleke kwenye ukurasa wa vipakuliwa</string>
+    <string name="download_options">Chaguo za kupakua</string>
+    <string name="download_options_note">Video yako ilipakuliwa kwa mafanikio. Nenda kwenye Vipakuliwa ili kutazama na chaguo zingine.</string>
+    <string name="add_to_watchlist_msg">Imeongezwa kwenye Orodha ya Kufuatilia</string>
+    <string name="removed_from_watchlist_msg">Imeondolewa kwenye Orodha ya Kufuatilia</string>
+    <string name="confirm_deletion">Thibitisha ufutaji</string>
+    <string name="delete_video_note">Video hizi hazitapatikana nje ya mtandao.</string>
+    <string name="delete_download_msg">Video imefutwa.</string>
+    <string name="file_has_been_downloaded">Faili imepakuliwa kwa mafanikio</string>
+    <string name="download_has_been_started">Upakuaji umeanzishwa...</string>
+    <string name="Downloaded">Imepakuliwa kwa mafanikio</string>
+    <string name="invalid_url">URL si sahihi!!!</string>
+    <string name="something_went_wrong">Hitilafu fulani imetokea...</string>
+    <string name="file_already_downloaded">Faili tayari imepakuliwa.</string>
+    <!-- Downloads END -->
+
+    <!-- MyStuff START -->
+    <string name="create_profile">Unda wasifu</string>
+    <string name="manage_profiles">Dhibiti wasifu</string>
+    <string name="manage_profile">Dhibiti wasifu</string>
+    <string name="learn_more_about_profiles">Pata maelezo zaidi kuhusu wasifu</string>
+    <string name="browse_now_watch_later">Vinjari sasa, tazama baadaye</string>
+    <string name="watchlist_note">Orodha yako ya Kufuatilia inashirikiwa kwenye vifaa vyako vyote.</string>
+    <!-- MyStuff END -->
+
+    <!-- Settings START -->
+    <string name="account_details">Maelezo ya akaunti</string>
+    <string name="manage_your_profile">Dhibiti wasifu wako</string>
+    <string name="on">Imewashwa</string>
+    <string name="off">Zima</string>
+    <string name="notifications">Arifa</string>
+    <string name="receive_notifications">Pokea arifa zinazotumwa na programu hata wakati huitumii</string>
+    <string name="clear_cache">Futa akiba</string>
+    <string name="clear_locally_cached_data">Futa data iliyoakibishwa ndani ya nchi</string>
+    <string name="clear_cached_data_toast">Data ya akiba imefutwa.</string>
+    <string name="change_password">Badilisha nenosiri</string>
+    <string name="update_your_password">Sasisha nenosiri lako</string>
+    <string name="current_password">Nenosiri la sasa</string>
+    <string name="confirm_password">Thibitisha nenosiri</string>
+    <string name="new_password">Nenosiri jipya</string>
+    <string name="enter_current_password">Ingiza nenosiri la sasa.</string>
+    <string name="enter_new_password">Ingiza nenosiri jipya.</string>
+    <string name="enter_confirm_password">Ingiza nenosiri la kuthibitisha.</string>
+    <string name="password_not_matched_toast">Nenosiri jipya ambalo umeweka, halilingani na nenosiri lililothibitishwa!!!</string>
+    <string name="change_password_request_for_type_2">Umeingia kwa kutumia akaunti yako ya Jamii, Kubadilisha nenosiri halitumiki kwa akaunti za kijamii.</string>
+    <string name="change_language">Badilisha lugha</string>
+    <string name="clear_video_search_history">Futa historia ya utafutaji wa video</string>
+    <string name="signed_in_as">Umeingia kama</string>
+    <string name="not_sign_in_desc">Hujaingia</string>
+    <string name="sign_out">Ondoka</string>
+    <string name="sign_in">Ingia</string>
+    <string name="terms_and_conditions">Masharti &amp;amp; Masharti</string>
+    <string name="privacy_policy">Sera ya faragha</string>
+    <string name="about_us">Kutuhusu</string>
+    <string name="rate_us">Tukadirie</string>
+    <string name="share_app">Shiriki programu</string>
+    <string name="rate_us_note">Kadiria programu yetu kwenye duka la programu</string>
+    <string name="share_app_note">Shiriki programu na marafiki zako</string>
+    <string name="version">Toleo</string>
+    <string name="always_ask">Uliza kila wakati</string>
+    <string name="start_over">Anza upya</string>
+    <string name="change_language_mark">Ungependa kubadilisha lugha?</string>
+    <string name="change_language_note">Kubofya Ndiyo kutaanzisha upya programu katika lugha iliyochaguliwa.\nJe, ungependa kuendelea?</string>
+    <string name="terms_and_privacy_notice">Sheria na Masharti na Ilani ya Faragha</string>
+    <string name="_3rd_party_notices">Ilani za watu wengine</string>
+    <string name="about_and_legal">Kuhusu &amp;amp; Kisheria</string>
+    <string name="confirm_sign_out">Thibitisha kuondoka</string>
+    <string name="are_you_sure_want_to_sign_out">Je, una uhakika unataka kuondoka?</string>
+    <!-- Settings END -->
+
+    <!-- Rent Products START -->
+    <string name="rent_products">Kodisha Bidhaa</string>
+    <string name="view_more">Tazama Zaidi</string>
+    <string name="submit">Wasilisha</string>
+    <string name="rent_movie_at_just">Kodisha filamu kwa urahisi</string>
+    <string name="rent_show_at_just">Kodisha onyesho kwa</string>
+    <string name="watch_with">Tazama ukitumia</string>
+    <string name="purchaged_videos">Video Zilizonunuliwa</string>
+    <string name="purchaged_shows">Vipindi Vilivyonunuliwa</string>
+    <string name="rent_videos">Kodisha Video</string>
+    <string name="rent_shows">Kodisha Maonyesho</string>
+    <!-- Rent Products END -->
+
+    <!-- Profile START -->
+    <string name="save">Hifadhi</string>
+    <string name="change">Badilisha</string>
+    <string name="kid_s_profile">Wasifu wa mtoto?</string>
+    <string name="learn_more">Pata maelezo zaidi</string>
+    <string name="new_">Mpya</string>
+    <string name="edit_profiles">Hariri wasifu</string>
+    <string name="edit_profile">Hariri wasifu</string>
+    <string name="remove_profile">Ondoa wasifu</string>
+    <string name="the_account_holder_s_profile_can_t_be_removed">Wasifu wa mwenye akaunti hauwezi kuondolewa</string>
+    <string name="change_profile_image">Badilisha picha ya wasifu</string>
+    <string name="take_photo">Piga picha.</string>
+    <string name="choose_from_gallery">Chagua kutoka kwenye ghala.</string>
+    <string name="add_photo">Ongeza picha!</string>
+    <string name="avatar_suggetion">Mapendekezo ya ishara</string>
+    <string name="choose_an_avatar">Chagua Avatar.</string>
+    <string name="choose_new_avatar_note">Teua chaguo lolote ili kuchagua avatar yako mpya.</string>
+    <string name="subscription">Usajili</string>
+    <string name="subscription_desc">Pandisha gredi ili unufaike zaidi na Usajili wako</string>
+    <string name="choose_plan">Chagua Mpango</string>
+    <string name="current">Sasa</string>
+    <string name="enter_phone_number_profile">Weka nambari ya simu...</string>
+    <string name="enter_email_profile">Andika barua pepe...</string>
+    <string name="enter_address_profile">Ingiza anwani...</string>
+    <string name="enter_your_name_profile">Andika jina lako...</string>
+    <string name="update_profile">Sasisha Wasifu</string>
+    <string name="enter_password_profile">Ingiza nenosiri...</string>
+    <!-- Profile END -->
+
+    <!--Payment Activity START-->
+    <string name="payment_details">Maelezo ya Malipo</string>
+    <string name="please_select_any_payment_method">Tafadhali, chagua njia yoyote ya Malipo</string>
+    <string name="payment_methods">Njia za Malipo</string>
+    <string name="choose_a_payment_methods_to_pay">Chagua njia ya kulipa Ili</string>
+    <string name="pay_with">Lipa kwa</string>
+    <string name="Continue">Endelea</string>
+    <string name="paypal">PayPal</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">LIPA</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">Samahani, hatukuweza kuthibitisha malipo yako, jaribu tena tafadhali!!!</string>
+    <string name="wallet_balance">Salio la Wallet</string>
+    <string name="payment_gateways">Milango ya malipo</string>
+    <string name="recharge_your_wallet">Chaji upya pochi yako</string>
+    <string name="add_to_wallet">Ongeza kwenye pochi</string>
+    <string name="enter_amount">Weka kiasi maalum...</string>
+    <string name="your_current_balance_is">Salio lako la sasa ni :</string>
+    <string name="use_wallet_balance">Tumia salio la pochi</string>
+    <string name="pay_now">Lipa Sasa</string>
+    <string name="please_enter_valid_amount">Tafadhali weka kiasi halali.</string>
+    <string name="payable_amount_is">Kiasi kinacholipwa ni :</string>
+    <string name="verification">Uthibitishaji</string>
+    <string name="verification_success">Uthibitishaji umefaulu.</string>
+    <string name="verification_note">*Tafadhali, thibitisha maelezo yako yafuatayo ili kuendelea.</string>
+    <string name="download_not_available">Kipengele cha kupakua hakipatikani kwa video hii.</string>
+    <string name="already_purchased">Tayari umenunua mpango.</string>
+    <string name="delete_account">Futa Akaunti</string>
+    <string name="delete_account_msg">Je, una uhakika unataka Kufuta Akaunti ?</string>
+    <string name="refund_policy">Sera ya kurejesha pesa</string>
+    <string name="confirm_delete_account">Thibitisha Futa Akaunti</string>
+    <!--Payment Activity END-->
+
+</resources>

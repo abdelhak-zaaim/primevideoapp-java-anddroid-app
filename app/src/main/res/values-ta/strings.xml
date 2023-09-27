@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CineFilmz</string>
+    <string name="prime">DT prime</string>
+
+    <!--Welcome START-->
+    <string name="skip">தவிர்</string>
+    <string name="next">அடுத்து</string>
+    <string name="get_started">தொடங்குக!</string>
+    <string name="welcome_slides">முகப்புத் திரை</string>
+    <string name="welcome_1_Title">திரைப்படங்கள், நிகழ்ச்சிகள், குழந்தைகள் நிகழ்ச்சி &amp;amp; இன்னும் அதிகம்.</string>
+    <string name="welcome_1_Desc">Lorem Ipsum என்பது அச்சிடும் மற்றும் தட்டச்சு செய்யும் துறையின் போலி உரை. லோரெம் இப்சம் 1500களில் இருந்து தொழில்துறையின் நிலையான போலி உரையாக இருந்து வருகிறது.</string>
+    <string name="welcome_2_Title">டிடி நேரலையில் ஆயிரக்கணக்கான வீடியோக்களை ஆராயுங்கள்.</string>
+    <string name="welcome_2_Desc">Lorem Ipsum என்பது அச்சிடும் மற்றும் தட்டச்சு செய்யும் துறையின் போலி உரை. லோரெம் இப்சம் 1500களில் இருந்து தொழில்துறையின் நிலையான போலி உரையாக இருந்து வருகிறது.</string>
+    <string name="welcome_3_Title">DT நேரலையில் உலகச் செய்திகளைக் கண்டறியவும்.</string>
+    <string name="welcome_3_Desc">Lorem Ipsum என்பது அச்சிடும் மற்றும் தட்டச்சு செய்யும் துறையின் போலி உரை. லோரெம் இப்சம் 1500களில் இருந்து தொழில்துறையின் நிலையான போலி உரையாக இருந்து வருகிறது.</string>
+    <string name="welcome_4_Title">உங்கள் சந்தாவிலிருந்து அதிகமானவற்றைப் பெற மேம்படுத்தவும்.</string>
+    <string name="welcome_4_Desc">Lorem Ipsum என்பது அச்சிடும் மற்றும் தட்டச்சு செய்யும் துறையின் போலி உரை. லோரெம் இப்சம் 1500களில் இருந்து தொழில்துறையின் நிலையான போலி உரையாக இருந்து வருகிறது.</string>
+    <string name="Lorem_Ipsum">Lorem Ipsum என்பது அச்சிடும் மற்றும் தட்டச்சு செய்யும் துறையின் போலி உரை.
+      லோரெம் இப்சம் 1500களில் இருந்து தொழில்துறை தரமான போலி உரையாக இருந்து வருகிறது.
+      லோரெம் இப்சம் 1500களில் இருந்து தொழில்துறை தரமான போலி உரையாக இருந்து வருகிறது.
+      லோரெம் இப்சம் 1500களில் இருந்து தொழில்துறை தரமான போலி உரையாக இருந்து வருகிறது.
+      லோரெம் இப்சம் 1500களில் இருந்து தொழில்துறை தரமான போலி உரையாக இருந்து வருகிறது.
+      லோரெம் இப்சம் 1500களில் இருந்து தொழில்துறை தரமான போலி உரையாக இருந்து வருகிறது.</string>
+    <string name="LoremIpsum_less">Lorem Ipsum என்பது அச்சிடும் மற்றும் தட்டச்சு செய்யும் துறையின் போலி உரை. லோரெம் இப்சம் தொழில்துறை நிலையான உரை.</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">மன்னிக்கவும்! இணையத்துடன் இணைக்கப்படவில்லை.</string>
+    <string name="back_to_online">மீண்டும் ஆன்லைனில்.</string>
+    <string name="permission_desc">இப்போது பயன்பாட்டைத் தொடர்ந்து பயன்படுத்த உங்கள் அனுமதி தேவை</string>
+    <string name="permission_title">எல்லாம் சரி.</string>
+    <string name="okay">சரி!</string>
+    <string name="internet_error">நெட்வொர்க் இணைப்பு பிழை!!!</string>
+    <string name="permission_necessary">அனுமதி அவசியம்</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">நிகழ்வை படிக்கவும் எழுதவும் சேமிப்பக அனுமதி அவசியம்</string>
+    <string name="settings">அமைப்புகள்</string>
+    <string name="cancel_">ரத்துசெய்</string>
+    <string name="permission">அனுமதி</string>
+    <string name="permission_alert">அனுமதி எச்சரிக்கை</string>
+    <string name="get_permission_for_brightness_manage_desc">பிரகாசத்தை மாற்ற எங்களுக்கு அனுமதி தேவை, வீடியோவை இயக்கும் போது நீங்கள் பிரகாசத்தை நிர்வகிக்கலாம். \n நன்றி.</string>
+    <string name="we_need_storage_permission_for_save_video">மீடியா கோப்பை வெளிப்புற சேமிப்பகத்தில் சேமிக்க, சேமிப்பக அனுமதி தேவை.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">சுயவிவரப் படத்தைப் பதிவேற்ற, எங்களுக்கு வெளிப்புற சேமிப்பகமும் கேமரா அனுமதியும் தேவை.</string>
+    <string name="yesterday">நேற்று</string>
+    <string name="day_ago">நாள் முன்பு</string>
+    <!--Network and Permission END-->
+
+    <!--General Strings START-->
+    <string name="please_wait">தயவுசெய்து காத்திருங்கள்...</string>
+    <string name="delete">நீக்கு</string>
+    <string name="cancel">ரத்துசெய்</string>
+    <string name="downloading">பதிவிறக்கப்படுகிறது...</string>
+    <string name="loading">ஏற்றுகிறது...</string>
+    <string name="do_you_want_to_exit">நீங்கள் வெளியேற விரும்புகிறீர்களா?</string>
+    <string name="yes">ஆம்</string>
+    <string name="no">இல்லை</string>
+    <string name="track_selection_title">தடத்தை மாற்று</string>
+    <!--General Strings END-->
+
+    <!-- Login and OTP START -->
+    <string name="login">உள்நுழை</string>
+    <string name="or">அல்லது</string>
+    <string name="welcome_back">மீண்டும் வருக,</string>
+    <string name="login_with_mobile_note">உள்நுழைய உங்கள் மொபைல் எண்ணை உள்ளிடவும்</string>
+    <string name="enter_your_mobile_number">உங்கள் மொபைல் எண்ணை உள்ளிடவும்</string>
+    <string name="login_with_google">Google மூலம் உள்நுழைக</string>
+    <string name="login_with_facebook">Facebook மூலம் உள்நுழைக</string>
+
+    <string name="otp_verification">OTP சரிபார்ப்பு</string>
+    <string name="enter_your_mobile_no">உங்கள் மொபைல் எண்ணை உள்ளிடவும்</string>
+    <string name="enter_coutry_code">உங்கள் நாட்டின் குறியீட்டை உள்ளிடவும்.</string>
+    <string name="verify_phone_number">தொலைபேசி எண்ணைச் சரிபார்க்கவும்</string>
+    <string name="code_expire_soon">குறியீடு விரைவில் காலாவதியாகும்</string>
+    <string name="resend">மீண்டும் அனுப்பு</string>
+    <string name="confirm">உறுதிப்படுத்து</string>
+    <string name="enter_otp">பெறப்பட்ட OTP ஐ உள்ளிடவும்.</string>
+    <string name="select_your_coutry_code">உங்கள் நாட்டின் குறியீட்டைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="you_will_receive_a_6_digit_code_to_verify_next">அடுத்ததைச் சரிபார்க்க \n 6 இலக்கக் குறியீட்டைப் பெறுவீர்கள்.</string>
+    <string name="send_otp">OTP ஐ அனுப்பு</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">மொபைல் எண்ணுக்கு அனுப்ப OTP குறியீட்டை உள்ளிடவும்.</string>
+    <string name="we_have_sent_code_to_your_number">உங்கள் எண்ணுக்கு குறியீட்டை அனுப்பியுள்ளோம்</string>
+    <string name="verify_and_proceed">சரிபார் &amp;amp; தொடரவும்</string>
+    <string name="send_">அனுப்பு</string>
+    <string name="resend_otp">ஓடிபியை மீண்டும் அனுப்பு</string>
+    <string name="already_have_an_account">ஏற்கனவே கணக்கு உள்ளதா?</string>
+    <string name="do_not_have_an_account">கணக்கு இல்லையா?</string>
+    <string name="or_Login_using_Social_Media">அல்லது சமூக ஊடகத்தைப் பயன்படுத்தி உள்நுழையவும்</string>
+    <!-- Login and OTP END -->
+
+    <!-- Home Fragment START -->
+    <string name="title_home">முகப்பு</string>
+    <string name="title_tvshows">டிவி நிகழ்ச்சிகள்</string>
+    <string name="title_movies">திரைப்படங்கள்</string>
+    <string name="title_kids">குழந்தைகள்</string>
+    <string name="title_channels">சேனல்கள்</string>
+    <string name="title_find">கண்டுபிடி</string>
+    <string name="title_downloads">பதிவிறக்கங்கள்</string>
+    <string name="title_store">ஸ்டோர்</string>
+    <string name="title_mystuff">எனது பொருள்</string>
+    <string name="title_settings">அமைப்புகள்</string>
+    <string name="continue_watching">தொடர்ந்து பார்க்கவும்</string>
+    <string name="top_movies">சிறந்த திரைப்படங்கள்</string>
+    <string name="new_movie_tag">புதிய திரைப்படம்</string>
+    <string name="new_series_tag">புதிய தொடர்கள்</string>
+    <string name="new_tvshow_tag">புதிய டிவிஷோ</string>
+    <string name="tvshow">டிவி நிகழ்ச்சிகள்</string>
+    <string name="shows">காட்சிகள்</string>
+    <string name="_shows">நிகழ்ச்சிகள்</string>
+    <string name="movies">திரைப்படங்கள்</string>
+    <string name="movies_">திரைப்படங்கள்</string>
+    <string name="tv">டிவி</string>
+    <!-- Home Fragment END -->
+
+    <!-- Details START -->
+    <string name="watch_now">இப்போதே பார்க்கவும்</string>
+    <string name="watch_episode">எபிசோடைப் பார்க்கவும்</string>
+    <string name="no_episode">மன்னிக்கவும்! எபிசோட் விளையாடக் கிடைக்கவில்லை.</string>
+    <string name="no_video">மன்னிக்கவும்! வீடியோவை இயக்க முடியாது.</string>
+    <string name="no_trailer">மன்னிக்கவும்! டிரெய்லர் விளையாடுவதற்கு கிடைக்கவில்லை.</string>
+    <string name="no_data">மன்னிக்கவும்! தரவு கிடைக்கவில்லை.</string>
+    <string name="related">தொடர்புடையது</string>
+    <string name="episodes">எபிசோடுகள்</string>
+    <string name="more_details">மேலும் விவரங்கள்</string>
+    <string name="customers_also_watched">வாடிக்கையாளர்களும் பார்த்தனர்</string>
+    <string name="cast_and_crew">நடிகர்கள் &amp;amp; குழுவினர்</string>
+    <string name="details_from">விவரங்கள்</string>
+    <string name="genres">வகைகள்</string>
+    <string name="directors">இயக்குனர்கள்</string>
+    <string name="starring">நட்சத்திரம்</string>
+    <string name="studios">ஸ்டுடியோக்கள்</string>
+    <string name="maturity_rating">முதிர்வு மதிப்பீடு</string>
+    <string name="content_advisory">உள்ளடக்க ஆலோசனை</string>
+    <string name="customer_reviews">வாடிக்கையாளர் மதிப்புரைகள்</string>
+    <string name="did_you_know">உங்களுக்குத் தெரியுமா?</string>
+    <string name="known_for">அறிந்தவர்:</string>
+    <string name="included_with">சந்தாவுடன் சேர்க்கப்பட்டுள்ளது</string>
+    <string name="available_to_rent">வாடகைக்கு கிடைக்கும்</string>
+    <string name="release_date">Release Date</string>
+    <string name="rent">வாடகை</string>
+    <string name="language_change_note">வீடியோ இயங்கும் போது மொழியை மாற்றலாம்.</string>
+    <string name="available_languages">கிடைக்கும் மொழிகள்</string>
+    <string name="audio">ஆடியோ</string>
+    <string name="subtitles">வசனங்கள்</string>
+    <string name="trailer">டிரெய்லர்</string>
+    <string name="share">பகிர்</string>
+    <string name="watch_party">பார்ட்டி பார்ட்டி</string>
+    <string name="watchlist">கவனிப்பு பட்டியல்</string>
+    <string name="download">பதிவிறக்கு</string>
+    <string name="season">சீசன்</string>
+    <string name="create_watch_party">வாட்ச் பார்ட்டியை உருவாக்கு</string>
+    <string name="watch_party_note">பிறருடன் திரைப்படம் மற்றும் டிவி பார்க்கும் போது அரட்டையடிக்கவும்.</string>
+    <string name="create">உருவாக்கு</string>
+    <string name="chat_as">இவ்வாறு அரட்டையடிக்கவும்:</string>
+    <string name="watch_party_tips">பார்ட்டி குறிப்புகளைப் பார்க்கவும்</string>
+    <string name="enter_name">பெயரை உள்ளிடவும்</string>
+    <string name="more">மேலும் +</string>
+    <string name="less">குறைவு -</string>
+    <string name="resume">தற்குறிப்பு</string>
+    <string name="trivia">ட்ரிவியா</string>
+    <string name="filter">வடிகட்டி</string>
+    <string name="videos">வீடியோக்கள்</string>
+    <string name="watch_trailer">டிரெய்லரைப் பார்க்கவும்</string>
+    <string name="add_to_watchlist">காணப்பட்டியலில் சேர்</string>
+    <string name="remove_from_watchlist">காணப்பட்டியலில் இருந்து அகற்று</string>
+    <string name="complete">முழுமை</string>
+    <string name="delete_download">பதிவிறக்கத்தை நீக்கு</string>
+    <string name="more_">மேலும்</string>
+    <string name="view_details">விவரங்களைக் காண்க</string>
+    <string name="hide_this_video">இந்த வீடியோவை மறை</string>
+    <string name="unhide_this_video">இந்த வீடியோவை மறைக்கவா?</string>
+    <string name="unhide_video_note">இந்த வீடியோவை மறைப்பதன் மூலம் நீங்கள் எதையாவது பார்ப்பதற்காக உலாவும்போது அது தோன்றும். மறைக்கப்பட்ட வீடியோக்களை Find</string>
+    <string name="instagram_stories">Instagram கதைகள்</string>
+    <string name="copy_link">இணைப்பை நகலெடு</string>
+    <string name="sms">SMS</string>
+    <string name="sort_by">வரிசைப்படுத்து</string>
+    <string name="most_recent_addition">மிக சமீபத்திய சேர்த்தல்</string>
+    <string name="title_a_z">தலைப்பு A - Z</string>
+    <string name="title_z_a">தலைப்பு Z - A</string>
+    <string name="content_type">உள்ளடக்க வகை</string>
+    <string name="quality">தரம் :</string>
+    <string name="audio_languages">ஆடியோ மொழிகள் :</string>
+    <string name="play_download">பதிவிறக்கத்தை இயக்கு</string>
+    <string name="aired">ஒளிபரப்பானது:</string>
+    <string name="purchases">கொள்முதல்கள்</string>
+    <string name="rent_and_buy_your_favorites"><![CDATA[உங்களுக்கு பிடித்தவற்றை வாடகைக்கு &amp; வாங்கவும்]]></string>
+    <string name="no_purchases_note">உங்கள் எந்த சாதனத்திலும் வாங்குதல்களையும் வாடகைகளையும் பார்க்கவும்.</string>
+    <string name="left">இடது</string>
+    <string name="share_with">இவருடன் பகிரவும்...</string>
+    <string name="link_copied">இணைப்பு நகலெடுக்கப்பட்டது</string>
+    <string name="languages">மொழிகள்:</string>
+    <string name="live">நேரலை</string>
+    <string name="finish">முடிவு</string>
+    <string name="replay_all">அனைத்தையும் மீண்டும் இயக்கு!</string>
+    <!-- Details END -->
+
+    <!-- Find START -->
+    <string name="find">கண்டுபிடி</string>
+    <string name="search_by_actor_title">நடிகர், தலைப்பு மூலம் தேடு...</string>
+    <string name="browse_by">இதன் மூலம் உலாவுக</string>
+    <string name="language">மொழி</string>
+    <string name="see_more">மேலும் காண்க</string>
+    <string name="subscribe_to_channels">சேனல்களுக்கு குழுசேர்</string>
+    <string name="results_for">இதற்கான முடிவுகள்</string>
+    <!-- Find END -->
+
+    <!-- Downloads START -->
+    <string name="downloads">பதிவிறக்கங்கள்</string>
+    <string name="_downloads">பதிவிறக்கங்கள்</string>
+    <string name="downloads_settings">பதிவிறக்க அமைப்புகள்</string>
+    <string name="video">வீடியோ</string>
+    <string name="videos_">வீடியோக்கள்</string>
+    <string name="video_">வீடியோ</string>
+    <string name="min">நிமிடம்</string>
+    <string name="edit">திருத்து</string>
+    <string name="seasons">பருவங்கள்</string>
+    <string name="_episode">எபிசோட்</string>
+    <string name="episode">எபிசோட்</string>
+    <string name="select_all">அனைத்தையும் தேர்ந்தெடு</string>
+    <string name="unselect_all">அனைத்தையும் தேர்வுநீக்கு</string>
+    <string name="no_downloads">வீடியோக்கள் பதிவிறக்கம் செய்யப்படவில்லை</string>
+    <string name="take_me_to_the_downloads_page">என்னை பதிவிறக்கங்கள் பக்கத்திற்கு அழைத்துச் செல்லுங்கள்</string>
+    <string name="download_options">பதிவிறக்க விருப்பங்கள்</string>
+    <string name="download_options_note">உங்கள் வீடியோ வெற்றிகரமாக பதிவிறக்கம் செய்யப்பட்டது. பார்க்க பதிவிறக்கங்கள் மற்றும் பிற விருப்பங்களுக்குச் செல்லவும்.</string>
+    <string name="add_to_watchlist_msg">காணப்பட்டியலில் வெற்றிகரமாக சேர்க்கப்பட்டது</string>
+    <string name="removed_from_watchlist_msg">காணப்பட்டியலில் இருந்து வெற்றிகரமாக அகற்றப்பட்டது</string>
+    <string name="confirm_deletion">நீக்குதலை உறுதிப்படுத்தவும்</string>
+    <string name="delete_video_note">இந்த வீடியோக்கள் ஆஃப்லைனில் கிடைக்காது.</string>
+    <string name="delete_download_msg">வீடியோ வெற்றிகரமாக நீக்கப்பட்டது.</string>
+    <string name="file_has_been_downloaded">கோப்பு வெற்றிகரமாக பதிவிறக்கப்பட்டது</string>
+    <string name="download_has_been_started">பதிவிறக்கம் தொடங்கப்பட்டது...</string>
+    <string name="Downloaded">பதிவிறக்கப்பட்டது வெற்றிகரமாக</string>
+    <string name="invalid_url">தவறான URL!!!</string>
+    <string name="something_went_wrong">ஏதோ தவறாகிவிட்டது...</string>
+    <string name="file_already_downloaded">கோப்பு ஏற்கனவே பதிவிறக்கப்பட்டது.</string>
+    <!-- Downloads END -->
+
+    <!-- MyStuff START -->
+    <string name="create_profile">சுயவிவரத்தை உருவாக்கு</string>
+    <string name="manage_profiles">சுயவிவரங்களை நிர்வகி</string>
+    <string name="manage_profile">சுயவிவரத்தை நிர்வகி</string>
+    <string name="learn_more_about_profiles">சுயவிவரங்களைப் பற்றி மேலும் அறிக</string>
+    <string name="browse_now_watch_later">இப்போதே உலாவவும், பிறகு பார்க்கவும்</string>
+    <string name="watchlist_note">உங்கள் கண்காணிப்பு பட்டியல் உங்கள் சாதனங்கள் அனைத்திலும் பகிரப்பட்டுள்ளது.</string>
+    <!-- MyStuff END -->
+
+    <!-- Settings START -->
+    <string name="account_details">கணக்கு விவரங்கள்</string>
+    <string name="manage_your_profile">உங்கள் சுயவிவரத்தை நிர்வகிக்கவும்</string>
+    <string name="on">On</string>
+    <string name="off">முடக்கு</string>
+    <string name="notifications">அறிவிப்புகள்</string>
+    <string name="receive_notifications">புஷ் அறிவிப்புகளைப் பெறுக</string>
+    <string name="clear_cache">தேக்ககத்தை அழி</string>
+    <string name="clear_locally_cached_data">உள்ளூரில் தற்காலிகமாக சேமிக்கப்பட்ட தரவை அழி</string>
+    <string name="clear_cached_data_toast">கேச் தரவு அழிக்கப்பட்டது.</string>
+    <string name="change_password">கடவுச்சொல்லை மாற்று</string>
+    <string name="update_your_password">உங்கள் கடவுச்சொல்லைப் புதுப்பிக்கவும்</string>
+    <string name="current_password">தற்போதைய கடவுச்சொல்</string>
+    <string name="confirm_password">கடவுச்சொல்லை உறுதிப்படுத்தவும்</string>
+    <string name="new_password">புதிய கடவுச்சொல்</string>
+    <string name="enter_current_password">தற்போதைய கடவுச்சொல்லை உள்ளிடவும்.</string>
+    <string name="enter_new_password">புதிய கடவுச்சொல்லை உள்ளிடவும்.</string>
+    <string name="enter_confirm_password">உறுதிப்படுத்தப்பட்ட கடவுச்சொல்லை உள்ளிடவும்.</string>
+    <string name="password_not_matched_toast">நீங்கள் உள்ளிட்ட புதிய கடவுச்சொல், உறுதிப்படுத்தும் கடவுச்சொல்லுடன் பொருந்தவில்லை!!!</string>
+    <string name="change_password_request_for_type_2">உங்கள் சமூகக் கணக்கைப் பயன்படுத்தி உள்நுழைந்துள்ளீர்கள், கடவுச்சொல்லை மாற்றும் வசதி சமூகக் கணக்குகளுக்குப் பொருந்தாது.</string>
+    <string name="change_language">மொழியை மாற்று</string>
+    <string name="clear_video_search_history">வீடியோ தேடல் வரலாற்றை அழி</string>
+    <string name="signed_in_as">இவ்வாறு உள்நுழைந்துள்ளீர்கள்</string>
+    <string name="not_sign_in_desc">நீங்கள் உள்நுழையவில்லை</string>
+    <string name="sign_out">வெளியேறு</string>
+    <string name="sign_in">உள்நுழை</string>
+    <string name="terms_and_conditions">விதிமுறைகள் &amp;amp; நிபந்தனைகள்</string>
+    <string name="privacy_policy">தனியுரிமைக் கொள்கை</string>
+    <string name="about_us">எங்களைப் பற்றி</string>
+    <string name="rate_us">எங்களை மதிப்பிடு</string>
+    <string name="share_app">பகிர்வு பயன்பாடு</string>
+    <string name="rate_us_note">ஆப்ஸ்டோரில் எங்கள் பயன்பாட்டை மதிப்பிடவும்</string>
+    <string name="share_app_note">உங்கள் நண்பர்களுடன் பயன்பாட்டைப் பகிரவும்</string>
+    <string name="version">பதிப்பு</string>
+    <string name="always_ask">எப்போதும் கேள்</string>
+    <string name="start_over">மீண்டும் தொடங்கு</string>
+    <string name="change_language_mark">மொழியை மாற்றவா?</string>
+    <string name="change_language_note">ஆம் என்பதைக் கிளிக் செய்வதன் மூலம், தேர்ந்தெடுக்கப்பட்ட மொழியில் பயன்பாடு மறுதொடக்கம் செய்யப்படும்.\nதொடர விரும்புகிறீர்களா?</string>
+    <string name="terms_and_privacy_notice">விதிமுறைகள் மற்றும் தனியுரிமை அறிவிப்பு</string>
+    <string name="_3rd_party_notices">மூன்றாம் தரப்பு அறிவிப்புகள்</string>
+    <string name="about_and_legal">பற்றி &amp; சட்டப்பூர்வ</string>
+    <string name="confirm_sign_out">வெளியேறுவதை உறுதிப்படுத்தவும்</string>
+    <string name="are_you_sure_want_to_sign_out">நிச்சயமாக வெளியேற விரும்புகிறீர்களா?</string>
+    <!-- Settings END -->
+
+    <!-- Rent Products START -->
+    <string name="rent_products">தயாரிப்புகளை வாடகைக்கு விடுங்கள்</string>
+    <string name="view_more">மேலும் காண்க</string>
+    <string name="submit">சமர்ப்பி</string>
+    <string name="rent_movie_at_just">சில நேரத்தில் திரைப்படத்தை வாடகைக்கு விடுங்கள்</string>
+    <string name="rent_show_at_just">காட்சியை வாடகைக்கு விடவும்</string>
+    <string name="watch_with">இதன் மூலம் பார்க்கவும்</string>
+    <string name="purchaged_videos">வாங்கிய வீடியோக்கள்</string>
+    <string name="purchaged_shows">வாங்கிய காட்சிகள்</string>
+    <string name="rent_videos">வீடியோக்களை வாடகைக்கு விடுங்கள்</string>
+    <string name="rent_shows">காட்சிகளை வாடகைக்கு விடுங்கள்</string>
+    <!-- Rent Products END -->
+
+    <!-- Profile START -->
+    <string name="save">சேமி</string>
+    <string name="change">மாற்று</string>
+    <string name="kid_s_profile">குழந்தையின் சுயவிவரமா?</string>
+    <string name="learn_more">மேலும் அறிக</string>
+    <string name="new_">புதியது</string>
+    <string name="edit_profiles">சுயவிவரங்களைத் திருத்து</string>
+    <string name="edit_profile">சுயவிவரத்தைத் திருத்து</string>
+    <string name="remove_profile">சுயவிவரத்தை அகற்று</string>
+    <string name="the_account_holder_s_profile_can_t_be_removed">கணக்கு வைத்திருப்பவரின் சுயவிவரத்தை அகற்ற முடியாது</string>
+    <string name="change_profile_image">சுயவிவர படத்தை மாற்று</string>
+    <string name="take_photo">படம் எடு.</string>
+    <string name="choose_from_gallery">கேலரியில் இருந்து தேர்வு செய்யவும்.</string>
+    <string name="add_photo">புகைப்படத்தைச் சேர்!</string>
+    <string name="avatar_suggetion">அவதார் பரிந்துரைகள்</string>
+    <string name="choose_an_avatar">ஒரு அவதாரத்தைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="choose_new_avatar_note">உங்கள் புதிய அவதாரத்தைத் தேர்வுசெய்ய ஏதேனும் விருப்பத்தைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="subscription">சந்தா</string>
+    <string name="subscription_desc">உங்கள் சந்தாவிலிருந்து அதிகமானவற்றைப் பெற மேம்படுத்தவும்</string>
+    <string name="choose_plan">திட்டத்தைத் தேர்ந்தெடு</string>
+    <string name="current">நடப்பு</string>
+    <string name="enter_phone_number_profile">ஃபோன் எண்ணை உள்ளிடவும்...</string>
+    <string name="enter_email_profile">மின்னஞ்சலை உள்ளிடவும்...</string>
+    <string name="enter_address_profile">முகவரியை உள்ளிடவும்...</string>
+    <string name="enter_your_name_profile">உங்கள் பெயரை உள்ளிடவும்...</string>
+    <string name="update_profile">சுயவிவரத்தைப் புதுப்பிக்கவும்</string>
+    <string name="enter_password_profile">கடவுச்சொல்லை உள்ளிடவும்...</string>
+    <!-- Profile END -->
+
+    <!--Payment Activity START-->
+    <string name="payment_details">கட்டண விவரங்கள்</string>
+    <string name="please_select_any_payment_method">தயவுசெய்து, ஏதேனும் கட்டண முறையைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="payment_methods">கட்டண முறைகள்</string>
+    <string name="choose_a_payment_methods_to_pay">இதற்கான கட்டண முறையைத் தேர்வுசெய்க</string>
+    <string name="pay_with">இதன் மூலம் பணம் செலுத்து</string>
+    <string name="Continue">தொடரவும்</string>
+    <string name="paypal">PayPal</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">PAY</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">மன்னிக்கவும், உங்கள் கட்டணத்தைச் சரிபார்க்க முடியவில்லை, மீண்டும் முயற்சிக்கவும்!!!</string>
+    <string name="wallet_balance">பணப்பை இருப்பு</string>
+    <string name="payment_gateways">கட்டண நுழைவாயில்கள்</string>
+    <string name="recharge_your_wallet">உங்கள் பணப்பையை ரீசார்ஜ் செய்யவும்</string>
+    <string name="add_to_wallet">வாலட்டில் சேர்</string>
+    <string name="enter_amount">தனிப்பயன் தொகையை உள்ளிடவும்...</string>
+    <string name="your_current_balance_is">உங்கள் தற்போதைய இருப்பு :</string>
+    <string name="use_wallet_balance">வாலட் இருப்பைப் பயன்படுத்தவும்</string>
+    <string name="pay_now">இப்போதே செலுத்து</string>
+    <string name="please_enter_valid_amount">சரியான தொகையை உள்ளிடவும்.</string>
+    <string name="payable_amount_is">செலுத்த வேண்டிய தொகை :</string>
+    <string name="verification">சரிபார்ப்பு</string>
+    <string name="verification_success">சரிபார்ப்பு வெற்றிகரமாக உள்ளது.</string>
+    <string name="verification_note">*தொடர்வதற்கு, பின்வரும் விவரங்களைச் சரிபார்க்கவும்.</string>
+    <string name="download_not_available">இந்த வீடியோவிற்கு பதிவிறக்க அம்சம் இல்லை.</string>
+    <string name="already_purchased">நீங்கள் ஏற்கனவே திட்டத்தை வாங்கிவிட்டீர்கள்.</string>
+    <string name="delete_account">கணக்கை நீக்குக</string>
+    <string name="delete_account_msg">கணக்கை நிச்சயமாக நீக்க விரும்புகிறீர்களா?</string>
+    <string name="refund_policy">பணத்தைத் திரும்பப்பெறுதல் கொள்கை</string>
+    <string name="confirm_delete_account">கணக்கை நீக்குவதை உறுதிப்படுத்தவும்</string>
+    <!--Payment Activity END-->
+
+</resources>
